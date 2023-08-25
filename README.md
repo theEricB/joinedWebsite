@@ -1,1 +1,3 @@
-# joinedWebsite between bros and fam
+# joinedWebsite
+
+each must work in his named folder pleeeaaaase!
