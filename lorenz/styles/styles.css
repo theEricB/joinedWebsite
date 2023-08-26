@@ -1,0 +1,12 @@
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    width: 3cm;
+    height: 3cm;
+    display: flex;
+    flex-direction: row;
+    
+}
