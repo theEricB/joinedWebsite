@@ -48,5 +48,6 @@ button{
 
 img{
     max-height: 66vh;
+    max-width: 95vw;
     width: auto;
 }
