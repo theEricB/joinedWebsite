@@ -24,6 +24,7 @@ button{
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
 }
 #all{
     display: flex;
@@ -48,6 +49,6 @@ button{
 
 img{
     max-height: 66vh;
-    max-width: 95vw;
+    max-width: 90vw;
     width: auto;
 }
