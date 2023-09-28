@@ -8,10 +8,14 @@
 <body>
     <h1 style="font-family: Arial, Helvetica, sans-serif;">thänk juu vor joosing auer webseit</h1>
 
+    <button id="button_anett">ANETT</button>
     <button id="button_lorenz">LORENZ</button>
     <button id="button_erik">ERIK</button>
 
     <script>
+        document.getElementById("button_anett").onclick = function () {
+            location.href = "/anett/";
+        };
         document.getElementById("button_lorenz").onclick = function () {
             location.href = "/lorenz/";
         };
