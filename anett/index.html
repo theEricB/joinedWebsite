@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anett's Ayurveda Massagestudio</title>
+    <meta name="description" content="Anett's Ayurveda Massagestudio bietet entspannende und therapeutische Ayuvedamassage in Asperg, Deuthschland. Entdecken Sie noch heute die Vorteile von Aryuvedamedizin!" />
+    <title>Ayurveda Massage in Asperg, Deutschland | Anett's Ayurveda Massagen</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <style>
@@ -14,23 +15,28 @@
         }
 
         header {
-            background-image: url('src/mumSmall3.jpg'); /* Replace 'massage-image.jpg' with your image file */
+            background-image: url('ayurveda-massage.jpg'); /* Replace 'massage-image.jpg' with your image file */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             height: 100vh; /* This sets the header to take up the full viewport height */
-            text-align: center;
+            /* text-align: center; */
             color: #fff;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
-        h1 {
-            font-size: 40px;
+        .headerText {
             font-family: "Garamond", serif;
-            margin: 0;
+            max-width: 800px;
             color: black;
+        }
+
+        h1{
+            font-size: 36px;
+            margin: 0;
         }
 
         /* Add styles for the blinking arrow */
@@ -40,7 +46,7 @@
             left: 50%;
             transform: translateX(-50%);
             animation: blink 2s infinite;
-            font-size: 32px; /* Adjust the font size to change the arrow size */
+            font-size: 40px; /* Adjust the font size to change the arrow size */
             line-height: 1; /* Set the line-height to control the vertical spacing */
             transition: opacity 0.5s; /* Add a transition effect for opacity */
         }
@@ -87,14 +93,22 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Wilkommen in Anett's Ayurveda Massagestudio</h1>
+    <header title="Ayurveda Massagestudio in Asperg, Deuthschland">
+        <div class="headerText">
+            <h1>Willkommen in Anett's Ayurveda Massagestudio</h1>
+            <h2>Angewandte Ayurveda Medizin in Asperg</h2>
+        </div>
         <div class="scroll-arrow" id="scroll-arrow">
             <span>&#8595;</span>
         </div>
     </header>
     
+    
     <div class="container">
+        <h2>Info</h2>
+        <p>lorem ipsum</p>
+        <p><br></p>
+        
         <h2>Massagen und Preise</h2>
         <table>
             <tr>
@@ -109,7 +123,6 @@
                 <td>Ayurvedic Aromatherapy Massage</td>
                 <td>$65</td>
             </tr>
-            <!-- Add more services and prices as needed -->
         </table>
         <p><br></p>
 
@@ -121,7 +134,7 @@
             </tr>
             <tr>
                 <td>Email:</td>
-                <td><a href="mailto:info@anettsmassages.com">info@anettsmassages.com</a>
+                <td><a href="mailto:info@anettsmassagen.com">info@anettsmassagen.com</a>
                 </td>
             </tr>
         </table>
@@ -167,5 +180,27 @@
             .openPopup();
     </script>
 
+    <!-- metadata die fürs googlen hilft -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Anett's Ayurveda Massagestudio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carl-Diem-Straße 7",
+        "addressLocality": "Asperg",
+        "postalCode": "71679",
+        "addressCountry": "Germany"
+      },
+      "telephone": "+1 (123) 456-7890",
+      "url": "https://www.anettsmassagestudio.com",
+      "sameAs": [
+        "https://www.facebook.com/anettsmassagestudio",
+        "https://www.instagram.com/anettsmassagestudio"
+      ]
+    }
+    </script>
+    
 </body>
 </html>
