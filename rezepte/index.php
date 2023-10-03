@@ -37,7 +37,7 @@
             echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
             echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
             echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
-            #echo "<input type='submit' value='Delete'>";
+            echo "<input type='submit' value='Delete'>";
             echo "</form>";
             echo "<hr>";
         }
