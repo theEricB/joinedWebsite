@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cityscapes</title>
+    <link rel="stylesheet" href="css/cityscapes.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon-16x16.png">
+    <link rel="manifest" href="./logo/site.webmanifest">
+
+</head>
+<body>
+    <div id="container"></div>
+
+    <h1>
+        <br>
+    </h1>
+
+    
+    <div id="newtown" class="pictures">
+
+        <img onclick="Zoom(0)" src="src/cityscapes/0.jpg" class="image">
+        <img onclick="Zoom(1)" src="src/cityscapes/1.jpg" class="image">
+        <img onclick="Zoom(2)" src="src/cityscapes/2.jpg" class="image">
+        <img onclick="Zoom(3)" src="src/cityscapes/3.jpg" class="image">
+        <img onclick="Zoom(4)" src="src/cityscapes/4.jpg" class="image">
+
+    </div>
+    
+    <h3>
+        <br>
+    </h3>
+
+    <div id="cbd" class="pictures">
+ 
+        <img onclick="Zoom(5)" src="src/cityscapes/5.jpg" class="image">
+        <img onclick="Zoom(6)" src="src/cityscapes/6.jpg" class="image">
+        <img onclick="Zoom(7)" src="src/cityscapes/7.jpg" class="image">
+        <img onclick="Zoom(8)" src="src/cityscapes/8.jpg" class="image">
+        <img onclick="Zoom(9)" src="src/cityscapes/9.jpg" class="image">
+    </div>
+
+    <p>
+        <br>
+    </p>
+
+    <div id="description">
+        <h1 class="text">cityscapes</h1>
+        <h3 class="text">series of prints, color, dinA3</h3>
+        <p class="text">
+        This exploration tries to deconstruct the effect architectural facades have on urban space. It also raises the question, how much effect there even is. 
+        Every collage consists out of multiple pictures of the chosen buildings taken from different angles. Based on David Hockney’s collages from the 90’s, the individual pictures are then assembled to form a more complete image of each building. By using different positions, angles and focal lengths, the final collage is rich in detail and gives a more three-dimensional feeling to the viewer. 
+        The exhibition compares two suburbs, Newtown and the central business district, of Sydney, Australia. While Newtown mostly consists of two- or three-story high buildings from the late 19th century, the CBD is known for its high rises from the 20th and 21st century.
+        The choice of the buildings mostly reflects personal interest as well as diversity in architecture and facades. Along the architectural facade, scenes on the streets are also captured and included in the collage, which allows for a deeper understanding of the urban space. 
+        The combination of capturing architecture in multiple settings with the digital process of rearranging the src on a canvas lets one see and appreciate architecture from a different perspective.
+        </p>
+    </div>
+
+    <div id="details">
+        <h1><br></h1>
+        <h3 class="detail" style="font-family: Arial, Helvetica, sans-serif;">exhibition</h3>
+        <img src="src/cityscapes/exhibition2.jpg" class="detail">
+        <img src="src/cityscapes/exhibition3.jpg" class="detail">
+        <img src="src/cityscapes/exhibition1.jpg" class="detail">
+        <h1><br></h1>
+        <h3 class="detail" style="font-family: Arial, Helvetica, sans-serif;">details</h3>
+        <img src="src/cityscapes/details1.jpg" class="detail">
+        <img src="src/cityscapes/details2.jpg" class="detail">
+        <img src="src/cityscapes/details3.jpg" class="detail">
+        <img src="src/cityscapes/details4.jpg" class="detail">
+        <img src="src/cityscapes/details5.jpg" class="detail">   
+        <img src="src/cityscapes/details6.jpg" class="detail">
+        <img src="src/cityscapes/details7.jpg" class="detail">
+        <img src="src/cityscapes/details8.jpg" class="detail">
+    </div>
+
+
+    <script>
+        function Zoom(num){
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            if(w<600){
+                return;
+            }
+
+
+            directory = "src/cityscapes/cityBig/" + num + ".jpg";
+            container = document.getElementById("container");
+            img = document.createElement("img");
+            img.setAttribute("src", directory);
+            img.setAttribute("id", "bigImage")
+            img.onclick = function () {
+                container.style.pointerEvents = "none";
+                container.removeChild(img);
+                container.style.backgroundColor = "transparent";
+            };
+
+            
+
+            if(w<h){
+                console.log("width smaller");
+                img.style.width = "100%"
+                container.style.flexDirection = "row"
+            }
+            else {
+                img.style.height = "100%"
+                container.style.flexDirection = "column"
+
+            }
+
+            container.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            container.append(img);
+            container.style.pointerEvents = "all";
+
+
+        };
+
+    </script>
+</body>
+</html>
