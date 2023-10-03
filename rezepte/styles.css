@@ -2,7 +2,8 @@
 .button {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border: 1px;
+    border: 2px;
+    border-color: black;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 10px;
