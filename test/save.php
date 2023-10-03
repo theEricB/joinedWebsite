@@ -1,9 +1,9 @@
 <?php
 // Database connection details
 $host = "localhost"; // Change this to your database host
-$username = "u260926282_test"; // Change this to your database username
-$password = "4K*l&Z|G17L"; // Change this to your database password
-$database = "u260926282_test"; // Change this to your database name
+$username = "u260926282_recipes"; // Change this to your database username
+$password = "o~Z0?:GG:"; // Change this to your database password
+$database = "u260926282_recipes"; // Change this to your database name
 
 $conn = new mysqli($host, $username, $password, $database);
 
