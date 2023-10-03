@@ -36,8 +36,8 @@
             echo "<h2>{$row['name']}</h2>";
             echo "<p><strong>Author:</strong> {$row['author']}</p>";
             echo "<p><strong>Date:</strong> {$row['date']}</p>";
-            echo "<p><strong>Ingredients:</strong><br>{$row['ingredients']}</p>";
-            echo "<p><strong>Description:</strong><br>{$row['description']}</p>";
+            echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
+            echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
             echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
             echo "<input type='submit' value='Delete'>";
             echo "</form>";
