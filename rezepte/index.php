@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CowFoot Rezepte</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1>CowFoot Rezepte</h1>
@@ -48,7 +49,7 @@
             echo "<p><strong>Beschreibung:</strong><br>" . nl2br($row['description']) . "<br><br></p>";            
             echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
-            echo "<input type='submit' value='Löschen' onclick=\"return confirm('Bist Du sicher?');\">";
+            echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher?');\">";
             echo "</form>";
             echo "<hr>";
         }
@@ -58,5 +59,8 @@
 
     $conn->close();
     ?>
+
+    <h1><br></h1>
+
 </body>
 </html>
