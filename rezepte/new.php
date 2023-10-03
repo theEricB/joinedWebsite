@@ -9,7 +9,7 @@
     <h1>Neues Rezept</h1>
     
     <form method="post" action="save.php">
-        <label for="name">Titel:</label>
+        <label for="name"><strong>Titel:</strong></label>
         <input type="text" name="name" id="name" required><br><br>
 
         <label for="ingredients">Zutaten:</label><br>
