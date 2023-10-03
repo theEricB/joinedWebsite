@@ -12,16 +12,16 @@
         <label for="name"><strong>Titel:</strong></label>
         <input type="text" name="name" id="name" required><br><br>
 
-        <label for="ingredients">Zutaten:</label><br>
+        <label for="ingredients"><strong>Zutaten:</strong></label><br>
         <textarea name="ingredients" id="ingredients" rows="4" cols="50" required></textarea><br><br>
 
-        <label for="description">Beschreibung:</label><br>
+        <label for="description"><strong>Beschreibung:</strong></label><br>
         <textarea name="description" id="description" rows="4" cols="50" required></textarea><br><br>
 
-        <label for="author">Author:</label>
+        <label for="author"><strong>Autor:</strong></label>
         <input type="text" name="author" id="author" required><br><br>
 
-        <label for="date">Datum:</label>
+        <label for="date"><strong>Datum:</strong></label>
         <input type="date" name="date" id="date" required><br><br>
 
         <button type="submit" class="button">Speichern</button>
