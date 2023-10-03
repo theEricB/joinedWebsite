@@ -23,6 +23,12 @@
     $sql = "SELECT * FROM recipes ORDER BY id DESC";
     $result = $conn->query($sql);
 
+    error_log("Query Result: " . print_r($result, true));
+
+    if (!$result) {
+        die("Error: " . mysqli_error($conn));
+    }
+
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo "<h2>{$row['name']}</h2>";
