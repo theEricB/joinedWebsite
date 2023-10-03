@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Neues Rezept</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <h1>Neues Rezept</h1>
@@ -22,7 +24,7 @@
         <label for="date">Datum:</label>
         <input type="date" name="date" id="date" required><br><br>
 
-        <button type="submit">Speichern</button>
+        <button type="submit" class="button">Speichern</button>
     </form>
     
     <br><br>
