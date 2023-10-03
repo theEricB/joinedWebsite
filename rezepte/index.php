@@ -19,8 +19,18 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    if (isset($_GET['delete_id'])) {
-        $delete_id = $_GET['delete_id'];
+    // if (isset($_GET['delete_id'])) {
+    //     $delete_id = $_GET['delete_id'];
+    //     $delete_sql = "DELETE FROM recipes WHERE id = ?";
+    //     $stmt = $conn->prepare($delete_sql);
+    //     $stmt->bind_param("i", $delete_id);
+    //     $stmt->execute();
+    //     $stmt->close();
+    // }
+
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
+        $delete_id = $_POST['delete_id'];
         $delete_sql = "DELETE FROM recipes WHERE id = ?";
         $stmt = $conn->prepare($delete_sql);
         $stmt->bind_param("i", $delete_id);
@@ -45,9 +55,15 @@
             echo "<p><strong>Date:</strong> {$row['date']}</p>";
             echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
             echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
-            echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
+            // echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
+            // echo "<input type='submit' value='Delete'>";
+            // echo "</form>";
+
+            echo "<form method='post' action='main.php'>";
+            echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' value='Delete'>";
             echo "</form>";
+
             echo "<hr>";
         }
     } else {
