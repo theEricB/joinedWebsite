@@ -59,7 +59,7 @@
             // echo "<input type='submit' value='Delete'>";
             // echo "</form>";
 
-            echo "<form method='post' action='main.php'>";
+            echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' value='Delete'>";
             echo "</form>";
