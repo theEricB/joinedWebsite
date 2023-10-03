@@ -50,6 +50,7 @@
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' value='Delete' onclick=\"return confirm('Bist Du sicher?');\">";
             echo "</form>";
+            echo "<p><br></p>";
             echo "<hr>";
         }
     } else {
