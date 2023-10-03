@@ -28,7 +28,8 @@
         $stmt->close();
     }
 
-    $sql = "SELECT * FROM recipes";
+    // Updated SQL query with ORDER BY for reverse order
+    $sql = "SELECT * FROM recipes ORDER BY id DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

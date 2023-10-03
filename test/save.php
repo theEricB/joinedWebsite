@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if ($stmt->affected_rows > 0) {
         // Redirect to main.php on success
-        header("Location: main.php");
+        header("Location: index.php");
         exit(); // Terminate script execution after redirection
     } else {
         echo "Error: " . $stmt->error;
