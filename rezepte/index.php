@@ -43,10 +43,10 @@
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo "<h2>{$row['name']}</h2>";
-            echo "<p><strong>Autor:</strong> {$row['author']}</p>";
-            echo "<p><strong>Datum:</strong> {$row['date']}</p>";
-            echo "<p><strong>Zutaten:</strong><br>" . nl2br($row['ingredients']) . "</p>";
-            echo "<p><strong>Beschreibung:</strong><br>" . nl2br($row['description']) . "<br><br></p>";            
+            echo "<p class='entryPart'><strong>Autor:</strong> {$row['author']}</p>";
+            echo "<p class='entryPart'><strong>Datum:</strong> {$row['date']}</p>";
+            echo "<p class='entryPart'><strong>Zutaten:</strong><br>" . nl2br($row['ingredients']) . "</p>";
+            echo "<p class='entryPart'><strong>Beschreibung:</strong><br>" . nl2br($row['description']) . "<br><br></p>";            
             echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher?');\">";
