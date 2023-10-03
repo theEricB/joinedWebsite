@@ -45,12 +45,11 @@
             echo "<p><strong>Author:</strong> {$row['author']}</p>";
             echo "<p><strong>Date:</strong> {$row['date']}</p>";
             echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
-            echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
+            echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "<br></p>";            
             echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' value='Delete' onclick=\"return confirm('Bist Du sicher?');\">";
             echo "</form>";
-            echo "<p><br></p>";
             echo "<hr>";
         }
     } else {
