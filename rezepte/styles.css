@@ -4,8 +4,7 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     border: 1px solid black; /* Specify border-style and border-color */
-    padding: 2px 4px;
-    margin: 5px;
+    padding: 3px 8px;
     cursor: pointer;
     border-radius: 10px;
 }
