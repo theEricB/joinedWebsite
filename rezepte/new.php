@@ -26,6 +26,6 @@
     </form>
     
     <br><br>
-    <a href="index.php">Zeige alle Rezepte...</a>
+    <a href="./">Zeige alle Rezepte...</a>
 </body>
 </html>
