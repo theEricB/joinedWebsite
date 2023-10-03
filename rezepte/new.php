@@ -28,6 +28,6 @@
     </form>
     
     <br><br>
-    <a href="./">Zeige alle Rezepte...</a>
+    <a href="./" class="button">Zeige alle Rezepte...</a>
 </body>
 </html>
