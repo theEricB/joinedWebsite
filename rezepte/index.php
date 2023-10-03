@@ -19,6 +19,15 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
+    if (isset($_GET['delete_id'])) {
+        $delete_id = $_GET['delete_id'];
+        $delete_sql = "DELETE FROM recipes WHERE id = ?";
+        $stmt = $conn->prepare($delete_sql);
+        $stmt->bind_param("i", $delete_id);
+        $stmt->execute();
+        $stmt->close();
+    }
+
     // Updated SQL query with ORDER BY for reverse order
     $sql = "SELECT * FROM recipes ORDER BY id DESC";
     $result = $conn->query($sql);
