@@ -4,7 +4,7 @@
     <title>Neues Rezept</title>
 </head>
 <body>
-    <h1>Neues Rezept:</h1>
+    <h1>Neues Rezept</h1>
     
     <form method="post" action="save.php">
         <label for="name">Titel:</label>
@@ -22,10 +22,10 @@
         <label for="date">Datum:</label>
         <input type="date" name="date" id="date" required><br><br>
 
-        <button type="submit">Save</button>
+        <button type="submit">Speichern</button>
     </form>
     
     <br><br>
-    <a href="index.php">Zeige alle Rezepte</a>
+    <a href="index.php">Zeige alle Rezepte...</a>
 </body>
 </html>

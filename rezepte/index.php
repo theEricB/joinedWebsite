@@ -9,7 +9,7 @@
     <a href="new.php">Rezept hinzufügen...</a><br><br>
     
     <?php
-    $host = "localhost"; // Change this to your database host
+    $host = "bauscher.xyz"; // Change this to your database host
     $username = "u260926282_recipes"; // Change this to your database username
     $password = "o~Z0?:GG:"; // Change this to your database password
     $database = "u260926282_recipes"; // Change this to your database name
@@ -17,15 +17,6 @@
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-    }
-
-    if (isset($_GET['delete_id'])) {
-        $delete_id = $_GET['delete_id'];
-        $delete_sql = "DELETE FROM recipes WHERE id = ?";
-        $stmt = $conn->prepare($delete_sql);
-        $stmt->bind_param("i", $delete_id);
-        $stmt->execute();
-        $stmt->close();
     }
 
     // Updated SQL query with ORDER BY for reverse order
@@ -40,7 +31,7 @@
             echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
             echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
             echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
-            echo "<input type='submit' value='Delete'>";
+            #echo "<input type='submit' value='Delete'>";
             echo "</form>";
             echo "<hr>";
         }
