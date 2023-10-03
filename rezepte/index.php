@@ -20,11 +20,11 @@
     }
 
     // Updated SQL query with ORDER BY for reverse order
-    $sql = "SELECT * FROM recipes # ORDER BY id DESC";
+    $sql = "SELECT * FROM recipes ORDER BY id DESC";
     $result = $conn->query($sql);
 
+    // some error logs if not working correctly    
     error_log("Query Result: " . print_r($result, true));
-
     if (!$result) {
         die("Error: " . mysqli_error($conn));
     }
