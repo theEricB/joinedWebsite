@@ -8,9 +8,10 @@
 }
 
 /* Media query for smaller screens (e.g., smartphones) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .button {
-        padding: 100px; /* Adjust the padding to make the button larger on smaller screens */
+        padding: 100px;
+        background-color: blue; /* Adjust the padding to make the button larger on smaller screens */
     }
 
     .entryPart{
