@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Neues Rezept</title>
+    <title>CowFoot Rezepte</title>
 </head>
 <body>
-    <h1>Neues Rezept:</h1>
+    <h1>CowFoot Rezepte</h1>
     
-    <form method="post" action="save.php">
-        <label for="name">Titel:</label>
-        <input type="text" name="name" id="name" required><br><br>
-
-        <label for="ingredients">Zutaten:</label><br>
-        <textarea name="ingredients" id="ingredients" rows="4" cols="50" required></textarea><br><br>
-
-        <label for="description">Beschreibung:</label><br>
-        <textarea name="description" id="description" rows="4" cols="50" required></textarea><br><br>
-
-        <label for="author">Author:</label>
-        <input type="text" name="author" id="author" required><br><br>
-
-        <label for="date">Datum:</label>
-        <input type="date" name="date" id="date" required><br><br>
-
-        <button type="submit">Save</button>
-    </form>
+    <a href="new.php">Rezept hinzufügen...</a><br><br>
     
-    <br><br>
-    <a href="main.php">Zeige alle Rezepte</a>
+    <?php
+    $host = "localhost"; // Change this to your database host
+    $username = "u260926282_recipes"; // Change this to your database username
+    $password = "o~Z0?:GG:"; // Change this to your database password
+    $database = "u260926282_recipes"; // Change this to your database name
+    $conn = new mysqli($host, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    if (isset($_GET['delete_id'])) {
+        $delete_id = $_GET['delete_id'];
+        $delete_sql = "DELETE FROM recipes WHERE id = ?";
+        $stmt = $conn->prepare($delete_sql);
+        $stmt->bind_param("i", $delete_id);
+        $stmt->execute();
+        $stmt->close();
+    }
+
+    $sql = "SELECT * FROM recipes";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "<h2>{$row['name']}</h2>";
+            echo "<p><strong>Author:</strong> {$row['author']}</p>";
+            echo "<p><strong>Date:</strong> {$row['date']}</p>";
+            echo "<p><strong>Ingredients:</strong><br>" . nl2br($row['ingredients']) . "</p>";
+            echo "<p><strong>Description:</strong><br>" . nl2br($row['description']) . "</p>";            
+            echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
+            echo "<input type='submit' value='Delete'>";
+            echo "</form>";
+            echo "<hr>";
+        }
+    } else {
+        echo "No recipes found.";
+    }
+
+    $conn->close();
+    ?>
 </body>
 </html>
