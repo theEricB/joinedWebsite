@@ -13,11 +13,19 @@
     $username = "u260926282_recipes"; // Change this to your database username
     $password = "o~Z0?:GG:"; // Change this to your database password
     $database = "u260926282_recipes"; // Change this to your database name
-    
     $conn = new mysqli($host, $username, $password, $database);
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+    }
+
+    if (isset($_GET['delete_id'])) {
+        $delete_id = $_GET['delete_id'];
+        $delete_sql = "DELETE FROM recipes WHERE id = ?";
+        $stmt = $conn->prepare($delete_sql);
+        $stmt->bind_param("i", $delete_id);
+        $stmt->execute();
+        $stmt->close();
     }
 
     $sql = "SELECT * FROM recipes";
@@ -30,6 +38,9 @@
             echo "<p><strong>Date:</strong> {$row['date']}</p>";
             echo "<p><strong>Ingredients:</strong><br>{$row['ingredients']}</p>";
             echo "<p><strong>Description:</strong><br>{$row['description']}</p>";
+            echo "<form method='post' action='main.php?delete_id={$row['id']}'>";
+            echo "<input type='submit' value='Delete'>";
+            echo "</form>";
             echo "<hr>";
         }
     } else {
