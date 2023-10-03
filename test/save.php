@@ -24,7 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
     
     if ($stmt->affected_rows > 0) {
-        echo "Recipe successfully saved to the database.";
+        // Redirect to main.php on success
+        header("Location: main.php");
+        exit(); // Terminate script execution after redirection
     } else {
         echo "Error: " . $stmt->error;
     }
