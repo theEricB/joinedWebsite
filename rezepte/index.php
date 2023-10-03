@@ -50,7 +50,7 @@
             echo "<p class='entryPart'><strong>Beschreibung:</strong><br>" . nl2br($row['description']) . "<br><br></p>";            
             echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
-            echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher? <br> Lösche nie eines anderen Rezepte!');\">";
+            echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher? Lösche nie eines Anderen Rezepte!');\">";
             echo "</form>";
             echo "<hr>";
         }
