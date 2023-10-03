@@ -9,7 +9,7 @@
     <a href="new.php">Rezept hinzufügen...</a><br><br>
     
     <?php
-    $host = "bauscher.xyz"; // Change this to your database host
+    $host = "localhost"; // Change this to your database host
     $username = "u260926282_recipes"; // Change this to your database username
     $password = "o~Z0?:GG:"; // Change this to your database password
     $database = "u260926282_recipes"; // Change this to your database name
