@@ -14,7 +14,10 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_id'])) {
     $edit_id = $_POST['edit_id'];
     $name = $_POST["name"];
-    // Update other fields (ingredients, description, author, date) similarly
+    $ingredients = $_POST["ingredients"];
+    $description = $_POST["description"];
+    $author = $_POST["author"];
+    $date = $_POST["date"];
 
     $sql = "UPDATE recipes SET name = ?, ingredients = ?, description = ?, author = ?, date = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
