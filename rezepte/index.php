@@ -48,7 +48,7 @@
             echo "<p class='entryPart'><strong>Datum:</strong> {$row['date']}</p>";
             echo "<p class='entryPart'><strong>Zutaten:</strong><br>" . nl2br($row['ingredients']) . "</p>";
             echo "<p class='entryPart'><strong>Beschreibung:</strong><br>" . nl2br($row['description']) . "<br><br></p>";            
-            echo "<div class buttonContainer>"
+            echo "<div class buttonContainer>";
             echo "<form method='post' action='edit.php'>";
             echo "<input type='hidden' name='edit_id' value='{$row['id']}'>";
             echo "<input type='submit' class='button' value='Edit'>";
@@ -57,7 +57,7 @@
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher? Lösche nie eines Anderen Rezepte!');\">";
             echo "</form>";
-            echo "</div>"
+            echo "</div>";
             echo "<hr>";
         }
     } else {
