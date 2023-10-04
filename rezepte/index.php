@@ -54,12 +54,13 @@
             echo "<input type='hidden' name='edit_id' value='{$row['id']}'>";
             echo "<input type='submit' class='button' value='Edit'>";
             echo "</form>";
+            
             echo "<form method='post' action='index.php'>";
             echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
             echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher? Lösche nie eines Anderen Rezepte!');\">";
             echo "</form>";
             echo "</div>";
-
+            echo "<h2><br></h2>";
             echo "<hr>";
         }
     } else {
