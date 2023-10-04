@@ -52,7 +52,7 @@
             echo "<div class buttonContainer>";
             echo "<form method='post' action='edit.php'>";
             echo "<input type='hidden' name='edit_id' value='{$row['id']}'>";
-            echo "<input type='submit' class='button' value='Edit'>";
+            echo "<input type='submit' class='button' value='Bearbeiten'>";
             echo "</form>";
             
             echo "<form method='post' action='index.php'>";
