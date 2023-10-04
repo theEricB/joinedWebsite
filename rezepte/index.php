@@ -60,7 +60,7 @@
             echo "<input type='submit' class='button' value='Löschen' onclick=\"return confirm('Bist Du sicher? Lösche nie eines Anderen Rezepte!');\">";
             echo "</form>";
             echo "</div>";
-            echo "<h2><br></h2>";
+            echo "<p><br></p>";
             echo "<hr>";
         }
     } else {
