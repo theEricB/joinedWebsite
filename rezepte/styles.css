@@ -10,7 +10,7 @@
     border-radius: 10px;
 }
 
-.buttonContainer{
-    display: flex;
-    flex-direction: row;
+.button-container {
+    display: inline-block; /* Display buttons side by side */
+    margin-right: 10px; /* Add some spacing between buttons */
 }
