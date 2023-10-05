@@ -9,6 +9,7 @@
     <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
   </head>
   <body>
+    <h1 id="msg">loading...</h1>
     <div id="graph"></div>
     <!-- Add third-party dependencies here -->
       <py-config>
@@ -21,6 +22,8 @@ arr = np.array([1, 2, 3, 4, 5])
 plt.plot(arr)
 plt
 display(plt, target="graph")
+msg = js.document.getElementById("msg")
+msg.innerHTML = 'Hello world'
       </py-script>
   </body>
 </html>
