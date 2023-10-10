@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css"> -->
     <title>Document</title>
 </head>
 <body>
     <p>
-        <h1 class="middle">Lorenz Bauscher</h1>
+        <h1 id="ID">Lorenz Bauscher</h1>
     </p>
     <p class="images">
     <img src="images/tennisRacket.png" title="Tennis Racket">
@@ -18,5 +19,9 @@
     <img src="images/movies.png" alt="Movie Clip" title="Filmmaking">
     <img src="images/university.png" alt="University" title="University">
     </p>
+
+    <button onclick='document.getElementById("ID").textContent = "Hello JavaScript"'>
+        wichtiger Button
+    </button>
 </body>
 </html>
