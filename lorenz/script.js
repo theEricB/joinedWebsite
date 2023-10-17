@@ -1,5 +1,5 @@
-textgroesse = 30
-condition = true;
+let textgroesse = 30
+let condition = true;
 function JavaScript(){
     if (condition){
         document.getElementById("ID").textContent = "Hello JavaScript"
@@ -18,4 +18,17 @@ function verstecken(){
 }
 function zeigen(){
     document.getElementById('ID').style.visibility='visible'
+}
+function add(x,y){
+    document.getElementById('Rechner').textContent = x+y
+}
+function calculate(){
+    let numbers = document.querySelector("#input").value
+    let ergebnis = 0
+    const numb = numbers.split(" ")
+    console.log(numb)
+    for (i in numb){
+        ergebnis += parseInt(i)
+    }
+    document.getElementById('Rechner').textContent = ergebnis
 }
