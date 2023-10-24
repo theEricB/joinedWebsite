@@ -28,9 +28,11 @@ function calculate(){
     let ergebnis = 0
     const numb = numbers.split(" ")
     console.log(numb)
-    for (i in numb){
-        ergebnis += Int(i)
+    for (i of numb){
+        console.log(i)
+        ergebnis += parseInt(i)
     }
+    console.log(ergebnis)
     document.getElementById('Rechner').textContent = ergebnis
 }
 function Surprise(){
