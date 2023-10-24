@@ -1,5 +1,6 @@
 let textgroesse = 30
 let condition = true;
+console.log("HAllo!")
 function JavaScript(){
     if (condition){
         document.getElementById("ID").textContent = "Hello JavaScript"
@@ -28,7 +29,19 @@ function calculate(){
     const numb = numbers.split(" ")
     console.log(numb)
     for (i in numb){
-        ergebnis += parseInt(i)
+        ergebnis += Int(i)
     }
     document.getElementById('Rechner').textContent = ergebnis
+}
+function Surprise(){
+    document.getElementById('hobbies').textContent = "Spaßßß"
+    console.log("In Surprise!")
+}
+function Another(){
+    document.getElementById('hobbies').textContent = "Hobbies"
+}
+function doSomething(){
+    for (i = 0; i < 10; i++){
+    document.getElementById('tennis').offsetHeight = 5
+    }
 }

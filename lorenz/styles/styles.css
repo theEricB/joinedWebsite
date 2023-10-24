@@ -10,3 +10,16 @@
     flex-direction: row;
     
 }
+#hobbies{
+    color: blue;
+    background-color: rgb(45, 193, 37);
+    width: 120px;
+}
+#Rechner i {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  #Rechner:hover i {
+    top: -10px;
+  }
