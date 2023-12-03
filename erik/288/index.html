@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>288</title>
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <style>
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+
+			#instructions {
+				width: 100%;
+				height: 100%;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				text-align: center;
+				font-size: 14px;
+				cursor: pointer;
+			}
+		</style>
+        <script type="importmap">
+            {
+                "imports": {
+                "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+                }
+            }
+            </script>
+	</head>
+    <div id="blocker" style="display: block;">
+        <div id="instructions" style="">
+            <p style="font-size:36px">
+                click to explore
+            </p>
+            <p>
+                Move: WASD<br>
+                Look: MOUSE
+            </p>
+        </div>
+    </div>
+	<body>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
