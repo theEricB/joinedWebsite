@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css"> -->
-    <title>Document</title>
-</head>
-<body>
-    <p>
-        <h1 id="ID">Lorenz Bauscher</h1>
-    </p>
-    <p class="images">
-    <img id="tennis" src="images/tennisRacket.png" title="Tennis Racket">
-    <img src="images/coding.png" alt="Coding" title="Coding">
-    <img src="images/drone.svg" alt="Drone" title="Drone">
-    <img src="images/CV.png" alt="CV" title="CV">
-    <img src="images/movies.png" alt="Movie Clip" title="Filmmaking">
-    <img src="images/university.png" alt="University" title="University">
-    </p>
+<meta charset=utf-8>
+<link rel=stylesheet href="https://foo.mi.hdm-stuttgart.de/wd/styles/content.css">
+<link rel=stylesheet href="styles.css">
+<title>ArrrTreasure Shop</title>
 
-    
-    <h1 id="hobbies" onmouseover="Surprise()" onmouseleave="Another()">
-        Hobbies
-    </h1>
+<header>
+	<h1>The official Angelina Shop</h1>
+	<p class=slogan>Angelina's Math, Wings Unfurled: Numbers Twirl in an Angelic World!</p>
+</header>
 
-    <div id="container">
-        Dies ist ein container
+<nav>
+	<ul>
+		<li><a href="#">Buy Angelina! <small>She's good at math! Trust me.</small></a></li>
+		<li><a href="#">Legal department <small>You dont get your <span class=suggestive-break></span> money back if she starts attacking your dignity</small></a></li>
+		<li><a href="#">Support <small></small></a>If you need Support its to late! Just run.</li>
+	</ul>
+</nav>
 
-    </div>
-    <button onclick='JavaScript(), Surprise()'>
-        wichtiger Button
-    </button>
-    <button onclick="groesserMachen()">
-    Schrift größer machen
-    
-    </button>
-    <button onclick="verstecken()">
-        Schrift verstecken!
-    </button>
-    <button onclick="zeigen()">
-        Schrift wieder anzeigen!
-    </button>
-    <p id = "Rechner">Hier wird das Ergebnis angezeigt!</p>  
-    <button onclick="calculate()">Calculate</button>
-    <input type="text" name="query" maxlength="64" placeholder="geben sie 2 zahlen ein" id="input">
-</body>
-<script src="script.js"></script>
-</html>
+<section id=articles>
+	<template>
+		<article>
+			<h2>…</h2>
+			<p class=description>…</p>
+			<dl>
+				<dt>Producer</dt>         <dd class=producer>…</dd>
+				<dt>Price</dt>            <dd class=price>…</dd>
+				<dt>Display</dt>          <dd class=display>…</dd>
+				<dt>Operating System</dt> <dd class=os>…</dd>
+				<dt>Battery</dt>          <dd class=battery>…</dd>
+			</dl>
+			<button class=buy>Buy!</button>
+		</article>
+	</template>
+</section>
+
+<aside id=cart class=empty>
+	<h1>🛒 Your Treasure to be</h1>
+	<p>Who doesn't like getting insulted all the time. Get your Angelina now</p>
+	
+	<div class=articles></div>
+	<a class="checkout button" href="#checkout">Checkout</a>
+</aside>
+
+<aside id=checkout>
+	<form action="https://foo.mi.hdm-stuttgart.de/wd/arrr/echo" method=POST>
+		<a class="close button" href="#">✕</a>
+		
+		<h1>Buy your treasure, now!</h1>
+		<p>Fill out the stuff below and you'll be a real pirate.</p>
+	</form>
+</aside>
+
+
+
+<script>
+	const articles = [
+		{ type: 'phone',  name: 'ArrrPhone Rum', producer: 'Pirate Electronics, Inc.',
+		  price: '350 €', display: '6.5"', os: 'ArrrOS 1024.9.2', battery: 'Li-Polymer, 4500mAh', description: `
+		    Your new flagship phone as never-seen before. Our marketing department worked really hard to bring you this
+		    new very special ArrrPhone. The brand-new ArrrOS v1024 and 3 more letters in the name make all the difference!
+		    Buy today and make yourself feel modern again. No pirate is a pirate without an ArrrPhone Rum!
+		` },
+		{ type: 'tablet', name: 'ArrrPad',       producer: 'Pirate Electronics, Inc.',
+		  price: '400 €', display: '10"',  os: 'ArrrOS 256.8.32', battery: 'Li-Polymer, 8827mAh', description: `
+		    The most beloved tablet of pirates. Perfectly suited for kitchen work and extensively tested in kitchens to
+		    withstand very sharp knifes⁴. In winter our world-leading Intransparent Battery Solution ™ even has a chance
+		    to keep you very warm for a few seconds⁵!
+		` },
+		{ type: 'phone',  name: 'ArrrPhone',     producer: 'Pirate Electronics, Inc.',
+		  price: '300 €', display: '6.5"', os: 'ArrrOS 512.9.1',  battery: 'Li-Polymer, 4500mAh', description: `
+		    The classical ArrrPhone. If you want to show your friends that you like yesterdays fashion this is your phone!
+		    If not buy the ArrrPhone Rum. Now with new energy saving features. It will slow down your aging phone by 30%
+		    to conserve the battery. The update also adds other numerous features to increase battery life by another -50%⁶!
+		` }
+	]
+
+	let bannerElement = document.createElement("a");
+	let text = document.createTextNode("Buy Angelina for 3 camels")
+	bannerElement.appendChild(text)
+	bannerElement.setAttribute("href", "https://foo.mi.hdm-stuttgart.de/wd/arrr/promo-real-treasure")
+	bannerElement.className = "banner";
+	document.body.append(bannerElement);
+	
+	// Hier kommt dein Code hin
+</script>
