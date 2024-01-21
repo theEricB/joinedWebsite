@@ -2,31 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>dream</title>
+		<title>latent</title>
 		<style>
-			body, html{ 
-                margin: 0;
-                overflow-x: hidden; 
-                overflow-y: hidden; 
-                background-color: black;
-            }
+			body { margin: 0; }
 		</style>
 
 	</head>
 	
 
     <body>
-        <div style="display: flex;">
-            <div id="latentSpace"></div>
-            <div id="dream"></div>
-        </div>
-        <div id="controls" style="width: 90vw;">
-            <div id="zoom"><input id="sliderX" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
-            <div id="zoom"><input id="sliderY" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
-            <div id="zoom"><input id="sliderZ" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+        <div id="latentSpace"></div>
         <script type="importmap">
             {
             "imports": {
@@ -36,139 +21,7 @@
             }
         </script>
         <script type="module">
-
-            function getCenterPoint(mesh) {
-                var middle = new THREE.Vector3();
-                var geometry = mesh.geometry;
-                middle.x = (geometry.boundingBox.max.x + geometry.boundingBox.min.x) / 2;
-                middle.y = (geometry.boundingBox.max.y + geometry.boundingBox.min.y) / 2;
-                middle.z = (geometry.boundingBox.max.z + geometry.boundingBox.min.z) / 2;
-                mesh.localToWorld( middle );
-                return middle;
-            }
-
-            async function decode(input) {
-                const sess = new onnx.InferenceSession()
-                await sess.loadModel('./src/thesis/onnx_model.onnx')
-                const outputMap = await sess.run([input])
-                const outputTensor = outputMap.values().next().value.data
-                return outputTensor;
-            }
-
-            import * as THREE from 'three';
-            import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
-            const scene = new THREE.Scene();
-            const camera = new THREE.PerspectiveCamera( 40, (window.innerWidth/3*2) / window.innerHeight, 0.1, 1000 );
-
-            const renderer = new THREE.WebGLRenderer();
-            renderer.shadowMap.enabled = true;
-            renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
-            renderer.setSize( window.innerWidth/3*2, window.innerHeight );
-            document.getElementById("dream").appendChild( renderer.domElement );
-
-            const controls = new OrbitControls( camera, renderer.domElement );
-            camera.position.set(20,10,25);
-            camera.lookAt(new THREE.Vector3(0,0,0));
-
-            const material = new THREE.MeshLambertMaterial();
-            material.transparent = true
-            material.opacity = 0.8
-
-            for (let i = 0; i < 21; i++) {
-                const box = new THREE.BoxGeometry( 1, 0.05, 1 );
-                const cube = new THREE.Mesh( box, material );
-                cube.receiveShadow = true;
-				cube.castShadow = true;
-                scene.add( cube );
-            }
-            
-            const axesHelper = new THREE.AxesHelper( 5 );
-            scene.add( axesHelper );  
-
-            scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
-            const light = new THREE.DirectionalLight( 0xddffdd, 2 );
-            light.position.set( 10, 10, 5 );
-            light.castShadow = true;
-            light.shadow.mapSize.width = 1024;
-            light.shadow.mapSize.height = 1024;
-
-            const d = 10;
-
-            light.shadow.camera.left = - d;
-            light.shadow.camera.right = d;
-            light.shadow.camera.top = d;
-            light.shadow.camera.bottom = - d;
-            light.shadow.camera.far = 1000;
-	
-            scene.add( light );
-            let mid = new THREE.Vector3(0,0,0);
-            async function animate() {
-                const slidX = document.getElementById("sliderX").value
-                const slidY = document.getElementById("sliderY").value
-                const slidZ = document.getElementById("sliderZ").value
- 
-
-                const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
-                let geo = await decode(input);
-                const centers = [];
-                for (let i = 0; i < 21; i++) {
-                    let ind = i+i*6;
-
-                    let x = geo[ind];
-                    let y = geo[ind+1];
-                    let z = geo[ind+2];
-
-                    let plane = parseInt(Math.round(geo[ind+3]));
-                    let width = geo[ind+4];
-                    let height = geo[ind+5];
-
-                    if(plane == 1){
-                        scene.children[i].rotation.x = Math.PI/2
-                    }
-                    if(plane == 2){
-                        scene.children[i].rotation.z = Math.PI/2
-                    }
-                    scene.children[i].position.x = x
-                    scene.children[i].position.y = z
-                    scene.children[i].position.z = y
-
-                    scene.children[i].scale.x = width*2
-                    scene.children[i].scale.z = height*2
-
-                    centers.push(x, y, z);
-                    
-                }
-
-                const bounding = new THREE.BufferGeometry();
-                bounding.setAttribute( 'position', new THREE.Float32BufferAttribute( centers, 3 ) );
-                bounding.computeBoundingBox();
-                const material = new THREE.PointsMaterial( {size: .05} );
-                const points = new THREE.Points( bounding, material );
-                mid = getCenterPoint(points);
-
-                for (let i = 0; i < 21; i++) {
-                    let ind = i+i*6;
-                    scene.children[i].position.x -= mid.x
-                    scene.children[i].position.y -= mid.y
-                    scene.children[i].position.z -= mid.z
-                }
-
-
-
-                requestAnimationFrame( animate );
-                renderer.render( scene, camera );
-            }
-            animate();
-
-        </script>
-
-        <script type="module">
             const latentCoordinates = [
-                [0,0,0],
-                [0,1,0],
-                [0,0,1],
-                [1,1,1],
                 [0.4822676 ,0.49123627,0.44303644],
                 [0.45967686,0.51163733,0.43174356],
                 [0.48036984,0.4928298 ,0.44332927],
@@ -571,21 +424,29 @@
                 [0.49885893,0.51200944,0.23270786],
             ];
 
-
+            function getCenterPoint(mesh) {
+                var middle = new THREE.Vector3();
+                var geometry = mesh.geometry;
+                middle.x = (geometry.boundingBox.max.x + geometry.boundingBox.min.x) / 2;
+                middle.y = (geometry.boundingBox.max.y + geometry.boundingBox.min.y) / 2;
+                middle.z = (geometry.boundingBox.max.z + geometry.boundingBox.min.z) / 2;
+                mesh.localToWorld( middle );
+                return middle;
+            }
 
             import * as THREE from 'three';
             import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-            const scene2 = new THREE.Scene();
-            const camera2 = new THREE.PerspectiveCamera( 40, (window.innerWidth/3) / window.innerHeight, 0.1, 1000 );
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera( 25, (window.innerWidth/2) / window.innerHeight, 0.1, 1000 );
 
             const renderer = new THREE.WebGLRenderer();
-            renderer.setSize( window.innerWidth/3, window.innerHeight );
+            renderer.setSize( window.innerWidth/2, window.innerHeight );
             document.getElementById("latentSpace").appendChild( renderer.domElement );
-            const controls2 = new OrbitControls( camera2, renderer.domElement );
+            const controls = new OrbitControls( camera, renderer.domElement );
 
-            camera2.position.set(-4,2,2);
-            camera2.lookAt(new THREE.Vector3(0,0,0));
+            camera.position.set(-8,5,5);
+            camera.lookAt(new THREE.Vector3(0,0,0));
 
             
             const geometry = new THREE.BufferGeometry();
@@ -594,11 +455,12 @@
 
             const color = new THREE.Color();
 
-            for ( let i = 0; i < 404; i ++ ) {
+            const scale = 10;
+            for ( let i = 0; i < 400; i ++ ) {
                 // positions
-                const x = latentCoordinates[i][0];
-                const y = latentCoordinates[i][1];
-                const z = latentCoordinates[i][2];
+                const x = latentCoordinates[i][0]*scale;
+                const y = latentCoordinates[i][1]*scale;
+                const z = latentCoordinates[i][2]*scale;
                 positions.push( x, y, z );
                 // colors
                 if (i < 100){
@@ -616,39 +478,28 @@
             geometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
             geometry.computeBoundingSphere();
             geometry.computeBoundingBox();
-            const material = new THREE.PointsMaterial( { size: .005, vertexColors: true } );
+            const material = new THREE.PointsMaterial( { size: .05, vertexColors: true } );
 
             const points = new THREE.Points( geometry, material );
-            scene2.add( points );
+            scene.add( points );
             
-            points.position.x -= 0.5;
-            points.position.y -= 0.5;
-            points.position.z -= 0.5;
+            const center = getCenterPoint(points);
+            points.position.x -= center.x;
+            points.position.y -= center.y;
+            points.position.z -= center.z;
 
+            console.log(points.geometry.boundingBox)
+            
             const box = new THREE.BoxHelper( points, 0x808080 );
-            scene2.add( box );
-
-            const lp = new THREE.SphereGeometry(.005, 6, 4); 
-            const lpm = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
-            const sphere = new THREE.Mesh( lp, lpm ); 
-            scene2.add( sphere );
+            scene.add( box );
 
             function animate() {
-                const slidX = document.getElementById("sliderX").value;
-                const slidY = document.getElementById("sliderY").value;
-                const slidZ = document.getElementById("sliderZ").value;
                 
-                sphere.position.x = (slidX-.5);
-                sphere.position.z = (slidZ-.5);
-                sphere.position.y = (slidY-.5);
-
                 requestAnimationFrame( animate );
-                renderer.render( scene2, camera2 );
+                renderer.render( scene, camera );
             }
             animate();
 
         </script>
-
-
 	</body>
 </html>
