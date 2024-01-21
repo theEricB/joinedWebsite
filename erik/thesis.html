@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+
+	</head>
+	
+
+    <body>
+        <div id="container" style="max-height: 70vh; max-width: 70vw;"></div>
+        <div id="controls" style="width: 90vw;">
+            <div id="zoom"><input id="sliderX" type="range" min="-10" max="10" step="0.01" value="0" style="width: 100%;"></div>
+            <div id="zoom"><input id="sliderY" type="range" min="-10" max="10" step="0.01" value="0" style="width: 100%;"></div>
+            <div id="zoom"><input id="sliderZ" type="range" min="-10" max="10" step="0.01" value="0" style="width: 100%;"></div>
+            <div id="values" style="color: aqua;"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+        <script type="importmap">
+            {
+            "imports": {
+                "three": "https://unpkg.com/three@v0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.160.0/examples/jsm/"
+            }
+            }
+        </script>
+        <script type="module">
+            async function decode(input) {
+                const sess = new onnx.InferenceSession()
+                await sess.loadModel('./src/thesis/onnx_model.onnx')
+                const outputMap = await sess.run([input])
+                const outputTensor = outputMap.values().next().value.data
+                return outputTensor;
+            }
+
+            import * as THREE from 'three';
+            import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+            const renderer = new THREE.WebGLRenderer();
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.getElementById("container").appendChild( renderer.domElement );
+
+            const controls = new OrbitControls( camera, renderer.domElement );
+            camera.position.z = 5;
+            
+            const material = new THREE.MeshLambertMaterial();
+            material.transparent = true
+            material.opacity = 0.8
+            // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+            // var materialLines = new THREE.LineBasicMaterial( { color: 0xffffff } );
+            for (let i = 0; i < 21; i++) {
+                const box = new THREE.BoxGeometry( 1, 0.05, 1 );
+                const cube = new THREE.Mesh( box, material );
+                cube.receiveShadow = true;
+				cube.castShadow = true;
+                scene.add( cube );
+            }
+            
+            const axesHelper = new THREE.AxesHelper( 5 );
+            scene.add( axesHelper );  
+
+            scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
+            const light = new THREE.DirectionalLight( 0xddffdd, 2 );
+            light.position.set( 10, 10, 5 );
+            light.castShadow = true;
+            light.shadow.mapSize.width = 1024;
+            light.shadow.mapSize.height = 1024;
+
+            const d = 10;
+
+            light.shadow.camera.left = - d;
+            light.shadow.camera.right = d;
+            light.shadow.camera.top = d;
+            light.shadow.camera.bottom = - d;
+            light.shadow.camera.far = 1000;
+	
+            scene.add( light );
+
+            async function animate() {
+                const slidX = document.getElementById("sliderX").value
+                const slidY = document.getElementById("sliderY").value
+                const slidZ = document.getElementById("sliderZ").value
+
+                document.getElementById("values").innerHTML = slidX + " - " + slidY + " - " + slidZ
+                
+                const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
+                let geo = await decode(input);
+
+                for (let i = 0; i < 21; i++) {
+                    let ind = i+i*6;
+                    let x = geo[ind];
+                    let y = geo[ind+1];
+                    let z = geo[ind+2];
+                    let plane = Math.abs(parseInt(geo[ind+3]));
+                    let width = geo[ind+4];
+                    let height = geo[ind+5];
+
+                    if(plane == 1){
+                        scene.children[i].rotation.x = Math.PI/2
+                    }
+                    if(plane == 2){
+                        scene.children[i].rotation.y = Math.PI/2
+                    }
+                    scene.children[i].position.x = x
+                    scene.children[i].position.y = y
+                    scene.children[i].position.z = z
+
+                    scene.children[i].scale.x = width
+                    scene.children[i].scale.z = height
+
+                }
+                requestAnimationFrame( animate );
+                renderer.render( scene, camera );
+            }
+            animate();
+
+        </script>
+	</body>
+</html>
