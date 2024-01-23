@@ -16,14 +16,23 @@
 	
 
     <body>
+
+          
+        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 20px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <h2>latent space</h2>
+        </div>
+        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 34%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <h2>generated 3d model</h2>
+        </div>
+        <div id="controls" style=" z-index: 10; width: 90vw; bottom: 0; margin-bottom: 30px; position: fixed;">
+        <div id="zoom"><input id="sliderX" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
+            <div id="zoom"><input id="sliderY" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
+            <div id="zoom"><input id="sliderZ" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
+        </div>
+
         <div style="display: flex;">
             <div id="latentSpace"></div>
             <div id="dream"></div>
-        </div>
-        <div id="controls" style="width: 90vw;">
-            <div id="zoom"><input id="sliderX" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
-            <div id="zoom"><input id="sliderY" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
-            <div id="zoom"><input id="sliderZ" type="range" min="0" max="1" step="0.001" value="0.5" style="width: 50%; margin-left: 50%;"></div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
