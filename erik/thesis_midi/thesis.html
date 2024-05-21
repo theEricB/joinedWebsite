@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>dream</title>
+        <script src="webserial.js"></script>
+        <script src="readserial.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+        <script type="importmap">
+            {
+            "imports": {
+                "three": "https://unpkg.com/three@v0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.160.0/examples/jsm/"
+            }
+            }
+        </script>
+        <script src="animation.js" type="module"></script>
+        <script src="latent.js" type="module"></script>
+
+		<style>
+			body, html{ 
+                margin: 0;
+                overflow-x: hidden; 
+                overflow-y: hidden; 
+                background-color: black;
+            }
+		</style>
+	</head>
+	
+    <body> 
+        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 20px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <h2>latent space</h2>
+        </div>
+        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 34%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <h2>generated 3d model</h2>
+        </div>
+
+        <button id="portButton">Open port</button>
+        
+        <div id="controls" style=" z-index: 10; width: 90vw; bottom: 0; margin-bottom: 30px; position: fixed;">
+            <h2 id="sliderX">0</h2>
+            <h2 id="sliderY">0</h2>
+            <h2 id="sliderZ">0</h2>
+        </div>
+
+        <div style="display: flex;">
+            <div id="latentSpace"></div>
+            <div id="dream"></div>
+        </div>
+        
+	</body>
+</html>
