@@ -30,6 +30,7 @@ function updateCountdown() {
 function updateImage(days) {
     const cacheBuster = new Date().getTime(); // Unique timestamp to prevent caching
     const imagePath = `images/${days * 100 + Math.floor((hours / 12))}.jpg?cb=${cacheBuster}`;
+    console.log(imagePath)
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
