@@ -13,6 +13,11 @@
             <h1 id="countdown">Loading...</h1>
         </div>
     </div>
-    <script src="countdown.js?v=1.0.2"></script>
+    <script>
+        // Dynamische Generierung des Cache-Busters mit einem Zeitstempel
+        const script = document.createElement('script');
+        script.src = 'countdown.js?cb=' + new Date().getTime();
+        document.head.appendChild(script);
+    </script>
 </body>
 </html>
