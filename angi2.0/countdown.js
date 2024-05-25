@@ -24,11 +24,12 @@ function updateCountdown() {
     countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     // Update image based on the remaining days
-    updateImage(days, hours);
+    updateImage(days);
 }
 
-function updateImage(days, hours) {
-    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 2)}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
+function updateImage(days) {
+    const cacheBuster = new Date().getTime(); // Unique timestamp to prevent caching
+    const imagePath = `images/${days * 100 + Math.floor((hours / 12))}.jpg?cb=${cacheBuster}`;
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
