@@ -28,7 +28,7 @@ function updateCountdown() {
 }
 
 function updateImage(days, hours) {
-    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
+    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 2)}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
