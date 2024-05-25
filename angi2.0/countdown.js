@@ -31,7 +31,7 @@ function updateCountdown() {
 function updateImage(days, hours) {
     const cacheBuster = new Date().getTime();
      // Unique timestamp to prevent caching
-     if (Math.floor(hours / 12) > 2){
+     if (Math.floor(hours / 12) > 1){
         hours = 23
      }
     const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg?cb=${cacheBuster}`; // Assumes images are named like "9.jpg", "8.jpg", etc.
