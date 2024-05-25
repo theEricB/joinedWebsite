@@ -29,13 +29,12 @@ function updateCountdown() {
 }
 
 function updateImage(days, hours) {
-    const cacheBuster = new Date().getTime();
      // Unique timestamp to prevent caching
      if (hours / 12 > 1){
         console.log("to Biggg")
         hours = 23
      }
-    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg?cb=${cacheBuster}`; // Assumes images are named like "9.jpg", "8.jpg", etc.
+    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
     console.log(imagePath)
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
