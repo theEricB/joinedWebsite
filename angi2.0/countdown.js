@@ -2,6 +2,7 @@
 
 // Zielzeit: 03.06.2024 um 20:30 Uhr
 const targetDate = new Date("June 3, 2024 20:30:00").getTime();
+console.log("Script geladen, Zielzeit: ", targetDate);
 
 const countdownElement = document.getElementById('countdown');
 const countdownImage = document.getElementById('countdown-image');
@@ -41,5 +42,4 @@ function updateImage(days, hours) {
 setInterval(updateCountdown, 1000);
 
 // Initial call to display the countdown immediately
-console.log("In der js datei")
 updateCountdown();
