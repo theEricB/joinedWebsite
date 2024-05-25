@@ -41,4 +41,5 @@ function updateImage(days, hours) {
 setInterval(updateCountdown, 1000);
 
 // Initial call to display the countdown immediately
+console.log("In der js datei")
 updateCountdown();
