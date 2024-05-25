@@ -2,12 +2,17 @@ import os
 
 def rename_images(folder_path):
     images = os.listdir(folder_path)
-
+    stunden = 1
+    tage = 9
     for i, image in enumerate(images):
-        if image.lower().endswith(('.png', '.jpg', '.jpeg')):
-            new_name = f"{len(images) - i - 1}.jpg"  # Naming from highest to lowest
+        if image.lower().endswith(('.png', '.jpg', '.jpeg', '.heic')):
+            if (stunden > 2):
+                stunden = 1
+                tage -= 1
+            new_name = f"{tage * 10 + stunden}.jpg"
             os.rename(os.path.join(folder_path, image), os.path.join(folder_path, new_name))
             print(f"Renamed {image} to {new_name}")
+            stunden += 1
 
 # Example usage
 rename_images('angi2.0/images')

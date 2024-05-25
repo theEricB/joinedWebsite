@@ -24,11 +24,11 @@ function updateCountdown() {
     countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     // Update image based on the remaining days
-    updateImage(days);
+    updateImage(days, hours);
 }
 
-function updateImage(days) {
-    const imagePath = `images/${days}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
+function updateImage(days, hours) {
+    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg`; // Assumes images are named like "9.jpg", "8.jpg", etc.
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
