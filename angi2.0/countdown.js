@@ -25,7 +25,7 @@ function updateCountdown() {
     countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     // Update image based on the remaining days
-    updateImage(days, hours);
+    updateImage(days, seconds);
 }
 
 function updateImage(days, hours) {
