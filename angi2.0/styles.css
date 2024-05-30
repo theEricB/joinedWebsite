@@ -15,6 +15,15 @@ body, html {
     height: 100%;
 }
 
+#sorry {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
 #countdown {
     font-weight: bold;
     color: white;
