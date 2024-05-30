@@ -30,7 +30,7 @@ function updateCountdown() {
 
 function updateImage(days, hours) {
      // Unique timestamp to prevent caching
-    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg`;
+    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg?cb=1.1`;
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
