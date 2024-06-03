@@ -29,25 +29,57 @@
 	</head>
 	
     <body> 
-        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 20px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
-            <h2>latent space</h2>
-        </div>
-        <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 34%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
-            <h2>generated 3d model</h2>
-        </div>
-
+        <button id="fullscreen">fullscreen</button>
         <button id="portButton">Open port</button>
-        
-        <div id="controls" style=" z-index: 10; width: 90vw; bottom: 0; margin-bottom: 30px; position: fixed;">
-            <h2 id="sliderX">0</h2>
-            <h2 id="sliderY">0</h2>
-            <h2 id="sliderZ">0</h2>
-        </div>
 
-        <div style="display: flex;">
-            <div id="latentSpace"></div>
-            <div id="dream"></div>
+        <div id="main">
+            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 20px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+                <h2>latent space</h2>
+            </div>
+            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 34%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+                <h2>generated 3d model</h2>
+            </div>
+            
+            <div id="controls" style=" z-index: 10; width: 90vw; bottom: 0; margin-bottom: 30px; position: fixed;">
+                <h2 id="sliderX">0</h2>
+                <h2 id="sliderY">0</h2>
+                <h2 id="sliderZ">0</h2>
+            </div>
+
+            <div style="display: flex;">
+                <div id="latentSpace"></div>
+                <div id="dream"></div>
+            </div>
         </div>
-        
+        <script>
+            /* Get the documentElement (<html>) to display the page in fullscreen */
+            var elem = document.getElementById("main");
+            var button = document.getElementById("fullscreen");
+
+            /* View in fullscreen */
+            function openFullscreen() {
+              if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+              } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+              }
+            }
+            
+            /* Close fullscreen */
+            function closeFullscreen() {
+              if (document.exitFullscreen) {
+                document.exitFullscreen();
+              } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+              } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+              }
+            }
+
+            button.addEventListener("click", openFullscreen);
+
+        </script>
 	</body>
 </html>
