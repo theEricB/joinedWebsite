@@ -3,10 +3,10 @@ import os
 def rename_images(folder_path):
     images = os.listdir(folder_path)
     stunden = 1
-    tage = 9
+    tage = 15
     for i, image in enumerate(images):
         if image.lower().endswith(('.png', '.jpg', '.jpeg', '.heic')):
-            if (stunden > 2):
+            if (stunden > 7):
                 stunden = 1
                 tage -= 1
             new_name = f"{tage * 10 + stunden}.jpg"

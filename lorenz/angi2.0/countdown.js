@@ -1,7 +1,7 @@
 // Datei: countdown.js
 
 // Zielzeit: 03.06.2024 um 20:30 Uhr
-const targetDate = new Date("June 22, 2024 22:00:00").getTime();
+const targetDate = new Date("June 27, 2024 22:00:00").getTime();
 console.log("Script geladen, Zielzeit: ", targetDate);
 
 const countdownElement = document.getElementById('countdown');
@@ -22,7 +22,7 @@ function updateCountdown() {
         countdownElement.innerHTML = "Klopf Klopf!";
         countdownElement.style.top = "40%";
         textElemenent.innerHTML = "";
-        countdownImage.src = `images/0.jpg?cb=3.3`;
+        countdownImage.src = `images/0.jpg?cb=3.4`;
         countdownImage.style.display = 'block';
         return;
     } else if (days < 1 && hours < 1 && minutes < 1) {
@@ -42,7 +42,7 @@ function updateCountdown() {
 
 function updateImage(days, hours) {
      // Unique timestamp to prevent caching
-    const imagePath = `images/${days * 10 + Math.floor((hours / 12) + 1)}.jpg?cb=1.3`;
+    const imagePath = `images/${days * 10 + Math.floor((hours / 3,4) + 1)}.jpg?cb=1.4`;
     countdownImage.src = imagePath;
     countdownImage.style.display = 'block';
 }
