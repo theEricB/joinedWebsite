@@ -34,6 +34,16 @@ body, html {
     z-index: 1;
 }
 
+#timeToNextPic {
+    font-weight: italic;
+    color: rgb(185, 185, 185);
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 #countdown-overlay {
     position: absolute;
     top: 0;

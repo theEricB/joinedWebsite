@@ -34,6 +34,11 @@ function updateCountdown() {
     } else {
         countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
+
+    const timeToNextPicLabel = document.getElementById('timeToNextPic');
+    timeToNextPicLabel.innerHTML = `Time until next Picture:<br>
+     ${Math.floor((hours / 3,4))}h ${minutes}m ${seconds}s`;
+
     
 
     // Update image based on the remaining days
