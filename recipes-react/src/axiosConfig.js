@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // The base URL for the API
-export const HOST = "http://212.227.245.238";
+export const HOST = "http://212.227.245.238/api";
 
 // Create an Axios instance with the base URL
 const axiosInstance = axios.create({
