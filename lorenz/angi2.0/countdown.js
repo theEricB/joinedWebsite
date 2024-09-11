@@ -1,7 +1,34 @@
 // Datei: countdown.js
 
-// Zielzeit: 03.06.2024 um 20:30 Uhr
-const targetDate = new Date("June 27, 2024 22:00:00").getTime();
+let targetDate = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('http://212.227.245.238/api/angi');
+        
+        if (!response.ok) {
+            throw new Error('Fehler beim Abrufen des Ziel-Datums');
+        }
+        
+        // JSON-Daten extrahieren
+        const targetDateData = await response.json();
+        
+        // targetDateString auf den Wert aus dem JSON setzen
+        const targetDateString = targetDateData.date; // Annahme: das JSON enthält ein `date`-Feld
+
+        console.log('Ziel-Datum:', targetDateString);
+        
+        // Verwende targetDateString wie gewünscht weiter
+        // Beispiel: ein Element in der UI anzeigen
+        document.querySelector('#target-date').textContent = targetDateString;
+        
+    } catch (error) {
+        console.log("Fehler beim Laden der Daten:", error.message);
+    }
+});
+
+
+
 console.log("Script geladen, Zielzeit: ", targetDate);
 
 const countdownElement = document.getElementById('countdown');

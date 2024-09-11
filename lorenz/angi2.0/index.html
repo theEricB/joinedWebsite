@@ -10,13 +10,12 @@
     <div id="countdown-container">
         <img id="countdown-image" src="" alt="Countdown Image">
         <div id="countdown-overlay">
-            <h3 id="sorry">Guess who's back!</h3>
+            <h3 id="sorry">See u soon!</h3>
             <h4 id="timeToNextPic">Loading Time...</h2>
             <h1 id="countdown">Loading...</h1>
         </div>
     </div>
     <script>
-        // Dynamische Generierung des Cache-Busters mit einem Zeitstempel
         const script = document.createElement('script');
         script.src = 'countdown.js?cb=2.1' + new Date().getTime();
         document.head.appendChild(script);
