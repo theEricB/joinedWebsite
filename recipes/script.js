@@ -12,12 +12,12 @@ function displayRecipes(recipes) {
         recipeDiv.classList.add('recipe');
 
         const title = document.createElement('h2');
-        title.textContent = recipe.recipeName;
+        title.textContent = recipe.name;
         recipeDiv.appendChild(title);
 
         const ingredients = document.createElement('p');
         ingredients.classList.add('ingredients');
-        ingredients.textContent = `Zutaten: ${recipe.ingredients.join(', ')}`;
+        ingredients.textContent = `Zutaten: ${recipe.ingredients}`;
         recipeDiv.appendChild(ingredients);
 
         const description = document.createElement('p');
@@ -26,7 +26,7 @@ function displayRecipes(recipes) {
 
         const authorDate = document.createElement('p');
         authorDate.classList.add('author-date');
-        const creationDate = new Date(recipe.creation_date).toLocaleDateString();
+        const creationDate = new Date(recipe.date).toLocaleDateString();
         authorDate.textContent = `Autor: ${recipe.author}, erstellt am: ${creationDate}`;
         recipeDiv.appendChild(authorDate);
 
@@ -37,7 +37,8 @@ function displayRecipes(recipes) {
 // Rezepte laden, wenn die Seite geladen ist
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const recipes = await fetchRecipes(); // API-Aufruf
+        const recipes = await fetchRecipes();
+        console.log(recipes)
         displayRecipes(recipes); // Rezepte im DOM anzeigen
     } catch (error) {
         console.error('Fehler bei der Darstellung der Rezepte:', error);
