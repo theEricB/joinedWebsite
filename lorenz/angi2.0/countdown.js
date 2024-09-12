@@ -2,8 +2,9 @@
 
 let targetDate = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
+(async () => {
     try {
+        console.log("DAVOR")
         const response = await fetch('http://212.227.245.238/api/angi');
         
         if (!response.ok) {
@@ -18,14 +19,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         console.log('Ziel-Datum:', targetDateString);
         
-        // Verwende targetDateString wie gewünscht weiter
         // Beispiel: ein Element in der UI anzeigen
         document.querySelector('#target-date').textContent = targetDateString;
         
+        // Setze das Ziel-Datum
+        targetDate = new Date(targetDateString).getTime();
+
     } catch (error) {
         console.log("Fehler beim Laden der Daten:", error.message);
     }
-});
+})();
+
 
 
 
@@ -49,7 +53,7 @@ function updateCountdown() {
         countdownElement.innerHTML = "Klopf Klopf!";
         countdownElement.style.top = "40%";
         textElemenent.innerHTML = "";
-        countdownImage.src = `images/0.jpg?cb=3.4`;
+        countdownImage.src = `images/11.jpg?cb=3.5`;
         countdownImage.style.display = 'block';
         return;
     } else if (days < 1 && hours < 1 && minutes < 1) {
