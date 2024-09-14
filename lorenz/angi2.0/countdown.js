@@ -5,7 +5,7 @@ let targetDate = null;
 (async () => {
     try {
         console.log("DAVOR")
-        const response = await fetch('http://212.227.245.238/api/angi');
+        const response = await fetch('http://localhost/api/angi');
         
         if (!response.ok) {
             throw new Error('Fehler beim Abrufen des Ziel-Datums');
