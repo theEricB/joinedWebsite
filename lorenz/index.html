@@ -1,14 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorenz</title>
+    <title>Bilder-Kollisionen mit Hover-Effekt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Zentrales Bild (Lorenz) */
+        .center-image {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #000;
+        }
+
+        .center-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Umlaufende Bilder */
+        .orbit-image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #000;
+        }
+
+        .orbit-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Lorenz Seite</h1>
 
-    <script>
-    </script>
+<!-- Zentrales, festes Bild von Lorenz -->
+<div class="center-image">
+    <img src="lorenz.jpg" alt="Lorenz">
+</div>
+
+<!-- Umlaufende Bilder -->
+<div class="orbit-image" id="image1">
+    <img src="bild1.jpg" alt="Bild 1">
+</div>
+<div class="orbit-image" id="image2">
+    <img src="bild2.jpg" alt="Bild 2">
+</div>
+<div class="orbit-image" id="image3">
+    <img src="bild3.jpg" alt="Bild 3">
+</div>
+<div class="orbit-image" id="image4">
+    <img src="bild4.jpg" alt="Bild 4">
+</div>
+<div class="orbit-image" id="image5">
+    <img src="bild5.jpg" alt="Bild 5">
+</div>
+
+<script>
+    // Initialisiere die Bilder und Positionen
+    const images = document.querySelectorAll('.orbit-image');
+    const centerImage = document.querySelector('.center-image');
+
+    const imageData = [];
+
+    images.forEach((image, index) => {
+        const startX = Math.random() * (window.innerWidth - 100);
+        const startY = Math.random() * (window.innerHeight - 100);
+        const speedX = (Math.random() * 4) - 2; // Zufällige Geschwindigkeit in X-Richtung
+        const speedY = (Math.random() * 4) - 2; // Zufällige Geschwindigkeit in Y-Richtung
+
+        // Setze Startposition
+        image.style.left = `${startX}px`;
+        image.style.top = `${startY}px`;
+
+        // Füge die Bilddaten zur Liste hinzu
+        imageData.push({
+            element: image,
+            x: startX,
+            y: startY,
+            speedX: speedX,
+            speedY: speedY,
+            radius: 50, // Radius des Bildes (100px Durchmesser)
+            isPaused: false // Status, ob das Bild angehalten wurde
+        });
+
+        // Event Listener zum Pausieren der Bewegung bei Hover
+        image.addEventListener('mouseover', () => {
+            imageData[index].isPaused = true;
+        });
+
+        // Event Listener zum Fortsetzen der Bewegung bei Mausverlassen
+        image.addEventListener('mouseout', () => {
+            imageData[index].isPaused = false;
+        });
+    });
+
+    // Zentrales Bild (Lorenz)
+    const centerRadius = 75; // Lorenz-Bild hat 150px Durchmesser
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+    // Kollisionsprüfung zwischen zwei Kreisen (Bild und Lorenz bzw. andere Bilder)
+    function checkCollision(x1, y1, r1, x2, y2, r2) {
+        const dx = x2 - x1;
+        const dy = y2 - y1;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        return distance < r1 + r2;
+    }
+
+    // Funktion zur Behandlung von Kollisionen (Abstoßen)
+    function handleCollision(data1, data2) {
+        const dx = data2.x + data2.radius - (data1.x + data1.radius);
+        const dy = data2.y + data2.radius - (data1.y + data1.radius);
+        const angle = Math.atan2(dy, dx);
+
+        // Neue Geschwindigkeiten nach der Kollision
+        const speed1 = Math.sqrt(data1.speedX * data1.speedX + data1.speedY * data1.speedY);
+        const speed2 = Math.sqrt(data2.speedX * data2.speedX + data2.speedY * data2.speedY);
+
+        data1.speedX = -Math.cos(angle) * speed1;
+        data1.speedY = -Math.sin(angle) * speed1;
+        data2.speedX = Math.cos(angle) * speed2;
+        data2.speedY = Math.sin(angle) * speed2;
+    }
+
+    // Hauptbewegungsfunktion
+    function moveImages() {
+        imageData.forEach((data, index) => {
+            // Bewege das Bild nur, wenn es nicht angehalten ist
+            if (!data.isPaused) {
+                data.x += data.speedX;
+                data.y += data.speedY;
+            }
+
+            // Bildschirmrand-Kollision
+            if (data.x <= 0 || data.x + data.radius * 2 >= window.innerWidth) {
+                data.speedX *= -1;
+            }
+            if (data.y <= 0 || data.y + data.radius * 2 >= window.innerHeight) {
+                data.speedY *= -1;
+            }
+
+            // Kollision mit dem Lorenz-Bild
+            if (checkCollision(data.x + data.radius, data.y + data.radius, data.radius, centerX, centerY, centerRadius)) {
+                const collisionAngle = Math.atan2(data.y + data.radius - centerY, data.x + data.radius - centerX);
+                data.speedX = Math.cos(collisionAngle) * 4;
+                data.speedY = Math.sin(collisionAngle) * 4;
+            }
+
+            // Kollision mit anderen umlaufenden Bildern
+            for (let i = index + 1; i < imageData.length; i++) {
+                const otherData = imageData[i];
+                if (checkCollision(data.x + data.radius, data.y + data.radius, data.radius, otherData.x + otherData.radius, otherData.y + otherData.radius, otherData.radius)) {
+                    handleCollision(data, otherData);
+                }
+            }
+
+            // Aktualisiere die Position des Bildes im DOM
+            data.element.style.left = `${data.x}px`;
+            data.element.style.top = `${data.y}px`;
+        });
+
+        // Wiederhole die Bewegung
+        requestAnimationFrame(moveImages);
+    }
+
+    // Starte die Animation
+    moveImages();
+</script>
+
 </body>
 </html>
