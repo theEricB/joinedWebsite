@@ -3,15 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
-    <link rel="stylesheet" href="styles.css?cb=1.1">
+    <title>Ball Platzen Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .ball {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(52, 152, 219, 0.7);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+        }
+
+        .ball.explode {
+            transform: scale(1.5);
+        }
+
+        .fragment {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(52, 152, 219, 0.7);
+            opacity: 0;
+            animation: explodeFragment 1s forwards;
+        }
+
+        @keyframes explodeFragment {
+            to {
+                opacity: 0;
+                transform: translate(var(--x), var(--y)) scale(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <button onclick="add10Minutes()">+10min auf Countdown</button>
+    <div class="container">
+        <div class="ball" id="ball">
+            <!-- Fragmente werden hier dynamisch hinzugefügt -->
+        </div>
+    </div>
+
     <script>
-        import {add10Min} from '../angi2.0/countdown.js'
-        function add10Minutes() {
-            add10Min()
+        const ball = document.getElementById('ball');
+
+        // Funktion um Zufallszahl zwischen -1 und 1 zu generieren
+        function random() {
+            return Math.random() * 2 - 1;
         }
+
+        // Funktion zum Erstellen und Hinzufügen von Fragmenten
+        function createFragments(num) {
+            for (let i = 0; i < num; i++) {
+                const fragment = document.createElement('div');
+                fragment.className = 'fragment';
+
+                // Zufällige Position und Bewegung der Fragmente
+                const angle = Math.random() * 2 * Math.PI;
+                const distance = Math.random() * 100 + 50; // Zufälliger Abstand
+                const x = distance * Math.cos(angle);
+                const y = distance * Math.sin(angle);
+
+                fragment.style.setProperty('--x', `${x}px`);
+                fragment.style.setProperty('--y', `${y}px`);
+
+                ball.appendChild(fragment);
+            }
+        }
+
+        // Ball und Fragmente initialisieren
+        createFragments(30);
+
+        ball.addEventListener('click', function() {
+            this.classList.add('explode');
+            setTimeout(() => {
+                this.style.display = 'none'; // Ball nach der Animation ausblenden
+            }, 1000); // Zeit muss mit der Dauer der CSS-Animation übereinstimmen
+        });
     </script>
 </body>
+</html>
