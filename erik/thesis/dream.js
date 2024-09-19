@@ -44,8 +44,8 @@ for (let i = 0; i < 21; i++) {
     scene.add( cube );
 }
 
-const axesHelper = new THREE.AxesHelper( 5 );
-scene.add( axesHelper );  
+// const axesHelper = new THREE.AxesHelper( 5 );
+// scene.add( axesHelper );  
 
 scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
 const light = new THREE.DirectionalLight( 0xddffdd, 2 );
@@ -108,12 +108,12 @@ async function animate() {
     const points = new THREE.Points( bounding, material );
     mid = getCenterPoint(points);
 
-    for (let i = 0; i < 21; i++) {
-        let ind = i+i*6;
-        scene.children[i].position.x -= mid.x
-        scene.children[i].position.y -= mid.y
-        scene.children[i].position.z -= mid.z
-    }
+    // for (let i = 0; i < 21; i++) {
+    //     let ind = i+i*6;
+    //     scene.children[i].position.x -= mid.x
+    //     scene.children[i].position.y -= mid.y
+    //     scene.children[i].position.z -= mid.z
+    // }
 
 
 

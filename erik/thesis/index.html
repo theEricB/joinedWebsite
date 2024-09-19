@@ -28,11 +28,12 @@
 
     <body>
         <button id="fullscreen">fullscreen</button>
+
         <div id="main">
-            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 20px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 25px; position: fixed; font-family: Arial, Helvetica, sans-serif;">
                 <h2>latent space</h2>
             </div>
-            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 34%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
+            <div style="color: aliceblue; z-index: 10; width: 90vw; top: 0; margin-top: 30px; margin-left: 50%; position: fixed; font-family: Arial, Helvetica, sans-serif;">
                 <h2>generated 3d model</h2>
             </div>
             <div id="controls" style=" z-index: 10; width: 90vw; bottom: 0; margin-bottom: 30px; position: fixed;">
@@ -46,12 +47,10 @@
                 <div id="dream"></div>
             </div>
         </div>
+
         <script>
-            /* Get the documentElement (<html>) to display the page in fullscreen */
             var elem = document.getElementById("main");
             var button = document.getElementById("fullscreen");
-
-            /* View in fullscreen */
             function openFullscreen() {
               if (elem.requestFullscreen) {
                 elem.requestFullscreen();
@@ -61,20 +60,7 @@
                 elem.msRequestFullscreen();
               }
             }
-            
-            /* Close fullscreen */
-            function closeFullscreen() {
-              if (document.exitFullscreen) {
-                document.exitFullscreen();
-              } else if (document.webkitExitFullscreen) { /* Safari */
-                document.webkitExitFullscreen();
-              } else if (document.msExitFullscreen) { /* IE11 */
-                document.msExitFullscreen();
-              }
-            }
-
             button.addEventListener("click", openFullscreen);
-
         </script>
 	</body>
 </html>
