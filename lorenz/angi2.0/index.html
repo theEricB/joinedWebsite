@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css?cb=1.1">
+</head>
+<body>
+    <div id="countdown-container">
+        <img id="countdown-image" src="" alt="Countdown Image">
+        <div id="countdown-overlay">
+            <h3 id="sorry">See u soon!</h3>
+            <h4 id="timeToNextPic">Loading Time...</h4>
+            <h1 id="countdown">Loading...</h1>
+        </div>
+    </div>
+    <script>
+        const script = document.createElement('script');
+        script.src = 'countdown.js?cb=2.2' + new Date().getTime();
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>

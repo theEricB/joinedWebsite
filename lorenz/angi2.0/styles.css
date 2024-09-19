@@ -1,0 +1,62 @@
+/* Datei: styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+#countdown-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#sorry {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#countdown {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#timeToNextPic {
+    font-weight: italic;
+    color: rgb(185, 185, 185);
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#countdown-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparente schwarze Box */
+}
+
+#countdown-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild wird in div#countdown-container skaliert */
+    position: relative;
+    z-index: 0;
+}
