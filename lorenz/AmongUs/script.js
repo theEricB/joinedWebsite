@@ -30,6 +30,7 @@ function addPlayer(playerName) {
 }
 
 let player = fetchPlayers();
+console.log(player)
 
 player.forEach(element => {
     console.log(element)
