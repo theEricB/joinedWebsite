@@ -16,6 +16,7 @@ async function fetchPlayers() {
 }
 
 function addPlayer(playerName) {
+    console.log('addPlayer aufgerufen:', playerName);
     // Hole das 'ul'-Element, das die Liste der Spieler darstellt
     var playersList = document.getElementById('players');
     
@@ -31,8 +32,7 @@ function addPlayer(playerName) {
 
 async function loadPlayers() {
     try {
-        let players = await fetchPlayers(); 
-        console.log(players) // Auf den Rückgabewert der fetchPlayers-Funktion warten
+        let players = await fetchPlayers();  // Auf den Rückgabewert der fetchPlayers-Funktion warten
         players.forEach(player => {
             addPlayer(player.name);  // Nehmen wir an, dass jeder Spieler ein `name`-Feld hat
         });
