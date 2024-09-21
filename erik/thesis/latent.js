@@ -431,13 +431,13 @@ for ( let i = 0; i < 400; i ++ ) {
     positions.push( x, y, z );
     // colors
     if (i < 100){
-        color.setRGB( 0,1,0, THREE.SRGBColorSpace );
+        color.setRGB( 230/255, 100/255, 30/255, THREE.SRGBColorSpace );
     } else if(i < 200){
-        color.setRGB( 1,0,0, THREE.SRGBColorSpace );
+        color.setRGB( 90/255, 160/255, 230/255, THREE.SRGBColorSpace );
     } else if(i < 300){
-        color.setRGB( 0,0,1, THREE.SRGBColorSpace );
+        color.setRGB( 100/255, 190/255, 30/255, THREE.SRGBColorSpace );
     } else {
-        color.setRGB( 1,1,1, THREE.SRGBColorSpace );
+        color.setRGB( 240/255, 190/255, 30/255, THREE.SRGBColorSpace );
     }
     colors.push( color.r, color.g, color.b );
 }
@@ -445,7 +445,7 @@ geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( positions, 
 geometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
 geometry.computeBoundingSphere();
 geometry.computeBoundingBox();
-const material = new THREE.PointsMaterial( { size: .02, vertexColors: true } );
+const material = new THREE.PointsMaterial( { size: .03, vertexColors: true } );
 
 const points = new THREE.Points( geometry, material );
 scene2.add( points );
@@ -458,7 +458,7 @@ const box = new THREE.BoxHelper( points, 0x808080 );
 scene2.add( box );
 
 const lp = new THREE.SphereGeometry(.02, 6, 4); 
-const lpm = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
+const lpm = new THREE.MeshBasicMaterial( { color: 0xff00ff } ); 
 const sphere = new THREE.Mesh( lp, lpm ); 
 scene2.add( sphere );
 
