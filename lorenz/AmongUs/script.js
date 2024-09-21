@@ -30,6 +30,6 @@ function addPlayer(playerName) {
 }
 
 let player =  (async () => { 
-    await fetchPlayers();
+    return await fetchPlayers();
 });
 console.log(player)
