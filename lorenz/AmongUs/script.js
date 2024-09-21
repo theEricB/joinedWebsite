@@ -29,5 +29,7 @@ function addPlayer(playerName) {
     playersList.appendChild(newPlayer);
 }
 
-let player = await fetchPlayers();
+let player =  (async () => { 
+    await fetchPlayers();
+});
 console.log(player)
