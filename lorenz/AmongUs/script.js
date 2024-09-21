@@ -3,11 +3,11 @@
 async function fetchPlayers() {
     try {
         const response = await fetch('/api/amongUs');
-        console.log(response)
         if (!response.ok) {
             throw new Error('Netzwerkantwort war nicht ok');
         }
         const data = await response.json();
+        console.log(data)
         return data;
     } catch (error) {
         console.error('Fehler beim Abrufen der Rezepte:', error);
