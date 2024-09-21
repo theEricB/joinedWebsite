@@ -34,7 +34,7 @@ async function loadPlayers() {
     try {
         let players = await fetchPlayers();  // Auf den Rückgabewert der fetchPlayers-Funktion warten
         players.forEach(player => {
-            addPlayer(player.name);  // Nehmen wir an, dass jeder Spieler ein `name`-Feld hat
+            addPlayer(player.playerName);  // Nehmen wir an, dass jeder Spieler ein `name`-Feld hat
         });
     } catch (error) {
         console.error('Fehler beim Laden der Spieler:', error);
