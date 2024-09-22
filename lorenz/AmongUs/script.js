@@ -41,4 +41,20 @@ async function loadPlayers() {
     }
 }
 
+function joinGroup() {
+    const gameTagTextBox = document.getElementById("gameTag")
+
+    if (gameTagTextBox.innerText != "") {
+        addPlayer(gameTagTextBox.innerText)
+    }
+}
+
 loadPlayers();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const joinGroupBtn = document.getElementById("joinGroupBtn");
+    
+    joinGroupBtn.addEventListener("click", joinGroup);
+});
