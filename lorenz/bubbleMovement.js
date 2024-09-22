@@ -130,5 +130,16 @@ function moveImages() {
     requestAnimationFrame(moveImages);
 }
 
+function linkAmongUs() {
+    location.href = "AmongUs/";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const linkAmongUsBtn = document.getElementById("amongUs");
+    
+    linkAmongUsBtn.addEventListener("click", linkAmongUs);
+});
+
 // Starte die Animation
 moveImages();
