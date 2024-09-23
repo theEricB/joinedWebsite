@@ -42,15 +42,12 @@ async function loadPlayers() {
 }
 
 async function addPlayerToJson(playerName) {
-    fetch('/api/resource/', {
+    fetch('/api/amongUs/' + playerName, {
         method: 'PUT', // PUT Methode verwenden
         headers: {
             'Content-Type': 'application/json', // Daten als JSON senden
             'Authorization': 'Bearer dein-token', // Optional: Authentifizierungstoken, falls nötig
         },
-        body: JSON.stringify({
-            name: playerName,
-        }) // Die Daten, die du senden möchtest
     })
 }
 
