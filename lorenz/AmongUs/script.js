@@ -2,12 +2,12 @@
 // Funktion, um Rezepte vom Backend-Server zu holen
 async function fetchPlayers() {
     try {
-        const response = await fetch('/api/amongUs/');
+        const response = await fetch('http://212.227.245.238/api/amongUs/');
         if (!response.ok) {
+            console.error(response)
             throw new Error('Netzwerkantwort war nicht ok');
         }
         const data = await response.json();
-        console.log(data)
         return data;
     } catch (error) {
         console.error('Fehler beim Abrufen der Rezepte:', error);
@@ -43,23 +43,20 @@ async function loadPlayers() {
 
 async function addPlayerToJson(playerName) {
     console.log("addPlayeerToJson")
-    await fetch('/api/amongUs/' + playerName, {
+    const response = await fetch('/api/amongUs/' + playerName, {
         method: 'PUT', // PUT Methode verwenden
         headers: {
             'Content-Type': 'application/json', // Daten als JSON senden
-            'Authorization': 'Bearer dein-token', // Optional: Authentifizierungstoken, falls nötig
         },
     })
+    console.log(response)
 }
 
 function joinGroup() {
     const gameTagTextBox = document.getElementById("gameTag")
     if (gameTagTextBox.value != "") {
-        console.log("Test hie3")
         addPlayerToJson(gameTagTextBox.value)
-        console.log("Test hier")
         addPlayer(gameTagTextBox.value)
-        console.log("Test hie2")
     }
 }
 
