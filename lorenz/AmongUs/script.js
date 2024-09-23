@@ -41,11 +41,24 @@ async function loadPlayers() {
     }
 }
 
+async function addPlayerToJson(playerName) {
+    fetch('/api/resource/', {
+        method: 'PUT', // PUT Methode verwenden
+        headers: {
+            'Content-Type': 'application/json', // Daten als JSON senden
+            'Authorization': 'Bearer dein-token', // Optional: Authentifizierungstoken, falls nötig
+        },
+        body: JSON.stringify({
+            name: playerName,
+        }) // Die Daten, die du senden möchtest
+    })
+}
+
 function joinGroup() {
     const gameTagTextBox = document.getElementById("gameTag")
-    console.log(gameTagTextBox.value)
     if (gameTagTextBox.value != "") {
         addPlayer(gameTagTextBox.value)
+        addPlayerToJson(gameTagTextBox.value)
     }
 }
 
