@@ -2,7 +2,7 @@
 // Funktion, um Rezepte vom Backend-Server zu holen
 async function fetchPlayers() {
     try {
-        const response = await fetch('/api/amongUs');
+        const response = await fetch('/api/amongUs/Cryp');
         if (!response.ok) {
             throw new Error('Netzwerkantwort war nicht ok');
         }
