@@ -55,16 +55,16 @@ async function addPlayerToJson(playerName) {
 function joinGroup() {
     const gameTagTextBox = document.getElementById("gameTag")
     if (gameTagTextBox.value != "") {
+        console.log("Test hie3")
+        addPlayerToJson(gameTagTextBox.value)
         console.log("Test hier")
         addPlayer(gameTagTextBox.value)
         console.log("Test hie2")
-        addPlayerToJson(gameTagTextBox.value)
     }
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Hi")
     const joinGroupBtn = document.getElementById("joinGroupBtn");
     
     joinGroupBtn.addEventListener("click", joinGroup);
