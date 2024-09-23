@@ -2,7 +2,7 @@
 // Funktion, um Rezepte vom Backend-Server zu holen
 async function fetchPlayers() {
     try {
-        const response = await fetch('/api/amongUs/roles');
+        const response = await fetch('/api/amongUs/');
         if (!response.ok) {
             throw new Error('Netzwerkantwort war nicht ok');
         }
@@ -42,6 +42,7 @@ async function loadPlayers() {
 }
 
 async function addPlayerToJson(playerName) {
+    console.log("addPlayeerToJson")
     fetch('/api/amongUs/' + playerName, {
         method: 'PUT', // PUT Methode verwenden
         headers: {
