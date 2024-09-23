@@ -56,6 +56,7 @@ function joinGroup() {
     const gameTagTextBox = document.getElementById("gameTag")
     if (gameTagTextBox.value != "") {
         addPlayer(gameTagTextBox.value)
+        console.log("Test hier")
         addPlayerToJson(gameTagTextBox.value)
     }
 }
