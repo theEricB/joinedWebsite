@@ -43,7 +43,7 @@ async function loadPlayers() {
 
 async function addPlayerToJson(playerName) {
     console.log("addPlayeerToJson")
-    fetch('/api/amongUs/' + playerName, {
+    await fetch('/api/amongUs/' + playerName, {
         method: 'PUT', // PUT Methode verwenden
         headers: {
             'Content-Type': 'application/json', // Daten als JSON senden
