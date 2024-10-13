@@ -2,7 +2,7 @@
 // Funktion, um Rezepte vom Backend-Server zu holen
 export async function fetchRecipes() {
     try {
-        const response = await fetch('/api/recipes');
+        const response = await fetch('http://www.cowfoot.xyz/api/recipes');
         if (!response.ok) {
             throw new Error('Netzwerkantwort war nicht ok');
         }

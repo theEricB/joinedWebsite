@@ -6,7 +6,7 @@ import { fetchRecipes } from './api.js'; // Import der API-Funktion
 function displayRecipes(recipes) {
     const recipeContainer = document.getElementById('recipe-container');
     recipeContainer.innerHTML = ''; // Container leeren
-
+    
     recipes.forEach(recipe => {
         const recipeDiv = document.createElement('div');
         recipeDiv.classList.add('recipe');
