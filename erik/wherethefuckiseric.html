@@ -11,10 +11,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon-16x16.png">
     <link rel="manifest" href="./logo/site.webmanifest">
 
-
-    <script src="src/jquery.csv.min.js"></script>
-
-
     <!-- LEAFLET -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
@@ -25,7 +21,13 @@
     crossorigin=""></script>
 
     <style>
-        #map { height: 80vh; }
+        body {
+            margin: 0;
+        }
+        #map {  
+            height: 100vh;
+            width: 100vw; 
+        }
     </style>
 
 </head>
@@ -39,58 +41,56 @@
     <script type="module">
 
         // map
-        var map = L.map('map').setView([30, 0], 2);
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        // var map = L.map('map').setView([30, 0], 2);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-
-        // cities with coordinates
-        test = $.csv.toArray();
-
-
         // history of places I have been, sorted
 
-        
-
-        // MAIN
-        const polyline = [];
-
-        for(i in history){
-            place = history[i];
-
-            // find place coordinates 
-            for(i in places){
-                endroit = places[i];
-                if (endroit.name == place.name){
-                    position = endroit.position;
-                    // finish
-                }
-            };
-
-            console.log(place.name);
-
-            // draw circle on map
-            var circle = L.circle(position, {
-            color: 'red',
-            fillColor: '#f03',
-            fillOpacity: 0.5,
-            radius: 1000
-            }).addTo(map);
-        
-            // add description
-            circle.bindPopup(place.notes);
-
-            // add coordinates to polyline list
-            // polyline.add(position);
-            polyline.push(position);
-
+        const places = { 
+            "GeburtLudwigsburg":[L.latLng(48.89777, 9.20355), "born, 13.08.1998"],
+            "Tamm01":[L.latLng(48.919477, 9.125701), "Laenderhaus1, 1998 - 2007"],
+            "Freiberg":[L.latLng(48.930181, 9.19571), "Freiberg, 2007 - 2011"],
+            "Tamm02":[L.latLng(48.91944, 9.125862), "Laenderhaus2, 2011 - 2014"],
+            "Asperg":[L.latLng(48.903728, 9.137768), "Carl-Diem-Str, 2014 - 2021"],
+            "21RueBardinet":[L.latLng(48.829953, 2.316527), "21 Rue Bardinet, 5 months with Corndog"],
+            "Asperg":[L.latLng(48.903728, 9.137768), "Carl-Diem-Str, 2014 - 2021"],
+            "Camperdown":[L.latLng(-33.888254, 151.179122), "Queen Mary Building, 6 months 2023"],
+            "Bondi":[L.latLng(-33.882325, 151.275422), "Surfing, 1 month 2023"],
+            "Surfcamp":[L.latLng(-34.769491, 150.808226), "Surfing4real, 2 months 2023"],
+            "12RueDeMilan":[L.latLng(48.879127, 2.328275), "12 Rue De Milan, 2023 avec Félicie"], 
+            "28AlbionStreet":[L.latLng(51.514009, -0.16675), "28AlbionStreet, 2024, working at Fosters"]
         };
 
-        // add polyline
-        var polygon = L.polyline([polyline]).addTo(map);
+        const work = { 
+            "SGVFreiberg":[L.latLng(48.939317, 9.198636), "SGV Freiberg EV, 2007 - 2017"],
+            "UniStuttgart":[L.latLng(48.78205, 9.174794), "Uni Bachelor + Master, 2016 - 2023"],
+        };
+
+        const travels = { 
+            "SGVFreiberg":[L.latLng(48.939317, 9.198636), "SGV Freiberg EV, 2007 - 2017"],
+            "UniStuttgart":[L.latLng(48.78205, 9.174794), "Uni Bachelor + Master, 2016 - 2023"],
+        };
+
+        const all_coor = Object.values(places).map(arr => arr[0]);
+        const polyline = L.polyline(all_coor, {color: 'grey'}).addTo(map);
+
+
+        for (const [key, value] of Object.entries(places)) {
+            console.log(key, value);
+            var marker = L.marker(value[0]).addTo(map).bindPopup('<b>' + value[1] + '</b>').openPopup();
+        }
+
+        for (const [key, value] of Object.entries(work)) {
+            console.log(key, value);
+            var marker = L.marker(value[0]).addTo(map).bindPopup('<b>' + value[1] + '</b>').openPopup();
+        }
+        
 
     </script>
 
