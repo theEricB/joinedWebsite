@@ -38,7 +38,7 @@ function displayRecipes(recipes) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const recipes = await fetchRecipes();
-        console.log(recipes)
+        recipes.reverse();
         displayRecipes(recipes); // Rezepte im DOM anzeigen
     } catch (error) {
         console.error('Fehler bei der Darstellung der Rezepte:', error);
