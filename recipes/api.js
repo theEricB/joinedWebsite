@@ -1,40 +1,26 @@
+// api.js
 
-const host = 'http://www.cowfoot.xyz/api'
-// Funktion, um Rezepte vom Backend-Server zu holen
+const host = 'http://www.cowfoot.xyz/api';
+
+// Function to fetch recipes from the server
 export async function fetchRecipes() {
     try {
-        const response = await fetch(host + '/recipes');
+        const response = await fetch(`${host}/recipes`);
         if (!response.ok) {
-            throw new Error('Netzwerkantwort war nicht ok');
+            throw new Error('Network response was not ok');
         }
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Fehler beim Abrufen der Rezepte:', error);
+        console.error('Error fetching recipes:', error);
         throw error;
     }
 }
 
-export async function deleteRecipe(recipeId) {
-    try {
-        const response = await fetch(`${host}/recipes/${recipeId}`, {
-            method: 'DELETE', // Methode auf DELETE setzen
-            headers: {
-                'Content-Type': 'application/json', // Optional, abhängig von der API
-            }
-        });
-        if (!response.ok) {
-            throw new Error('Netzwerkantwort war nicht ok');
-        }
-        return true;
-    } catch (err) {
-        throw new Error(err)
-    }
-}
-
+// Function to add a new recipe to the server
 export async function addRecipe(recipe) {
     try {
-        const response = await fetch(`${host}/recipes}`, {
+        const response = await fetch(`${host}/recipes`, { // fixed URL
             method: 'POST',
             body: JSON.stringify({
                 name: recipe.name,
@@ -44,14 +30,35 @@ export async function addRecipe(recipe) {
                 date: recipe.date
             }),
             headers: {
-                'Content-Type': 'application/json', // Optional, abhängig von der API
+                'Content-Type': 'application/json',
             }
         });
         if (!response.ok) {
-            throw new Error('Netzwerkantwort war nicht ok');
+            throw new Error('Network response was not ok');
         }
-        return true;
+        return await response.json();
     } catch (err) {
-        throw new Error(err)
+        console.error('Error adding recipe:', err);
+        throw err;
+    }
+}
+
+// New function to update a recipe on the server
+export async function updateRecipe(recipeId, updatedData) {
+    try {
+        const response = await fetch(`${host}/recipes/${recipeId}`, {
+            method: 'PUT',
+            body: JSON.stringify(updatedData),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return await response.json();
+    } catch (err) {
+        console.error('Error updating recipe:', err);
+        throw err;
     }
 }
