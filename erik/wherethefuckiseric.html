@@ -28,6 +28,9 @@
             height: 100vh;
             width: 100vw; 
         }
+        
+        img.huechange { filter: hue-rotate(120deg); }
+
     </style>
 
 </head>
@@ -41,17 +44,14 @@
     <script type="module">
 
         // map
-        var map = L.map('map').setView([51.505, -0.09], 13);
-
-        // var map = L.map('map').setView([30, 0], 2);
+        var map = L.map('map').setView([51.505, -0.09], 3);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        // history of places I have been, sorted
-
+        // history of places I have lived, worked and travelled, sorted
         const places = { 
             "GeburtLudwigsburg":[L.latLng(48.89777, 9.20355), "born, 13.08.1998"],
             "Tamm01":[L.latLng(48.919477, 9.125701), "Laenderhaus1, 1998 - 2007"],
@@ -73,8 +73,54 @@
         };
 
         const travels = { 
-            "SGVFreiberg":[L.latLng(48.939317, 9.198636), "SGV Freiberg EV, 2007 - 2017"],
-            "UniStuttgart":[L.latLng(48.78205, 9.174794), "Uni Bachelor + Master, 2016 - 2023"],
+            // EUROPE
+            "Ballena Alegre":[L.latLng(0,0), "all the Summers, with the Fam"],
+            "Obersaxen":[L.latLng(0,0), "all the Winters, with the Fam"],
+            
+            //ski
+            "Laax":[L.latLng(46.8097, 9.2599), "Winter 2022, with Lori"],
+            "Avoriaz":[L.latLng(46.1921, 6.7744), "Winter 2019, with Wolf"],
+            "St. Moritz":[L.latLng(46.4983, 9.8390), "Winter 2023, with Mama"],
+            "Hintertux":[L.latLng(47.0954, 11.6883), "Winter 2015?, with the Fam"],
+            
+
+            "Bilbao":[L.latLng(43.2630, -2.9350), "2018 on Neauvou Tour"],
+            "San Sebastian":[L.latLng(43.3183, -1.9812), "2018 on Neauvou Tour"],
+            "Vienna":[L.latLng(48.2082, 16.3738), "2018 on Neauvou Tour"],
+            "Graz":[L.latLng(47.0707, 15.4395), "2018 on Neauvou Tour, 2024 Job Interview TU Graz"],
+            "Basel":[L.latLng(47.5596, 7.5886), "2018 on Neauvou Tour with Oma"],
+            "Fribourg":[L.latLng(46.8065, 7.1619), "2018 on Neauvou Tour at Sara's place"],
+            "Lausanne":[L.latLng(46.5197, 6.6323), "2018 on Neauvou Tour, 2018 Visit Corndog"],
+            "Lyon":[L.latLng(45.7640, 4.8357), "2018 on Neauvou Tour, 2018 Erasmus Oh la la la la..."],
+
+
+            "Milano":[L.latLng(45.4642, 9.1900), "2017+2019 on Uni Trip, 2023 on Trip with Félicie"],
+            "Bregenz":[L.latLng(47.5031, 9.7471), "2017 on Uni Trip"],
+            "Zurich":[L.latLng(47.3769, 8.5417), "2017 on Uni Trip, 2018 Neauvou Tour at Anna Oexle's, multiple times at Seffinga's"],
+            "Turino":[L.latLng(45.0703, 7.6869), "2019 on Uni Trip"],
+            "Genova":[L.latLng(44.4056, 8.9463), "2019 on Uni Trip"],
+            
+
+            "Venice":[L.latLng(45.4408, 12.3155), "2023 on Trip with Félicie in Uli's Van"],
+            "Verona":[L.latLng(45.4384, 10.9916), "2023 on Trip with Félicie in Uli's Van"],
+            "Lago di Lugano":[L.latLng(45.9993, 8.9743), "2023 on Trip with Félicie in Uli's Van"],
+            "Como":[L.latLng(45.8081, 9.0852), "2023 on Trip with Félicie in Uli's Van"],
+            "Torbole":[L.latLng(45.8704, 10.8781), "2023 on Trip with Félicie in Uli's Van"],
+            
+
+            "CHM":[L.latLng(45.36083, -1.154852), "Summer 2023, with Félicie and Fam"],
+
+            "Bordeaux":[L.latLng(44.8378, -0.5792), "Summer 2023, with Félicie"],
+            "Lisboa":[L.latLng(38.7223, -9.1393), "Summer 2018, with Magdalena"],
+            "Ericeira":[L.latLng(38.9624, -9.4155), "Summer 2018, with Magdalena"],
+            "Peniche":[L.latLng(39.3558, -9.3817), "Summer 2018, with Magdalena"],
+            "Portimao":[L.latLng(37.1366, -8.5392), "Winter 2023, Surftrip"],
+            "Faro":[L.latLng(37.0194, -7.9322), "Winter 2023, Surftrip"],
+            "Arrifana":[L.latLng(37.2906, -8.8544), "Winter 2023, Surftrip"],
+            "Marrakesh":[L.latLng(31.6295, -7.9811), "Late Summer 2024, with Liese & Lori"],
+            "Tagazhout":[L.latLng(30.5457, -9.7072), "Late Summer 2024, with Liese & Lori"],
+            
+
         };
 
         const all_coor = Object.values(places).map(arr => arr[0]);
@@ -82,15 +128,34 @@
 
 
         for (const [key, value] of Object.entries(places)) {
-            console.log(key, value);
             var marker = L.marker(value[0]).addTo(map).bindPopup('<b>' + value[1] + '</b>').openPopup();
         }
 
         for (const [key, value] of Object.entries(work)) {
-            console.log(key, value);
             var marker = L.marker(value[0]).addTo(map).bindPopup('<b>' + value[1] + '</b>').openPopup();
         }
+
+
+        for (const [key, value] of Object.entries(travels)) {
+            var marker = L.marker(value[0]).addTo(map)
+                .bindPopup('<b>' + value[1] + '</b>').openPopup();
+            marker._icon.classList.add("huechange");
+        }
+
+        const popup = L.popup()
+		.setLatLng([51.513, -0.09])
+		.setContent('I am a standalone popup.')
+		.openOn(map);
         
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .openOn(map);
+        }
+    
+        map.on('click', onMapClick);
+    
 
     </script>
 
