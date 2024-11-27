@@ -49,14 +49,18 @@ export async function updateRecipe(recipeId, updatedData) {
             body: JSON.stringify(updatedData),
             headers: {
                 'Content-Type': 'application/json',
-            }
+            },
         });
+
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            const errorText = await response.text();
+            throw new Error(`Server responded with status ${response.status}: ${errorText}`);
         }
+
         return await response.json();
     } catch (err) {
         console.error('Error updating recipe:', err);
-        throw err;
+        throw err; // Re-throw the error so it can be caught in the form submission
     }
 }
+

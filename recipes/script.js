@@ -1,12 +1,10 @@
-// script.js
-
 import { fetchRecipes, addRecipe, updateRecipe } from './api.js';
 
 // Function to display recipes on the page
 function displayRecipes(recipes) {
     const recipeContainer = document.getElementById('recipe-container');
     recipeContainer.innerHTML = ''; // Clear container
-    
+
     recipes.forEach(recipe => {
         const recipeDiv = document.createElement('div');
         recipeDiv.dataset.recipeId = recipe._id;
@@ -48,10 +46,7 @@ function displayRecipes(recipes) {
     });
 }
 
-document.getElementById('addRecipe').addEventListener('click', () => {
-    showRecipeForm(); // Show form to add a new recipe
-});
-
+// Function to show the recipe form (for adding or editing)
 function showRecipeForm(recipe = null) {
     const formContainer = document.getElementById('formContainer');
     formContainer.innerHTML = ''; // Clear any existing form
@@ -127,6 +122,7 @@ function showRecipeForm(recipe = null) {
     // Form Submit Event
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
+
         const newRecipe = {
             name: nameInput.value,
             ingredients: ingredientsInput.value,
@@ -135,19 +131,28 @@ function showRecipeForm(recipe = null) {
             date: dateInput.value
         };
 
-        if (recipe) {
-            // Update existing recipe
-            await updateRecipe(recipe._id, newRecipe);
-        } else {
-            // Add new recipe
-            await addRecipe(newRecipe);
+        try {
+            if (recipe) {
+                // Update existing recipe
+                await updateRecipe(recipe._id, newRecipe);
+                alert('Recipe updated successfully!');
+            } else {
+                // Add new recipe
+                await addRecipe(newRecipe);
+                alert('Recipe added successfully!');
+            }
+
+            // Reload and display updated recipes
+            const updatedRecipes = await fetchRecipes();
+            displayRecipes(updatedRecipes);
+
+            // Close and clear the form
+            formContainer.style.display = 'none';
+            formContainer.innerHTML = '';
+        } catch (error) {
+            console.error('Error updating or adding recipe:', error);
+            alert('An error occurred while saving the recipe. Please try again.');
         }
-
-        // Reload and display updated recipes
-        displayRecipes(await fetchRecipes());
-
-        formContainer.style.display = 'none';
-        formContainer.innerHTML = '';
     });
 
     // Show form container
@@ -159,7 +164,7 @@ function showRecipeForm(recipe = null) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const recipes = await fetchRecipes();
-        recipes.reverse();
+        recipes.reverse(); // Show newest recipes first
         displayRecipes(recipes);
     } catch (error) {
         console.error('Error displaying recipes:', error);
