@@ -1,5 +1,3 @@
-// api.js
-
 const host = 'http://www.cowfoot.xyz/api';
 
 // Function to fetch recipes from the server
