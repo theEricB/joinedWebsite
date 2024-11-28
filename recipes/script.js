@@ -4,6 +4,10 @@ import { fetchRecipes, addRecipe, updateRecipe } from './api.js';
 function displayRecipes(recipes) {
     const recipeContainer = document.getElementById('recipe-container');
     recipeContainer.innerHTML = ''; // Clear container
+    const addRecipeButton = document.getElementById('addRecipe');
+    addRecipeButton.onclick = () => {
+        showRecipeForm();
+    }
 
     recipes.forEach(recipe => {
         const recipeDiv = document.createElement('div');
