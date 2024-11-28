@@ -135,15 +135,14 @@ function showRecipeForm(recipe = null) {
             if (recipe) {
                 // Update existing recipe
                 await updateRecipe(recipe._id, newRecipe);
-                alert('Recipe updated successfully!');
             } else {
                 // Add new recipe
                 await addRecipe(newRecipe);
-                alert('Recipe added successfully!');
             }
 
             // Reload and display updated recipes
             const updatedRecipes = await fetchRecipes();
+            updatedRecipes.reverse();
             displayRecipes(updatedRecipes);
 
             // Close and clear the form
