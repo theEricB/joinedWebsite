@@ -22,7 +22,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 40, (window.innerWidth/3*2) / window.innerHeight, 0.1, 1000 );
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
 renderer.setSize( window.innerWidth/3*2, window.innerHeight );
@@ -108,31 +108,13 @@ async function animate() {
         if (plane !== 0 && height > max) {
             height = max;
         }
-        
-        //scene.children[i].rotation.y = Math.PI/2
-
-        // if(plane == 0){
-        //     scene.children[i].rotation.y = Math.PI/2
-        // }
-
-        // if(plane == 1){
-        //     scene.children[i].rotation.x = Math.PI/2
-        // }
-        // if(plane == 2){
-        //     scene.children[i].rotation.z = Math.PI/2
-        //     scene.children[i].rotation.x = Math.PI/2
-        // }
 
         updateCubeRotation(scene.children[i], plane)
-
-
         scene.children[i].position.x = x
         scene.children[i].position.y = z
         scene.children[i].position.z = y
-
         scene.children[i].scale.x = width*2
         scene.children[i].scale.z = height*2
-
         centers.push(x, y, z);
     }
 
@@ -140,18 +122,15 @@ async function animate() {
     const bounding = new THREE.BufferGeometry();
     bounding.setAttribute( 'position', new THREE.Float32BufferAttribute( centers, 3 ) );
     bounding.computeBoundingBox();
-    const material = new THREE.PointsMaterial( {size: .05} );
-    const points = new THREE.Points( bounding, material );
+    const points = new THREE.Points( bounding );
     mid = getCenterPoint(points);
     
-    // for (let i = 0; i < 21; i++) {
-    //     let ind = i+i*6;
-    //     scene.children[i].position.x -= mid.x
-    //     scene.children[i].position.y -= mid.y
-    //     scene.children[i].position.z -= mid.z
-    // }
-
-
+    for (let i = 0; i < 21; i++) {
+        let ind = i+i*6;
+        scene.children[i].position.x -= mid.x
+        scene.children[i].position.y -= mid.y
+        scene.children[i].position.z -= mid.z
+    }
 
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
