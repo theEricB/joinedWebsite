@@ -36,16 +36,16 @@ const cubeMaterial = new THREE.MeshLambertMaterial();
 cubeMaterial.transparent = true
 cubeMaterial.opacity = 0.8
 
-// for (let i = 0; i < 21; i++) {
-//     const box = new THREE.BoxGeometry( 1, 0.05, 1 );
-//     const cube = new THREE.Mesh( box, material );
-//     cube.receiveShadow = true;
-//     cube.castShadow = true;
-//     scene.add( cube );
-// }
+for (let i = 0; i < 21; i++) {
+    const box = new THREE.BoxGeometry( 1, 0.05, 1 );
+    const cube = new THREE.Mesh( box, cubeMaterial );
+    cube.receiveShadow = true;
+    cube.castShadow = true;
+    scene.add( cube );
+}
 
-// const axesHelper = new THREE.AxesHelper( 5 );
-// scene.add( axesHelper );  
+const axesHelper = new THREE.AxesHelper( 5 );
+scene.add( axesHelper );  
 
 
 
@@ -63,67 +63,56 @@ light.shadow.camera.top = d;
 light.shadow.camera.bottom = - d;
 light.shadow.camera.far = 1000;
 
+// LIGHTS
+scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
+scene.add( light );
 
 let mid = new THREE.Vector3(0,0,0);
 
+function updateCubeRotation(cube, plane) {
+    switch (plane) {
+      case 0: // No rotation
+        cube.rotation.set(0, 0, 0); // Reset rotation to default (optional if needed)
+        break;
+      case 1: // Rotate around X-axis
+        cube.rotation.set(Math.PI/2 + 0.01, 0, 0); // Increment rotation around X
+        break;
+      case 2: // Rotate around Z-axis
+        cube.rotation.set(Math.PI/2, 0, Math.PI/2); // Increment rotation around Z
+        break;
+    }
+  }
 
 async function animate() {
     const slidX = document.getElementById("sliderX").value
     const slidY = document.getElementById("sliderY").value
     const slidZ = document.getElementById("sliderZ").value
 
-
     const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
     let geo = await decode(input);
+
     // console.log(geo);
     const centers = [];
-    // DELETE SCENE
-    for( var i = scene.children.length - 1; i >= 0; i--) { 
-        let obj = scene.children[i];
-        scene.remove(obj); 
-    }
-    renderer.renderLists.dispose();
 
-    // REESTABLISH SCENE
-    scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
-    scene.add( light );
     for (let i = 0; i < 21; i++) {
+        // decode all the info
         let ind = i+i*6;
-
         let x = geo[ind];
         let y = geo[ind+1];
         let z = geo[ind+2];
         let plane = parseInt(Math.round(geo[ind+3]));
         let width = geo[ind+4];
         let height = geo[ind+5];
-        
         const max = 2.5
         if (plane !== 0 && height > max) {
             height = max;
         }
+        
+        //scene.children[i].rotation.y = Math.PI/2
 
-        const box = new THREE.BoxGeometry( 1, 0.05, 1 );
-        const cube = new THREE.Mesh( box, cubeMaterial );
-        cube.position.x = x
-        cube.position.y = z
-        cube.position.z = y
-        cube.scale.x = width*2
-        cube.scale.z = height*2
-
-        if(plane == 1){
-            cube.rotation.x = Math.PI/2
-        }
-        if(plane == 2){
-            cube.rotation.z = Math.PI/2
-            cube.rotation.x = Math.PI/2
-        }
-
-        cube.receiveShadow = true;
-        cube.castShadow = true;
-        scene.add( cube );
-
-
-
+        // if(plane == 0){
+        //     scene.children[i].rotation.y = Math.PI/2
+        // }
 
         // if(plane == 1){
         //     scene.children[i].rotation.x = Math.PI/2
@@ -132,15 +121,18 @@ async function animate() {
         //     scene.children[i].rotation.z = Math.PI/2
         //     scene.children[i].rotation.x = Math.PI/2
         // }
-        // scene.children[i].position.x = x
-        // scene.children[i].position.y = z
-        // scene.children[i].position.z = y
 
-        // scene.children[i].scale.x = width*2
-        // scene.children[i].scale.z = height*2
+        updateCubeRotation(scene.children[i], plane)
+
+
+        scene.children[i].position.x = x
+        scene.children[i].position.y = z
+        scene.children[i].position.z = y
+
+        scene.children[i].scale.x = width*2
+        scene.children[i].scale.z = height*2
 
         centers.push(x, y, z);
-        
     }
 
 
