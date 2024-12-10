@@ -84,9 +84,10 @@ function updateCubeRotation(cube, plane) {
   }
 
 async function animate() {
-    const slidX = document.getElementById("sliderX").value
-    const slidY = document.getElementById("sliderY").value
-    const slidZ = document.getElementById("sliderZ").value
+    const slidX = document.getElementById("sliderX").innerHTML
+    const slidY = document.getElementById("sliderY").innerHTML
+    const slidZ = document.getElementById("sliderZ").innerHTML
+
 
     const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
     let geo = await decode(input);
