@@ -1,7 +1,5 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { latentCoordinates } from './latent_coordinates.js'
-import { dataset } from './dataset.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const scene2 = new THREE.Scene();
@@ -12,8 +10,9 @@ renderer.setSize( window.innerWidth/2, window.innerHeight );
 document.getElementById("latentSpace").appendChild( renderer.domElement );
 const controls2 = new OrbitControls( camera2, renderer.domElement );
 
-camera2.position.set(-4,2,2);
-camera2.lookAt(new THREE.Vector3(0,0,0));
+
+camera2.position.set(15,50,-60);
+camera2.lookAt(new THREE.Vector3(13,13,-13));
 
 
 // SOME LIGHT
@@ -22,16 +21,12 @@ light1.position.set(5, 0, 0);
 scene2.add(light1);
 
 // axis
-const axesHelper = new THREE.AxesHelper( 5 );
-scene2.add( axesHelper );  
+// const axesHelper = new THREE.AxesHelper( 5 );
+// scene2.add( axesHelper );  
 
 
-const sphereGeometry = new THREE.SphereGeometry(1, 8, 8); // Radius: 1, widthSegments: 8, heightSegments: 8
-const pinkReflectiveMaterial = new THREE.MeshStandardMaterial({
-    color: 0xff69b4,  // Pink color
-    metalness: 0.5,   // Adjust metalness for reflectivity
-    roughness: 0.5,   // Adjust roughness for a shiny surface
-  });
+const sphereGeometry = new THREE.SphereGeometry(.5, 8, 8); // Radius: 1, widthSegments: 8, heightSegments: 8
+const pinkReflectiveMaterial = new THREE.MeshStandardMaterial({color: 0xff69b4});
 const sphere = new THREE.Mesh(sphereGeometry, pinkReflectiveMaterial);
 scene2.add(sphere);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // Strong directional light
@@ -46,6 +41,17 @@ loader.load(loc, function ( gltf ) {
 });
 
 let scale = 26.5
+
+// dynamical resizing
+window.addEventListener('resize', function()
+{
+  var width = window.innerWidth/2;
+  var height = window.innerHeight;
+  renderer.setSize(width, height);
+  camera2.aspect = width / height;
+  camera2.updateProjectionMatrix();
+});
+
 function animate() {
     const slidX = document.getElementById("sliderX").innerHTML;
     const slidY = document.getElementById("sliderY").innerHTML;
@@ -55,7 +61,10 @@ function animate() {
     sphere.position.z = (slidZ*scale*-1);
     sphere.position.y = (slidY*scale);
 
+
     requestAnimationFrame( animate );
     renderer.render( scene2, camera2 );
 }
+
+
 animate();

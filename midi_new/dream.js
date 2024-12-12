@@ -24,48 +24,58 @@ const camera = new THREE.PerspectiveCamera( 40, (window.innerWidth/3*2) / window
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
-renderer.setSize( window.innerWidth/3*2, window.innerHeight );
+renderer.shadowMap.enabled = true;
+
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+
+renderer.setSize( window.innerWidth/2, window.innerHeight );
 document.getElementById("dream").appendChild( renderer.domElement );
 
 const controls = new OrbitControls( camera, renderer.domElement );
 camera.position.set(20,10,25);
 camera.lookAt(new THREE.Vector3(0,0,0));
 
-const cubeMaterial = new THREE.MeshLambertMaterial();
-cubeMaterial.transparent = true
-cubeMaterial.opacity = 0.8
+// Material with better shading and contrast
+const cubeMaterial = new THREE.MeshStandardMaterial({
+  color: 0xffffff, // Base color
+  roughness: 1,  // Adjust for surface roughness
+  metalness: 0,  // Non-metallic surface
+  transparent: true,
+  opacity: 0.9
+});
 
 for (let i = 0; i < 21; i++) {
-    const box = new THREE.BoxGeometry( 1, 0.05, 1 );
+    const box = new THREE.BoxGeometry( 1, 0.2, 1 );
     const cube = new THREE.Mesh( box, cubeMaterial );
     cube.receiveShadow = true;
     cube.castShadow = true;
     scene.add( cube );
 }
 
-const axesHelper = new THREE.AxesHelper( 5 );
-scene.add( axesHelper );  
+
+// const axesHelper = new THREE.AxesHelper( 5 );
+// scene.add( axesHelper );  
 
 
+// Lights
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // Ambient light
+scene.add(ambientLight);
 
-const light = new THREE.DirectionalLight( 0xddffdd, 2 );
-light.position.set( 10, 10, 5 );
-light.castShadow = true;
-light.shadow.mapSize.width = 1024;
-light.shadow.mapSize.height = 1024;
+const hemisphereLight = new THREE.HemisphereLight(0xddeeff, 0x333333, 0.4); // Sky-ground light
+scene.add(hemisphereLight);
 
-const d = 10;
-
-light.shadow.camera.left = - d;
-light.shadow.camera.right = d;
-light.shadow.camera.top = d;
-light.shadow.camera.bottom = - d;
-light.shadow.camera.far = 1000;
-
-// LIGHTS
-scene.add( new THREE.AmbientLight( 0xaaaaaa, 0.6 ) );
-scene.add( light );
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+directionalLight.position.set(10, 10, 10);
+directionalLight.castShadow = true;
+directionalLight.shadow.mapSize.width = 2048;
+directionalLight.shadow.mapSize.height = 2048;
+directionalLight.shadow.camera.left = -10;
+directionalLight.shadow.camera.right = 10;
+directionalLight.shadow.camera.top = 10;
+directionalLight.shadow.camera.bottom = -10;
+scene.add(directionalLight);
 
 let mid = new THREE.Vector3(0,0,0);
 
@@ -82,6 +92,16 @@ function updateCubeRotation(cube, plane) {
         break;
     }
   }
+
+// dynamical resizing
+window.addEventListener('resize', function()
+{
+  var width = window.innerWidth/2;
+  var height = window.innerHeight;
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+});
 
 async function animate() {
     const slidX = document.getElementById("sliderX").innerHTML
