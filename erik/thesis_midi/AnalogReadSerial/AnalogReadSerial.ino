@@ -5,17 +5,17 @@ void setup() {
 
 
 void loop() {
-  int sensorValueA = analogRead(A1);
+  int sensorValueA = analogRead(A4);
   Serial.print("A");
   Serial.print(sensorValueA);
   Serial.print("A");
 
-  int sensorValueB = analogRead(A2);
+  int sensorValueB = analogRead(A1);
   Serial.print("B");
   Serial.print(sensorValueB);
   Serial.print("B");
 
-  int sensorValueC = analogRead(A3);
+  int sensorValueC = analogRead(A6);
   Serial.print("C");
   Serial.print(sensorValueC);
   Serial.println("C");
