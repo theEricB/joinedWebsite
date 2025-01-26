@@ -1,6 +1,7 @@
-epochs: 1000
+dataset size: 400
+max num nodes: 21
+epochs: 100
 learning rate: 0.001
-optimiser: adam
-loss function: mean squared error
-activation function: ReLu
-train, test, validate: 80%, 10%, 10%
+weight decay: 0.001
+encoder dimensions: 8, 64, 64, 64, 3
+decoder dimensions: 3, 64, 128, 512, 168

@@ -192,9 +192,8 @@ async function animate() {
     const slidY = document.getElementById("sliderY").value
     const slidZ = document.getElementById("sliderZ").value
 
-
     const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
-    
+
 
     let modelname = "results/" + current_model + ".onnx"
     let geo = await decode(input, modelname);
