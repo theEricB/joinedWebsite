@@ -16,6 +16,20 @@ async function decode(input, modelname) {
     return outputTensor;
 }
 
+async function decode_with_num_nodes(input, modelname) {
+  const sess = new onnx.InferenceSession();
+  await sess.loadModel(modelname);
+
+  // Run the model with the input
+  const outputMap = await sess.run([input]);
+
+  // Extract all outputs by their keys or iterate through the map
+  const outputs = Array.from(outputMap.values()).map(tensor => tensor.data);
+
+  // console.log(outputs); // Logs an array of output tensors
+  return outputs; // Return both outputs as an array
+}
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
@@ -185,7 +199,8 @@ selector.addEventListener("change", function() {
   }
 });
 
-
+const max_num_nodes = 21;
+let num_features;
 
 async function animate() {
     const slidX = document.getElementById("sliderX").value
@@ -196,25 +211,40 @@ async function animate() {
 
 
     let modelname = "results/" + current_model + ".onnx"
-    let geo = await decode(input, modelname);
-
-    // console.log(geo);
+    let geo;
+    let num_nodes;
+    if(current_model == "thesis"){
+      geo = await decode(input, modelname);
+      num_nodes = 21;
+      num_features = 6;
+    } else {
+      [geo, num_nodes]  = await decode_with_num_nodes(input, modelname);
+      num_nodes = parseInt(num_nodes[0]);
+      num_features = 5;
+    }
     const centers = [];
 
-    for (let i = 0; i < 21; i++) {
+
+    for (let i = 0; i < max_num_nodes; i++) {
+        if (i >= num_nodes) {
+            scene.children[i].visible = false;
+            continue;
+        } else {
+          scene.children[i].visible = true;
+        }
         // decode all the info
-        let ind = i+i*6;
+        let ind = i+i*num_features;
         let x = geo[ind];
         let y = geo[ind+1];
         let z = geo[ind+2];
+
         let plane = parseInt(Math.round(geo[ind+3]));
         let width = geo[ind+4];
         let height = geo[ind+5];
-        const max = 2.5
+        const max = 3 
         if (plane !== 0 && height > max) {
             height = max;
         }
-
         updateCubeRotation(scene.children[i], plane)
         scene.children[i].position.x = x
         scene.children[i].position.y = z
@@ -231,7 +261,7 @@ async function animate() {
     const points = new THREE.Points( bounding );
     mid = getCenterPoint(points);
     
-    for (let i = 0; i < 21; i++) {
+    for (let i = 0; i < max_num_nodes; i++) {
         let ind = i+i*6;
         scene.children[i].position.x -= mid.x
         scene.children[i].position.y -= mid.y

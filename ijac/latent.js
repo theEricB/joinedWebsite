@@ -33,23 +33,46 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // Strong dire
 directionalLight.position.set(2, 10, 7.5);
 scene2.add(directionalLight);
 
-
-
-let selector = document.getElementById("modelSelector");
-let current_model = selector.value
-selector.addEventListener("change", function() {
-  if(selector.value != current_model)
-  {
-    current_model = selector.value
-  }
-});
-let loc = "results/" + current_model + ".glb"
+let current_model = document.getElementById("modelSelector").value;
+let loc = "results/" + current_model + ".glb";
 
 const loader = new GLTFLoader();
-loader.load(loc, function ( gltf ) {
-    let model = gltf.scene;
-    scene2.add( model );
+let loadedModel = null; // Keep track of the currently loaded model
+
+// Function to load and add the model to the scene
+function loadModel(path) {
+    loader.load(path, function (gltf) {
+        let model = gltf.scene;
+
+        // If there's an existing model, remove it from the scene
+        if (loadedModel) {
+            scene2.remove(loadedModel);
+        }
+
+        // Add the new model to the scene and update the reference
+        loadedModel = model;
+        scene2.add(model);
+    });
+}
+
+// Load the initial model
+loadModel(loc);
+
+// Set up the event listener to update the model on selector change
+let selector = document.getElementById("modelSelector");
+selector.addEventListener("change", function () {
+    if (selector.value !== current_model) {
+        current_model = selector.value;
+        loc = "results/" + current_model + ".glb";
+
+        // Load the new model
+        loadModel(loc);
+    }
 });
+
+
+
+
 
 let scale = 26.5
 
