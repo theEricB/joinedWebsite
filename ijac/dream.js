@@ -51,35 +51,9 @@ const controls = new OrbitControls( camera, renderer.domElement );
 camera.position.set(20,10,25);
 camera.lookAt(new THREE.Vector3(0,0,0));
 
-// Material with better shading and contrast
-const cubeMaterial = new THREE.MeshStandardMaterial({
-  color: 0xffffff, // Base color
-  roughness: 1,  // Adjust for surface roughness
-  metalness: 0,  // Non-metallic surface
-  transparent: true,
-  opacity: 0.9
-});
-
-for (let i = 0; i < 21; i++) {
-    const box = new THREE.BoxGeometry( 1, 0.2, 1 );
-    const cube = new THREE.Mesh( box, cubeMaterial );
-    cube.receiveShadow = true;
-    cube.castShadow = true;
-    scene.add( cube );
-}
-
-
-// const axesHelper = new THREE.AxesHelper( 5 );
-// scene.add( axesHelper );  
-
-
-// Lights
+// define Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // Ambient light
-scene.add(ambientLight);
-
 const hemisphereLight = new THREE.HemisphereLight(0xddeeff, 0x333333, 0.4); // Sky-ground light
-scene.add(hemisphereLight);
-
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
 directionalLight.position.set(10, 10, 10);
 directionalLight.castShadow = true;
@@ -89,23 +63,7 @@ directionalLight.shadow.camera.left = -10;
 directionalLight.shadow.camera.right = 10;
 directionalLight.shadow.camera.top = 10;
 directionalLight.shadow.camera.bottom = -10;
-scene.add(directionalLight);
-
 let mid = new THREE.Vector3(0,0,0);
-
-function updateCubeRotation(cube, plane) {
-    switch (plane) {
-      case 0: // No rotation
-        cube.rotation.set(0, 0, 0); // Reset rotation to default (optional if needed)
-        break;
-      case 1: // Rotate around X-axis
-        cube.rotation.set(Math.PI/2 + 0.01, 0, 0); // Increment rotation around X
-        break;
-      case 2: // Rotate around Z-axis
-        cube.rotation.set(Math.PI/2, 0, Math.PI/2); // Increment rotation around Z
-        break;
-    }
-  }
 
 // dynamical resizing
 window.addEventListener('resize', function()
@@ -116,76 +74,6 @@ window.addEventListener('resize', function()
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
 });
-
-
-// USE KEYS TO CHANGE SLIDER VALUES
-
-let intervalId = null; // To track the active interval
-let adjustmentSpeed = 0.003; // Initial adjustment speed
-let heldKey = null; // To track the currently held key
-
-function updateValueStart(event) {
-  const key = event.key.toLowerCase();
-  
-  // Prevent multiple intervals for the same key
-  if (key === heldKey) return;
-
-  // Track the held key
-  heldKey = key;
-
-  const sliderX = document.getElementById("sliderX");
-  const sliderY = document.getElementById("sliderY");
-  const sliderZ = document.getElementById("sliderZ");
-
-  // Reset the adjustment speed on a new keypress
-  adjustmentSpeed = 0.003;
-
-  // Define the update logic
-  function updateSlider() {
-    switch (key) {
-      case "q":
-        sliderX.value = parseFloat(sliderX.value) - adjustmentSpeed;
-        break;
-      case "e":
-        sliderX.value = parseFloat(sliderX.value) + adjustmentSpeed;
-        break;
-      case "a":
-        sliderZ.value = parseFloat(sliderZ.value) - adjustmentSpeed;
-        break;
-      case "d":
-        sliderZ.value = parseFloat(sliderZ.value) + adjustmentSpeed;
-        break;
-      case "y":
-        sliderY.value = parseFloat(sliderY.value) - adjustmentSpeed;
-        break;
-      case "c":
-        sliderY.value = parseFloat(sliderY.value) + adjustmentSpeed;
-        break;
-    }
-
-    // Gradually increase the adjustment speed
-    adjustmentSpeed = Math.min(adjustmentSpeed + 0.001, 0.05); // Cap speed at 0.05
-  }
-
-  // Start an interval to repeatedly update the value
-  intervalId = setInterval(updateSlider, 50); // Adjust every 50ms
-}
-
-function updateValueStop(event) {
-  const key = event.key.toLowerCase();
-
-  // Stop the interval only if the released key matches the held key
-  if (key === heldKey) {
-    clearInterval(intervalId);
-    intervalId = null;
-    heldKey = null;
-    adjustmentSpeed = 0.003; // Reset speed for the next keypress
-  }
-}
-
-// Attach event listeners for keydown and keyup
-document.addEventListener("keydown", updateValueStart);
-document.addEventListener("keyup", updateValueStop);
 
 
 let selector = document.getElementById("modelSelector");
@@ -202,72 +90,157 @@ selector.addEventListener("change", function() {
 const max_num_nodes = 21;
 let num_features;
 
-async function animate() {
-    const slidX = document.getElementById("sliderX").value
-    const slidY = document.getElementById("sliderY").value
-    const slidZ = document.getElementById("sliderZ").value
+// Material with better shading and contrast
+const cubeMaterial = new THREE.MeshStandardMaterial({
+  color: 0xffffff, // Base color
+  roughness: 1,  // Adjust for surface roughness
+  metalness: 0,  // Non-metallic surface
+  transparent: true,
+  opacity: 0.9
+});
 
-    const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
+const material = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
+// const material = new THREE.MeshPhongMaterial({
+//   color: 0xffffff,          // White color
+//   transparent: true,        // Enable transparency
+//   opacity: 0.7,             // Slightly transparent (70% opaque)
+//   side: THREE.DoubleSide,   // Render both sides of the surface
+// });
 
 
-    let modelname = "results/" + current_model + ".onnx"
-    let geo;
-    let num_nodes;
-    if(current_model == "thesis"){
-      geo = await decode(input, modelname);
-      num_nodes = 21;
-      num_features = 6;
-    } else {
-      [geo, num_nodes]  = await decode_with_num_nodes(input, modelname);
-      num_nodes = parseInt(num_nodes[0]);
-      num_features = 5;
+const meshes = []; // Store references to the meshes
+for (let i = 0; i < max_num_nodes; i++) {
+  const geometry = new THREE.BufferGeometry();
+
+  // Placeholder vertices (6 vertices for 2 triangles)
+  const vertices1 = new Float32Array([
+    0, 0, 0,   // Bottom-left corner
+    10, 0, 0,   // Bottom-right corner
+    0, 10, 0,   // Top-left corner
+    0, 10, 0,   // Top-left corner
+    10, 0, 0,   // Bottom-right corner
+    10, 10, 0,   // Top-right corner
+  ]);
+  geometry.setAttribute('position', new THREE.BufferAttribute(vertices1, 3));
+
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.castShadow = true;    // Allow the mesh to cast shadows
+  mesh.receiveShadow = true;
+  scene.add(mesh);
+  meshes.push(mesh); // Store a reference for later updates
+}
+
+// add rest after so that loop works
+scene.add(ambientLight);
+scene.add(hemisphereLight);
+scene.add(directionalLight);
+const axesHelper = new THREE.AxesHelper( 5 );
+scene.add( axesHelper );  
+
+function updateMeshesCornerpoints(geo, num_nodes, num_features, meshes, max_num_nodes) {
+  for (let i = 0; i < max_num_nodes; i++) {
+    const mesh = meshes[i]; // Access the initialized mesh
+
+    if (i >= num_nodes) {
+      // Hide unused meshes
+      mesh.visible = false;
+      continue;
     }
-    const centers = [];
 
+    mesh.visible = true; // Make sure the mesh is visible
+    // Decode the vertices for this mesh
+    const ind = i + i * num_features;
+    const x1 = geo[ind], y1 = geo[ind + 1], z1 = geo[ind + 2];
+    const x2 = geo[ind + 3], y2 = geo[ind + 4], z2 = geo[ind + 5];
+    const x3 = geo[ind + 6], y3 = geo[ind + 7], z3 = geo[ind + 8];
+    const x4 = geo[ind + 9], y4 = geo[ind + 10], z4 = geo[ind + 11];
 
-    for (let i = 0; i < max_num_nodes; i++) {
-        if (i >= num_nodes) {
-            scene.children[i].visible = false;
-            continue;
-        } else {
-          scene.children[i].visible = true;
-        }
-        // decode all the info
-        let ind = i+i*num_features;
-        let x = geo[ind];
-        let y = geo[ind+1];
-        let z = geo[ind+2];
+    // Update the vertices array
+    const vertices = new Float32Array([
+      x1, z1, y1,
+      x2, z2, y2,
+      x3, z3, y3,
+      x1, z1, y1,
+      x3, z3, y3,
+      x4, z4, y4,
+    ]);
 
-        let plane = parseInt(Math.round(geo[ind+3]));
-        let width = geo[ind+4];
-        let height = geo[ind+5];
-        const max = 3 
-        if (plane !== 0 && height > max) {
-            height = max;
-        }
-        updateCubeRotation(scene.children[i], plane)
-        scene.children[i].position.x = x
-        scene.children[i].position.y = z
-        scene.children[i].position.z = y
-        scene.children[i].scale.x = width*2
-        scene.children[i].scale.z = height*2
-        centers.push(x, y, z);
+    // Access and update the mesh's geometry
+    const position = mesh.geometry.attributes.position.array;
+    for (let j = 0; j < vertices.length; j++) {
+      position[j] = vertices[j];
     }
 
+    // Mark the position attribute as needing an update
+    mesh.geometry.attributes.position.needsUpdate = true;
+  }
+}
 
-    const bounding = new THREE.BufferGeometry();
-    bounding.setAttribute( 'position', new THREE.Float32BufferAttribute( centers, 3 ) );
-    bounding.computeBoundingBox();
-    const points = new THREE.Points( bounding );
-    mid = getCenterPoint(points);
+function updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_nodes) {
+  for (let i = 0; i < max_num_nodes; i++) {
+    const mesh = meshes[i]; // Access the initialized mesh
+
+    if (i >= num_nodes) {
+      // Hide unused meshes
+      mesh.visible = false;
+      continue;
+    }
+
+    mesh.visible = true; // Make sure the mesh is visible
+    // Decode the vertices for this mesh
+    const ind = i + i * num_features;
+    const x1 = geo[ind], y1 = geo[ind + 1], z1 = geo[ind + 2];
+    const x2 = geo[ind + 3], y2 = geo[ind + 4], z2 = geo[ind + 5];
     
-    for (let i = 0; i < max_num_nodes; i++) {
-        let ind = i+i*6;
-        scene.children[i].position.x -= mid.x
-        scene.children[i].position.y -= mid.y
-        scene.children[i].position.z -= mid.z
+
+    // Update the vertices array
+    const vertices = new Float32Array([
+      x1, z1, y1,
+      x2, z2, y2,
+      x3, z3, y3,
+      x1, z1, y1,
+      x3, z3, y3,
+      x4, z4, y4,
+    ]);
+
+    // Access and update the mesh's geometry
+    const position = mesh.geometry.attributes.position.array;
+    for (let j = 0; j < vertices.length; j++) {
+      position[j] = vertices[j];
     }
 
+    // Mark the position attribute as needing an update
+    mesh.geometry.attributes.position.needsUpdate = true;
+  }
+}
+
+async function animate() {
+  const slidX = document.getElementById("sliderX").value
+  const slidY = document.getElementById("sliderY").value
+  const slidZ = document.getElementById("sliderZ").value
+
+  const input = new onnx.Tensor(new Float32Array([slidX,slidY,slidZ]), "float32", [1,3]);
+
+  // current_model = "cornerpoints"
+  let modelname = "results/" + current_model + ".onnx"
+  let geo;
+  let num_nodes;
+  if(current_model == "thesis"){
+    geo = await decode(input, modelname);
+    num_nodes = 21;
+    num_features = 6;
+    updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_nodes);
+  } else if(current_model == "orthogonal"){
+    [geo, num_nodes]  = await decode_with_num_nodes(input, modelname);
+    num_nodes = parseInt(num_nodes[0]);
+    num_features = 5;
+    updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_nodes);
+  } else {
+    [geo, num_nodes]  = await decode_with_num_nodes(input, modelname);
+    num_nodes = parseInt(num_nodes[0]);
+    num_features = 11;
+    updateMeshesCornerpoints(geo, num_nodes, num_features, meshes, max_num_nodes);
+  } 
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
 }
