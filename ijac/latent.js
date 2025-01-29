@@ -92,8 +92,8 @@ function animate() {
     const slidZ = document.getElementById("sliderZ").value;
 
     sphere.position.x = (slidX*scale);
-    sphere.position.z = (slidZ*scale*-1);
-    sphere.position.y = (slidY*scale);
+    sphere.position.y = (slidZ*scale);
+    sphere.position.z = (slidY*scale*-1);
 
 
     requestAnimationFrame( animate );

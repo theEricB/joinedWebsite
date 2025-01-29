@@ -91,20 +91,11 @@ selector.addEventListener("change", function() {
 const max_num_nodes = 21;
 let num_features;
 
-// Material with better shading and contrast
-const cubeMaterial = new THREE.MeshStandardMaterial({
-  color: 0xffffff, // Base color
-  roughness: 1,  // Adjust for surface roughness
-  metalness: 0,  // Non-metallic surface
-  transparent: true,
-  opacity: 0.9
-});
-
 const surfaceMaterial2 = new THREE.MeshStandardMaterial({
   color: 0xffffff,
   side: THREE.DoubleSide,
   transparent: true,
-  opacity: 0.8,
+  opacity: 0.7,
   metalness: 0.2,  // Low but present for a slight reflection
   roughness: 0.3,  // Reduce roughness for sharper highlights
 });
