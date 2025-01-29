@@ -53,17 +53,19 @@ camera.lookAt(new THREE.Vector3(0,0,0));
 
 // define Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // Ambient light
-const hemisphereLight = new THREE.HemisphereLight(0xddeeff, 0x333333, 0.4); // Sky-ground light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+const hemisphereLight = new THREE.HemisphereLight(0xddeeff, 0x333333, 1); // Sky-ground light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 4);
 directionalLight.position.set(10, 10, 10);
 directionalLight.castShadow = true;
 directionalLight.shadow.mapSize.width = 2048;
 directionalLight.shadow.mapSize.height = 2048;
-directionalLight.shadow.camera.left = -10;
-directionalLight.shadow.camera.right = 10;
-directionalLight.shadow.camera.top = 10;
-directionalLight.shadow.camera.bottom = -10;
-let mid = new THREE.Vector3(0,0,0);
+directionalLight.shadow.camera.left = -50;   // Expand shadow area
+directionalLight.shadow.camera.right = 50;
+directionalLight.shadow.camera.top = 50;
+directionalLight.shadow.camera.bottom = -50;
+directionalLight.shadow.camera.near = 1;     // Keep near plane low
+directionalLight.shadow.camera.far = 100;    // Increase far plane
+
 
 // dynamical resizing
 window.addEventListener('resize', function()
@@ -99,14 +101,14 @@ const cubeMaterial = new THREE.MeshStandardMaterial({
   opacity: 0.9
 });
 
-const material = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
-// const material = new THREE.MeshPhongMaterial({
-//   color: 0xffffff,          // White color
-//   transparent: true,        // Enable transparency
-//   opacity: 0.7,             // Slightly transparent (70% opaque)
-//   side: THREE.DoubleSide,   // Render both sides of the surface
-// });
-
+const surfaceMaterial2 = new THREE.MeshStandardMaterial({
+  color: 0xffffff,
+  side: THREE.DoubleSide,
+  transparent: true,
+  opacity: 0.8,
+  metalness: 0.2,  // Low but present for a slight reflection
+  roughness: 0.3,  // Reduce roughness for sharper highlights
+});
 
 const meshes = []; // Store references to the meshes
 for (let i = 0; i < max_num_nodes; i++) {
@@ -122,8 +124,8 @@ for (let i = 0; i < max_num_nodes; i++) {
     10, 10, 0,   // Top-right corner
   ]);
   geometry.setAttribute('position', new THREE.BufferAttribute(vertices1, 3));
-
-  const mesh = new THREE.Mesh(geometry, material);
+  geometry.computeVertexNormals();
+  const mesh = new THREE.Mesh(geometry, surfaceMaterial2);
   mesh.castShadow = true;    // Allow the mesh to cast shadows
   mesh.receiveShadow = true;
   scene.add(mesh);
@@ -173,26 +175,51 @@ function updateMeshesCornerpoints(geo, num_nodes, num_features, meshes, max_num_
 
     // Mark the position attribute as needing an update
     mesh.geometry.attributes.position.needsUpdate = true;
+    mesh.geometry.computeVertexNormals();
   }
 }
 
 function updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_nodes) {
   for (let i = 0; i < max_num_nodes; i++) {
     const mesh = meshes[i]; // Access the initialized mesh
-
     if (i >= num_nodes) {
       // Hide unused meshes
       mesh.visible = false;
       continue;
     }
-
     mesh.visible = true; // Make sure the mesh is visible
+
     // Decode the vertices for this mesh
     const ind = i + i * num_features;
-    const x1 = geo[ind], y1 = geo[ind + 1], z1 = geo[ind + 2];
-    const x2 = geo[ind + 3], y2 = geo[ind + 4], z2 = geo[ind + 5];
-    
 
+    const centre_x = geo[ind], centre_y = geo[ind + 1], centre_z = geo[ind + 2];
+    const orientation = parseInt(Math.round(geo[ind + 3]));
+    let width = geo[ind + 4], length = geo[ind + 5];
+    const max = 3;
+    if (orientation !== 0 && length > max) {
+      length = max;
+    } 
+    
+    // Compute the corner points
+    let x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4;
+    
+    if (orientation === 0) { // XY plane
+      x1 = centre_x - width; y1 = centre_y - length; z1 = centre_z;
+      x2 = centre_x + width; y2 = centre_y - length; z2 = centre_z;
+      x3 = centre_x + width; y3 = centre_y + length; z3 = centre_z;
+      x4 = centre_x - width; y4 = centre_y + length; z4 = centre_z;
+    } else if (orientation === 1) { // XZ plane
+      x1 = centre_x - width; y1 = centre_y; z1 = centre_z - length;
+      x2 = centre_x + width; y2 = centre_y; z2 = centre_z - length;
+      x3 = centre_x + width; y3 = centre_y; z3 = centre_z + length;
+      x4 = centre_x - width; y4 = centre_y; z4 = centre_z + length;
+    } else if (orientation === 2) { // YZ plane
+      x1 = centre_x; y1 = centre_y - width; z1 = centre_z - length;
+      x2 = centre_x; y2 = centre_y + width; z2 = centre_z - length;
+      x3 = centre_x; y3 = centre_y + width; z3 = centre_z + length;
+      x4 = centre_x; y4 = centre_y - width; z4 = centre_z + length;
+    }
+    
     // Update the vertices array
     const vertices = new Float32Array([
       x1, z1, y1,
@@ -202,7 +229,7 @@ function updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_no
       x3, z3, y3,
       x4, z4, y4,
     ]);
-
+    
     // Access and update the mesh's geometry
     const position = mesh.geometry.attributes.position.array;
     for (let j = 0; j < vertices.length; j++) {
@@ -211,6 +238,7 @@ function updateMeshesOrthogonal(geo, num_nodes, num_features, meshes, max_num_no
 
     // Mark the position attribute as needing an update
     mesh.geometry.attributes.position.needsUpdate = true;
+    mesh.geometry.computeVertexNormals();
   }
 }
 

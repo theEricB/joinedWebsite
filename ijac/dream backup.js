@@ -69,8 +69,8 @@ for (let i = 0; i < 21; i++) {
 }
 
 
-// const axesHelper = new THREE.AxesHelper( 5 );
-// scene.add( axesHelper );  
+const axesHelper = new THREE.AxesHelper( 5 );
+scene.add( axesHelper );  
 
 
 // Lights
@@ -239,6 +239,7 @@ async function animate() {
         }
         // decode all the info
         let ind = i+i*num_features;
+        
         let x = geo[ind];
         let y = geo[ind+1];
         let z = geo[ind+2];
