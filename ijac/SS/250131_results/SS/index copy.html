@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>dream</title>
+        <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+        <script type="importmap">
+            {
+            "imports": {
+                "three": "https://unpkg.com/three@v0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.160.0/examples/jsm/"
+            }
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <script src="dream backup.js" type="module"></script>
+        <script src="latent.js" type="module"></script>
+
+	</head>
+	
+
+    <body>
+        <div id="main">
+          <div id="controls">
+            <div class="containers">
+              <!-- <div>
+                <input type="range" id="sliderCountElements" class="slider" min="1" max="20" value="10" step="1">
+                <span id="countElements"></span>
+              </div> -->
+              <div>
+                  <input type="range" id="sliderX" class="slider" min="0" max="1" value="0" step="0.005">
+                  <span id="valueX"></span>
+                </div>
+                <div>
+                  <input type="range" id="sliderZ" class="slider" min="0" max="1" value="0" step="0.005">
+                  <span id="valueZ"></span>
+                </div>
+                <div>
+                  <input type="range" id="sliderY" class="slider" min="0" max="1" value="0" step="0.005">
+                  <span id="valueY"></span>
+                </div>
+            </div>
+            <div class="containers">
+              <select name="models" id="modelSelector">
+                <option value="thesis">previous research and dataset</option>
+                <option value="orthogonal">orthogonal surfaces</option>
+                <!-- <option value="zrotation">rotation in Z</option> -->
+                <option value="cornerpoints">corner points</option>
+              </select>
+              <button id="fullscreen">fullscreen</button>
+            </div>
+            <div class="containers">
+              <pre id="info">Loading...</pre>
+            </div>
+          </div>
+
+
+            <div style="display: flex;">
+                <div id="latentSpace"></div>
+                <div id="dream"></div>
+            </div>
+        </div>
+
+        
+
+        <script>
+            var elem = document.getElementById("main");
+            var button = document.getElementById("fullscreen");
+            function openFullscreen() {
+              if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+              } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+              }
+            }
+            button.addEventListener("click", openFullscreen);
+
+            const output = document.getElementById('info');
+
+            
+            let selector = document.getElementById("modelSelector");
+            let current_model = selector.value
+            let infoDir = "results/" + current_model + ".txt"
+
+            selector.addEventListener("change", function() {
+              if(selector.value != current_model)
+              {
+                current_model = selector.value
+                infoDir = "results/" + current_model + ".txt"
+                displayInfo(infoDir)
+              }
+            });
+            
+
+            // Fetch the file automatically when the page loads
+            window.addEventListener('DOMContentLoaded', () => {
+              displayInfo(infoDir)
+            });
+
+            function displayInfo(location){
+              fetch(location) // Replace 'example.txt' with your file name
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                  }
+                  return response.text();
+                })
+                .then(text => {
+                  output.textContent = text; // Display the file content
+                })
+                .catch(error => {
+                  output.textContent = `Could not load file: ${error.message}`;
+                });
+            };
+
+        </script>
+	</body>
+</html>

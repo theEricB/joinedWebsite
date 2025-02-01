@@ -1,0 +1,6 @@
+epochs: 400
+learning rate: 0.001
+optimiser: adam
+loss function: mean squared error
+activation function: ReLu
+train, test, validate: 80%, 10%, 10%

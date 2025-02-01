@@ -1,0 +1,7 @@
+dataset size: 400
+max num nodes: 189
+epochs: 100
+learning rate: 0.001
+weight decay: 0.001
+encoder dimensions: 6, 64, 64, 64, 3
+decoder dimensions: 3, 64, 128, 512, 1134
