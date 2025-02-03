@@ -1,9 +1,9 @@
-dataset size: 1000
-max num nodes: 29
-epochs: 1000
+dataset size: 400
+max num nodes: 22
+epochs: 400
 learning rate: 0.001
 weight decay: 0.001
-encoder dimensions: 6, 128, 128, 128, 3
-decoder dimensions: 3, 64, 128, 512, 174
-final loss training: 3.2238200047053396
+encoder dimensions: 6, 64, 64, 64, 3
+decoder dimensions: 3, 64, 128, 512, 132
+final loss training: 2.2671236982336267
 final loss validate: 0
