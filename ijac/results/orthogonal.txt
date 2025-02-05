@@ -3,7 +3,7 @@ max num nodes: 22
 epochs: 400
 learning rate: 0.001
 weight decay: 0.001
-encoder dimensions: 6, 64, 64, 64, 3
-decoder dimensions: 3, 64, 128, 512, 132
-final loss training: 2.2671236982336267
+encoder dimensions: 6, 512, 512, 512, 3
+decoder dimensions: 3, 512, 512, 512, 132
+final loss training: 2.321165372757241
 final loss validate: 0
