@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/erik/thearchitectsbrain/static/css/main.e6c13ad2.css",
+    "main.js": "/erik/thearchitectsbrain/static/js/main.879d41e9.js",
+    "static/js/453.a4050e40.chunk.js": "/erik/thearchitectsbrain/static/js/453.a4050e40.chunk.js",
+    "index.html": "/erik/thearchitectsbrain/index.html",
+    "main.e6c13ad2.css.map": "/erik/thearchitectsbrain/static/css/main.e6c13ad2.css.map",
+    "main.879d41e9.js.map": "/erik/thearchitectsbrain/static/js/main.879d41e9.js.map",
+    "453.a4050e40.chunk.js.map": "/erik/thearchitectsbrain/static/js/453.a4050e40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.879d41e9.js"
+  ]
+}
