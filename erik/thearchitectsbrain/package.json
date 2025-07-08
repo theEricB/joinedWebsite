@@ -1,5 +1,6 @@
 {
   "name": "thearchitectsbrain",
+  "homepage": "/erik/thearchitectsbrain/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
