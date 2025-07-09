@@ -2,976 +2,127 @@
   {
     "id": 1,
     "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 1 of the RIBA Plan of Work focuses on which primary activity or outcome?",
+    "source": "RIBA Plan of Work 2020, Stage 0",
+    "question": "What is the primary objective of Stage 0: Strategic Definition in the RIBA Plan of Work?",
     "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
+      "To start detailed technical design drawings",
+      "To prepare planning applications",
+      "To assess the client\u2019s business case and strategic brief",
+      "To begin construction documentation"
     ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
+    "answer": "To assess the client\u2019s business case and strategic brief",
+    "explanation": "Stage 0 is about understanding the project\u2019s feasibility before design begins."
   },
   {
     "id": 2,
     "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 2 of the RIBA Plan of Work focuses on which primary activity or outcome?",
+    "source": "RIBA Plan of Work 2020, Stage 2",
+    "question": "At which stage is the architectural concept typically developed?",
     "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
+      "Stage 0",
+      "Stage 1",
+      "Stage 2",
+      "Stage 3"
     ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
+    "answer": "Stage 2",
+    "explanation": "Stage 2 is Concept Design, where initial design ideas take shape."
   },
   {
     "id": 3,
     "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 3 of the RIBA Plan of Work focuses on which primary activity or outcome?",
+    "source": "RIBA Plan of Work 2020, Stage 3",
+    "question": "What is the main output of Stage 3: Spatial Coordination?",
     "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
+      "Outline planning consent",
+      "Detailed design specifications",
+      "Coordinated design with input from all disciplines",
+      "Site inspection reports"
     ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 4,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 4 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 5,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 5 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 6,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 6 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 7,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 7 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 8,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 0 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 9,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 1 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 10,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 2 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 11,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 3 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 12,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 4 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 13,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 5 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 14,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 6 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 15,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 7 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 16,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 0 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 17,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 1 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 18,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 2 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 19,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 3 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 20,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 4 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 21,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 5 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 22,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 6 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 23,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 7 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 24,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 0 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
-  },
-  {
-    "id": 25,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020",
-    "question": "Stage 1 of the RIBA Plan of Work focuses on which primary activity or outcome?",
-    "options": [
-      "Concept Design",
-      "Technical Design",
-      "Strategic Definition",
-      "Handover"
-    ],
-    "explanation": "Each stage of the RIBA Plan of Work has a clearly defined strategic focus. For example, Stage 0 is Strategic Definition, while Stage 6 is Handover."
+    "answer": "Coordinated design with input from all disciplines",
+    "explanation": "Stage 3 ensures design coordination across disciplines."
   },
   {
     "id": 26,
     "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
+    "source": "RIBA PSC 2020 Clause 5.1",
+    "question": "What must an architect do if asked to perform services beyond those listed in their Schedule of Services?",
     "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
+      "Refuse to carry out the service",
+      "Carry out the service without additional charge",
+      "Agree the additional service and its cost with the client before proceeding",
+      "Complete the service and bill for it later"
     ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
+    "answer": "Agree the additional service and its cost with the client before proceeding",
+    "explanation": "Clause 5.1 of the RIBA PSC requires mutual agreement before extra services are rendered."
   },
   {
     "id": 27,
     "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
+    "source": "RIBA PSC 2020 Clause 9",
+    "question": "Which clause in the RIBA PSC deals with liability and limitation of claims?",
     "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
+      "Clause 4.2",
+      "Clause 9",
+      "Clause 7.1",
+      "Clause 11"
     ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
+    "answer": "Clause 9",
+    "explanation": "Clause 9 outlines the architect\u2019s liability and how it may be capped or limited."
   },
   {
     "id": 28,
     "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
+    "source": "RIBA PSC 2020 Clause 6.1",
+    "question": "When is the architect entitled to suspend performance of their services?",
     "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
+      "If a client issues a verbal instruction",
+      "If payment is late by more than 14 days",
+      "If another consultant leaves the team",
+      "If the site becomes inaccessible"
     ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 29,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 30,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 31,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 32,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 33,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 34,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 35,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 36,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 37,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 38,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 39,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 40,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 41,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 42,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 43,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 44,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 45,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 46,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 47,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 48,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 49,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
-  },
-  {
-    "id": 50,
-    "category": "contracts/appointment",
-    "source": "RIBA Professional Services Contract 2020 (2024 amendment)",
-    "question": "What is the appropriate response if the client requests additional services not included in the basic fee according to the RIBA PSC?",
-    "options": [
-      "Provide the services for free",
-      "Refuse to provide any extra services",
-      "Agree and document additional fees before proceeding",
-      "Begin the services and negotiate fees later"
-    ],
-    "explanation": "Additional services must be agreed with the client and are subject to additional fees as set out in the PSC Schedule of Services."
+    "answer": "If payment is late by more than 14 days",
+    "explanation": "Clause 6.1 allows suspension for non-payment beyond 14 days."
   },
   {
     "id": 51,
     "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
+    "source": "Building Act 1984 Section 35",
+    "question": "What action may be taken under the Building Act 1984 if building work contravenes regulations?",
     "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
+      "Issue a Certificate of Lawfulness",
+      "Issue a Demolition Notice",
+      "Initiate prosecution and require rectification",
+      "Refer to the Planning Inspectorate"
     ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
+    "answer": "Initiate prosecution and require rectification",
+    "explanation": "Section 35 provides for legal action including fines and remedial orders."
   },
   {
     "id": 52,
     "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
+    "source": "Building Act 1984 Section 36",
+    "question": "Under Section 36, what may a local authority require if unauthorized work is done?",
     "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
+      "Immediate occupation",
+      "Payment of double council tax",
+      "Removal or alteration of the work",
+      "Notification of the fire authority"
     ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
+    "answer": "Removal or alteration of the work",
+    "explanation": "Section 36 empowers LAs to require the removal or modification of unlawful work."
   },
   {
     "id": 53,
     "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
+    "source": "Building Act 1984 Section 47",
+    "question": "What is a \u2018regularisation certificate\u2019 under the Building Act?",
     "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
+      "A planning certificate",
+      "A certificate confirming lawful unauthorised work after inspection",
+      "A fire safety inspection notice",
+      "A developer guarantee"
     ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 54,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 55,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 56,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 57,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 58,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 59,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 60,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 61,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 62,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 63,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 64,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 65,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 66,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 67,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 68,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 69,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 70,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 71,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 72,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 73,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 74,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
-  },
-  {
-    "id": 75,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984",
-    "question": "What is the consequence under the Building Act 1984 if a person occupies a building in contravention of a notice issued by a building control authority?",
-    "options": [
-      "They may receive a certificate of completion",
-      "They may be fined and prosecuted",
-      "They may request a site visit",
-      "They may file for planning approval"
-    ],
-    "explanation": "Occupying a building against a notice can result in prosecution and fines, as described in the Building Act 1984 Section 25."
+    "answer": "A certificate confirming lawful unauthorised work after inspection",
+    "explanation": "Section 47 allows retrospective approval for unauthorised work if found compliant."
   }
 ]
