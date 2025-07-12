@@ -1,128 +1,702 @@
 [
   {
     "id": 1,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020, Stage 0",
-    "question": "What is the primary objective of Stage 0: Strategic Definition in the RIBA Plan of Work?",
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What is the definition of 'building work' under Regulation 3?",
     "options": [
-      "To start detailed technical design drawings",
-      "To prepare planning applications",
-      "To assess the client\u2019s business case and strategic brief",
-      "To begin construction documentation"
+      "Only new construction",
+      "Erection, extension, material alteration, underpinning, thermal element replacement",
+      "Interior decoration and minor repairs",
+      "Temporary structures under 30m²"
     ],
-    "answer": "To assess the client\u2019s business case and strategic brief",
-    "explanation": "Stage 0 is about understanding the project\u2019s feasibility before design begins."
+    "answer": "Erection, extension, material alteration, underpinning, thermal element replacement",
+    "explanation": "Regulation 3(1) defines building work broadly to include erection, extensions, material alterations, provision of controlled services/fittings, cavity wall insulation, underpinning, and work related to energy status changes."
   },
   {
     "id": 2,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020, Stage 2",
-    "question": "At which stage is the architectural concept typically developed?",
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "A client wants to convert an old warehouse into residential flats. What regulation governs this change?",
     "options": [
-      "Stage 0",
-      "Stage 1",
-      "Stage 2",
-      "Stage 3"
+      "Regulation 4 (Requirements for building work)",
+      "Regulation 5 (Material change of use)",
+      "Regulation 9 (Exempt buildings)",
+      "Regulation 22 (Change to energy status)"
     ],
-    "answer": "Stage 2",
-    "explanation": "Stage 2 is Concept Design, where initial design ideas take shape."
+    "answer": "Regulation 5 (Material change of use)",
+    "explanation": "Regulation 5 specifically addresses material changes of use, including conversion to dwellings which triggers additional requirements."
   },
   {
     "id": 3,
-    "category": "practice/conduct/ethics",
-    "source": "RIBA Plan of Work 2020, Stage 3",
-    "question": "What is the main output of Stage 3: Spatial Coordination?",
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When must full plans be deposited rather than a building notice?",
     "options": [
-      "Outline planning consent",
-      "Detailed design specifications",
-      "Coordinated design with input from all disciplines",
-      "Site inspection reports"
+      "For all commercial projects",
+      "When work involves electrical installations",
+      "For buildings subject to the Fire Safety Order 2005 or fronting private streets",
+      "Only for projects over £100,000"
     ],
-    "answer": "Coordinated design with input from all disciplines",
-    "explanation": "Stage 3 ensures design coordination across disciplines."
+    "answer": "For buildings subject to the Fire Safety Order 2005 or fronting private streets",
+    "explanation": "Regulation 12(3)-(5) requires full plans for buildings subject to fire safety regulations or those fronting private streets."
+  },
+  {
+    "id": 4,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "During a renovation, you discover thermal elements don't meet Part L standards. What does Regulation 23 require?",
+    "options": [
+      "Only new elements must comply",
+      "The whole thermal element must be upgraded",
+      "No action needed if not a material alteration",
+      "Apply for relaxation from local authority"
+    ],
+    "answer": "The whole thermal element must be upgraded",
+    "explanation": "Regulation 23(1) mandates that renovation work must ensure the entire thermal element complies with Part L requirements."
+  },
+  {
+    "id": 5,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "Which is NOT exempt under Schedule 2?",
+    "options": [
+      "Greenhouse under 30m²",
+      "Temporary building (28 days)",
+      "Detached office under 30m²",
+      "New 3-bedroom detached house"
+    ],
+    "answer": "New 3-bedroom detached house",
+    "explanation": "Class 6 exemptions only cover small detached buildings under 30m² without sleeping accommodation - dwellings are not exempt."
+  },
+  {
+    "id": 6,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What is the maximum wholesome water consumption for new dwellings under Regulation 36?",
+    "options": [
+      "100 litres/person/day",
+      "125 litres/person/day",
+      "150 litres/person/day",
+      "No specific limit"
+    ],
+    "answer": "125 litres/person/day",
+    "explanation": "Regulation 36 sets a limit of 125 litres per person per day calculated using the Water Efficiency Calculator methodology."
+  },
+  {
+    "id": 7,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When must pressure testing be carried out under Regulation 43?",
+    "options": [
+      "All new commercial buildings",
+      "Extensions over 100m²",
+      "Erection of buildings where Part L imposes requirements",
+      "Only high-rise residential"
+    ],
+    "answer": "Erection of buildings where Part L imposes requirements",
+    "explanation": "Regulation 43 applies to new buildings requiring compliance with Part L to ensure air tightness standards are met."
+  },
+  {
+    "id": 8,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "You discover unauthorized building work completed in 2015. What procedure applies?",
+    "options": [
+      "Apply for regularisation certificate under Regulation 18",
+      "Submit retrospective building notice",
+      "Demolish and rebuild",
+      "No action possible after 6 months"
+    ],
+    "answer": "Apply for regularisation certificate under Regulation 18",
+    "explanation": "Regulation 18 provides a process for regularizing unauthorized work carried out since 1985."
+  },
+  {
+    "id": 9,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "Which requirement focuses on disproportionate collapse?",
+    "options": [
+      "Part A3",
+      "Part B3",
+      "Part C2",
+      "Part K1"
+    ],
+    "answer": "Part A3",
+    "explanation": "Part A3 requires buildings to resist disproportionate collapse in accidents."
+  },
+  {
+    "id": 10,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When must energy performance certificates be provided?",
+    "options": [
+      "Only for new public buildings",
+      "Within 5 days of completing new builds or major modifications",
+      "At planning application stage",
+      "When selling any property"
+    ],
+    "answer": "Within 5 days of completing new builds or major modifications",
+    "explanation": "Regulation 29(3) requires EPCs within 5 days of completion for new builds or modifications changing separate units."
+  },
+  {
+    "id": 11,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What does Regulation 6 require when converting an office to a hotel?",
+    "options": [
+      "Only fire safety upgrades",
+      "Compliance with Part M access requirements",
+      "Full upgrade to current building standards",
+      "Specific requirements including fire safety, drainage, and access"
+    ],
+    "answer": "Specific requirements including fire safety, drainage, and access",
+    "explanation": "Regulation 6 mandates specific upgrades for material changes of use, including fire safety (Part B), sanitation (Part G), drainage (Part H), and access (Part M)."
+  },
+  {
+    "id": 12,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When installing cavity wall insulation, what must you consider under Part D?",
+    "options": [
+      "Thermal performance only",
+      "Prevention of toxic fume permeation",
+      "Structural integrity of walls",
+      "Moisture resistance"
+    ],
+    "answer": "Prevention of toxic fume permeation",
+    "explanation": "Part D requires precautions to prevent toxic fumes from insulation materials permeating occupied spaces."
+  },
+  {
+    "id": 13,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "A contractor proposes changing specified materials without notification. What does Regulation 7 require?",
+    "options": [
+      "Accept if cheaper",
+      "Use only if 'workmanlike'",
+      "Ensure materials remain adequate and proper",
+      "Requires architect's approval only"
+    ],
+    "answer": "Ensure materials remain adequate and proper",
+    "explanation": "Regulation 7 mandates adequate/proper materials appropriate for their use, regardless of substitutions."
+  },
+  {
+    "id": 14,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What triggers the requirement for consequential improvements under Regulation 28?",
+    "options": [
+      "Any renovation over £10,000",
+      "Extensions or increased service capacity in buildings >1000m²",
+      "Change of use applications",
+      "New build projects"
+    ],
+    "answer": "Extensions or increased service capacity in buildings >1000m²",
+    "explanation": "Regulation 28 requires energy efficiency improvements when extending or upgrading services in large existing buildings."
+  },
+  {
+    "id": 15,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "Which document must accompany an EPC under Regulation 29?",
+    "options": [
+      "Building warranty certificate",
+      "Recommendation report for energy improvements",
+      "Construction drawings",
+      "Maintenance manual"
+    ],
+    "answer": "Recommendation report for energy improvements",
+    "explanation": "Regulation 29(5) requires EPCs to be accompanied by recommendation reports for energy performance improvements."
+  },
+  {
+    "id": 16,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "During construction, the client requests changes that would breach Part B fire safety. What should you do?",
+    "options": [
+      "Accommodate if client signs waiver",
+      "Refuse and explain legal requirements",
+      "Implement but increase insurance",
+      "Only warn verbally"
+    ],
+    "answer": "Refuse and explain legal requirements",
+    "explanation": "Regulation 4 requires compliance with Schedule 1 - architects must not facilitate breaches even if requested."
+  },
+  {
+    "id": 17,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What does Part K2 require for a balcony 2m above ground level?",
+    "options": [
+      "Non-slip surface only",
+      "Barriers to prevent falling",
+      "Emergency escape route",
+      "Weather protection"
+    ],
+    "answer": "Barriers to prevent falling",
+    "explanation": "Part K2 mandates barriers where falls from height could occur, including balconies."
+  },
+  {
+    "id": 18,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When must sound insulation testing be carried out?",
+    "options": [
+      "For all new dwellings",
+      "Only when requested by client",
+      "When required by Part E for new builds",
+      "Only for flats"
+    ],
+    "answer": "When required by Part E for new builds",
+    "explanation": "Regulation 41 mandates testing where Part E imposes requirements, typically new residential builds."
+  },
+  {
+    "id": 19,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "A self-certifying contractor installs non-compliant electrical work. Who is responsible?",
+    "options": [
+      "Only the contractor",
+      "Architect who specified",
+      "Both architect and contractor",
+      "Local authority"
+    ],
+    "answer": "Both architect and contractor",
+    "explanation": "Regulation 20 holds both parties responsible - architects must ensure oversight even with self-certification."
+  },
+  {
+    "id": 20,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What must be provided under Part M for a new shop extension?",
+    "options": [
+      "WC accessible to staff only",
+      "Suitable independent access where practicable",
+      "Ramped access only if over 100m²",
+      "No specific requirements"
+    ],
+    "answer": "Suitable independent access where practicable",
+    "explanation": "Part M2 requires reasonable access provision, including independent access where feasible."
+  },
+  {
+    "id": 21,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "Which work is exempt from notification under Schedule 4?",
+    "options": [
+      "New bathroom installation",
+      "Replacing a sink in kitchen",
+      "Installing new electrical circuit",
+      "Cavity wall insulation"
+    ],
+    "answer": "Replacing a sink in kitchen",
+    "explanation": "Schedule 4 exempts minor works like replacing sanitary fittings without drainage alterations."
+  },
+  {
+    "id": 22,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "You discover non-compliant work after completion. What does Regulation 17 require?",
+    "options": [
+      "Issue completion certificate regardless",
+      "Only report if safety issue",
+      "Withhold certificate until compliant",
+      "Retroactively approve minor issues"
+    ],
+    "answer": "Withhold certificate until compliant",
+    "explanation": "Regulation 17(2) prohibits completion certificates unless authorities confirm compliance."
+  },
+  {
+    "id": 23,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "What does Regulation 45 allow authorities to do?",
+    "options": [
+      "Impose unlimited fines",
+      "Test building work for compliance",
+      "Order immediate demolition",
+      "Revoke planning permissions"
+    ],
+    "answer": "Test building work for compliance",
+    "explanation": "Regulation 45 grants authorities testing rights to verify compliance with regulations."
+  },
+  {
+    "id": 24,
+    "category": "core legal/statutory",
+    "source": "Building Regulations 2010",
+    "question": "When must mechanical ventilation be commissioned?",
+    "options": [
+      "Only in commercial kitchens",
+      "When required by Part F",
+      "For all new builds",
+      "When specified in contract"
+    ],
+    "answer": "When required by Part F",
+    "explanation": "Regulation 44 requires commissioning of fixed systems under Part F for adequate ventilation."
+  },
+  {
+    "id": 25,
+    "category": "practice/conduct/ethics",
+    "source": "Building Regulations 2010",
+    "question": "A 2012 extension lacks completion certificate. What transitional provision applies?",
+    "options": [
+      "2000 Regulations still apply",
+      "Immediate enforcement action",
+      "2010 Regulations fully apply",
+      "Apply for regularisation under 2010 rules"
+    ],
+    "answer": "2000 Regulations still apply",
+    "explanation": "Regulation 52 states pre-2010 notices follow old regulations if work started before Oct 2011."
   },
   {
     "id": 26,
-    "category": "contracts/appointment",
-    "source": "RIBA PSC 2020 Clause 5.1",
-    "question": "What must an architect do if asked to perform services beyond those listed in their Schedule of Services?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What must you do under Standard 1 when a conflict of interest arises?",
     "options": [
-      "Refuse to carry out the service",
-      "Carry out the service without additional charge",
-      "Agree the additional service and its cost with the client before proceeding",
-      "Complete the service and bill for it later"
+      "Continue working unless client complains",
+      "Disclose it in writing and manage to parties' satisfaction",
+      "Only notify ARB if serious",
+      "Resign immediately"
     ],
-    "answer": "Agree the additional service and its cost with the client before proceeding",
-    "explanation": "Clause 5.1 of the RIBA PSC requires mutual agreement before extra services are rendered."
+    "answer": "Disclose it in writing and manage to parties' satisfaction",
+    "explanation": "Standard 1.3 requires written disclosure and management of conflicts to affected parties' satisfaction."
   },
   {
     "id": 27,
-    "category": "contracts/appointment",
-    "source": "RIBA PSC 2020 Clause 9",
-    "question": "Which clause in the RIBA PSC deals with liability and limitation of claims?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "A client complains about project delays. What does Standard 10 require?",
     "options": [
-      "Clause 4.2",
-      "Clause 9",
-      "Clause 7.1",
-      "Clause 11"
+      "Respond fully within 60 days",
+      "Acknowledge within 10 days, respond within 30 days",
+      "Refer immediately to arbitration",
+      "Only respond if complaint is in writing"
     ],
-    "answer": "Clause 9",
-    "explanation": "Clause 9 outlines the architect\u2019s liability and how it may be capped or limited."
+    "answer": "Acknowledge within 10 days, respond within 30 days",
+    "explanation": "Standard 10.2 sets specific timelines: 10-day acknowledgement and 30-day substantive response."
   },
   {
     "id": 28,
-    "category": "contracts/appointment",
-    "source": "RIBA PSC 2020 Clause 6.1",
-    "question": "When is the architect entitled to suspend performance of their services?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 7 require regarding client money?",
     "options": [
-      "If a client issues a verbal instruction",
-      "If payment is late by more than 14 days",
-      "If another consultant leaves the team",
-      "If the site becomes inaccessible"
+      "Keep in business account with records",
+      "Use interest for administrative costs",
+      "Keep in designated interest-bearing client account",
+      "No specific requirements"
     ],
-    "answer": "If payment is late by more than 14 days",
-    "explanation": "Clause 6.1 allows suspension for non-payment beyond 14 days."
+    "answer": "Keep in designated interest-bearing client account",
+    "explanation": "Standard 7.2 mandates separate client accounts for client money."
   },
   {
-    "id": 51,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984 Section 35",
-    "question": "What action may be taken under the Building Act 1984 if building work contravenes regulations?",
+    "id": 29,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "You're asked to work outside your expertise. What does Standard 2 require?",
     "options": [
-      "Issue a Certificate of Lawfulness",
-      "Issue a Demolition Notice",
-      "Initiate prosecution and require rectification",
-      "Refer to the Planning Inspectorate"
+      "Accept if fee is sufficient",
+      "Only accept with competent supervision",
+      "Decline unless competent to undertake",
+      "Subcontract without disclosure"
     ],
-    "answer": "Initiate prosecution and require rectification",
-    "explanation": "Section 35 provides for legal action including fines and remedial orders."
+    "answer": "Decline unless competent to undertake",
+    "explanation": "Standard 2.1 requires undertaking only work you're competent to perform."
   },
   {
-    "id": 52,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984 Section 36",
-    "question": "Under Section 36, what may a local authority require if unauthorized work is done?",
+    "id": 30,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What must be included in written agreements under Standard 4?",
     "options": [
-      "Immediate occupation",
-      "Payment of double council tax",
-      "Removal or alteration of the work",
-      "Notification of the fire authority"
+      "Only scope and fee",
+      "Parties, scope, fee, responsibilities, termination, insurance, complaints procedure",
+      "Detailed construction specifications",
+      "Personal guarantees"
     ],
-    "answer": "Removal or alteration of the work",
-    "explanation": "Section 36 empowers LAs to require the removal or modification of unlawful work."
+    "answer": "Parties, scope, fee, responsibilities, termination, insurance, complaints procedure",
+    "explanation": "Standard 4.4 lists required elements for client agreements."
   },
   {
-    "id": 53,
-    "category": "core legal/statuatory",
-    "source": "Building Act 1984 Section 47",
-    "question": "What is a \u2018regularisation certificate\u2019 under the Building Act?",
+    "id": 31,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "When must you notify ARB about financial orders?",
     "options": [
-      "A planning certificate",
-      "A certificate confirming lawful unauthorised work after inspection",
-      "A fire safety inspection notice",
-      "A developer guarantee"
+      "Only if related to practice",
+      "Within 28 days of bankruptcy order",
+      "Annually through renewal",
+      "Voluntary disclosure only"
     ],
-    "answer": "A certificate confirming lawful unauthorised work after inspection",
-    "explanation": "Section 47 allows retrospective approval for unauthorised work if found compliant."
+    "answer": "Within 28 days of bankruptcy order",
+    "explanation": "Standard 9.2 requires notification within 28 days of various financial orders including bankruptcy."
+  },
+  {
+    "id": 32,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 12 require regarding discrimination?",
+    "options": [
+      "Comply only with Equality Act",
+      "Treat everyone fairly and comply with legal obligations",
+      "Avoid only obvious discrimination",
+      "No specific requirements"
+    ],
+    "answer": "Treat everyone fairly and comply with legal obligations",
+    "explanation": "Standard 12.1 mandates fair treatment and compliance with discrimination laws."
+  },
+  {
+    "id": 33,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "You witness another architect falsifying documents. What does Standard 9 require?",
+    "options": [
+      "Confront them privately",
+      "Report to ARB if serious breach",
+      "No obligation to report",
+      "Only report if client affected"
+    ],
+    "answer": "Report to ARB if serious breach",
+    "explanation": "Standard 9.3 requires reporting significant breaches of standards to ARB."
+  },
+  {
+    "id": 34,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What insurance must architects maintain?",
+    "options": [
+      "Public liability only",
+      "Adequate professional indemnity insurance",
+      "Employer's liability if applicable",
+      "No mandatory insurance"
+    ],
+    "answer": "Adequate professional indemnity insurance",
+    "explanation": "Standard 8.1 mandates appropriate PII cover for all professional work."
+  },
+  {
+    "id": 35,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "When can you refuse to return client papers?",
+    "options": [
+      "If fees are outstanding",
+      "Only if legally entitled to retain",
+      "When client is unreasonable",
+      "Never - must always return"
+    ],
+    "answer": "Only if legally entitled to retain",
+    "explanation": "Standard 4.6 requires returning client papers unless legal exceptions apply."
+  },
+  {
+    "id": 36,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What must you do before undertaking work abroad?",
+    "options": [
+      "Only follow UK standards",
+      "Comply with local codes if registered there",
+      "Notify ARB of overseas projects",
+      "No special requirements"
+    ],
+    "answer": "Comply with local codes if registered there",
+    "explanation": "Standard 12 requires compliance with local professional standards where they exist and you're registered."
+  },
+  {
+    "id": 37,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "How should you promote services under Standard 3?",
+    "options": [
+      "Guarantee lowest fees",
+      "Claim superiority over competitors",
+      "Truthful and responsible manner",
+      "Focus on aesthetic merits only"
+    ],
+    "answer": "Truthful and responsible manner",
+    "explanation": "Standard 3.1 mandates honest promotion without misleading claims."
+  },
+  {
+    "id": 38,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 4.3 require for client records?",
+    "options": [
+      "Keep for 6 years minimum",
+      "Adequate security for paper/electronic records",
+      "Store offsite after project completion",
+      "Destroy confidential data immediately"
+    ],
+    "answer": "Adequate security for paper/electronic records",
+    "explanation": "Standard 4.3 requires safeguarding client records with proper security measures."
+  },
+  {
+    "id": 39,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "When can you disclose client information without consent?",
+    "options": [
+      "When legally required",
+      "To colleagues for convenience",
+      "For marketing purposes",
+      "Never under any circumstances"
+    ],
+    "answer": "When legally required",
+    "explanation": "Standard 4.3 permits disclosure only when legally obligated or with client consent."
+  },
+  {
+    "id": 40,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 6.4 require when acting between parties?",
+    "options": [
+      "Prioritize paying client",
+      "Exercise impartial professional judgment",
+      "Avoid mediation roles",
+      "Disclose confidential information"
+    ],
+    "answer": "Exercise impartial professional judgment",
+    "explanation": "Standard 6.4 mandates impartiality when advising multiple parties."
+  },
+  {
+    "id": 41,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "A contractor offers commission for referrals. What must you do?",
+    "options": [
+      "Accept if disclosed later",
+      "Disclose arrangement to client at outset",
+      "Only accept small gifts",
+      "No disclosure needed"
+    ],
+    "answer": "Disclose arrangement to client at outset",
+    "explanation": "Standard 1.4 requires upfront disclosure of referral payments/inducements."
+  },
+  {
+    "id": 42,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct, Standard 8",
+    "question": "What does 'run-off cover' refer to in Standard 8 of the ARB Code of Conduct?",
+    "options": [
+      "Insurance that covers work done by contractors",
+      "Insurance covering ongoing projects only",
+      "Insurance covering claims made after a practice closes",
+      "Cover for equipment losses in office relocation"
+    ],
+    "answer": "Insurance covering claims made after a practice closes",
+    "explanation": "Standard 8.1 of the ARB Code requires architects to maintain adequate professional indemnity insurance, including run-off cover to protect against claims arising after a practice ceases trading."
+  },
+  {
+    "id": 43,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "When must you report your own misconduct to ARB?",
+    "options": [
+      "Only if convicted in court",
+      "When conduct could discredit profession",
+      "Never - wait for complaint",
+      "Only for criminal offenses"
+    ],
+    "answer": "When conduct could discredit profession",
+    "explanation": "Standard 9.2 requires self-reporting within 28 days if conduct could damage profession's reputation."
+  },
+  {
+    "id": 44,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 5 require regarding environmental impact?",
+    "options": [
+      "Maximize energy consumption",
+      "Advise on conservation where appropriate",
+      "Prioritize aesthetics over sustainability",
+      "No specific environmental duties"
+    ],
+    "answer": "Advise on conservation where appropriate",
+    "explanation": "Standard 5.1 requires advising on environmental quality enhancement where suitable."
+  },
+  {
+    "id": 45,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "How long must complaints records be kept?",
+    "options": [
+      "1 year after resolution",
+      "3 years minimum",
+      "6 years minimum",
+      "No specified period"
+    ],
+    "answer": "6 years minimum",
+    "explanation": "Implied by Standard 10 - should align with limitation periods for potential disputes."
+  },
+  {
+    "id": 46,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What must you provide when ARB investigates a complaint?",
+    "options": [
+      "Only public documents",
+      "Full cooperation within specified timescales",
+      "Information only through solicitor",
+      "Relevant excerpts of records"
+    ],
+    "answer": "Full cooperation within specified timescales",
+    "explanation": "Standard 11.1 requires prompt cooperation with ARB investigations."
+  },
+  {
+    "id": 47,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Can you enter agreements preventing clients from reporting to ARB?",
+    "options": [
+      "Yes with mutual consent",
+      "Only for commercial projects",
+      "Never - Standard 9.5 prohibits",
+      "If settlement includes confidentiality"
+    ],
+    "answer": "Never - Standard 9.5 prohibits",
+    "explanation": "Standard 9.5 expressly forbids agreements that prevent reporting Code breaches."
+  },
+  {
+    "id": 48,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does 'fitness to practise' refer to in the Introduction?",
+    "options": [
+      "Physical ability to visit sites",
+      "Financial solvency of practice",
+      "Suitability to remain registered architect",
+      "Technical design skills"
+    ],
+    "answer": "Suitability to remain registered architect",
+    "explanation": "Introduction states conduct affecting fitness includes private life matters impacting professional standing."
+  },
+  {
+    "id": 49,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "When can you decline to return client materials?",
+    "options": [
+      "Always retain copyright materials",
+      "Only if legally entitled to withhold",
+      "When unpaid invoices exceed £5,000",
+      "For sensitive project information"
+    ],
+    "answer": "Only if legally entitled to withhold",
+    "explanation": "Standard 4.6 requires returning client property unless legal rights allow retention."
+  },
+  {
+    "id": 50,
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "What does Standard 2.4 require regarding knowledge?",
+    "options": [
+      "Master all construction methods",
+      "Keep knowledge/skills up-to-date",
+      "Specialize in single building type",
+      "Rely on technical consultants"
+    ],
+    "answer": "Keep knowledge/skills up-to-date",
+    "explanation": "Standard 2.4 mandates maintaining current knowledge relevant to professional work."
   }
 ]
