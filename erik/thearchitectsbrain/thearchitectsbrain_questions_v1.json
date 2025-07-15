@@ -1,702 +1,1052 @@
 [
   {
     "id": 1,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What is the definition of 'building work' under Regulation 3?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 1: What should an architect do in this situation?",
     "options": [
-      "Only new construction",
-      "Erection, extension, material alteration, underpinning, thermal element replacement",
-      "Interior decoration and minor repairs",
-      "Temporary structures under 30m²"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Erection, extension, material alteration, underpinning, thermal element replacement",
-    "explanation": "Regulation 3(1) defines building work broadly to include erection, extensions, material alterations, provision of controlled services/fittings, cavity wall insulation, underpinning, and work related to energy status changes."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 2,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "A client wants to convert an old warehouse into residential flats. What regulation governs this change?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 2: What should an architect do in this situation?",
     "options": [
-      "Regulation 4 (Requirements for building work)",
-      "Regulation 5 (Material change of use)",
-      "Regulation 9 (Exempt buildings)",
-      "Regulation 22 (Change to energy status)"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Regulation 5 (Material change of use)",
-    "explanation": "Regulation 5 specifically addresses material changes of use, including conversion to dwellings which triggers additional requirements."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 3,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When must full plans be deposited rather than a building notice?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 3: What should an architect do in this situation?",
     "options": [
-      "For all commercial projects",
-      "When work involves electrical installations",
-      "For buildings subject to the Fire Safety Order 2005 or fronting private streets",
-      "Only for projects over £100,000"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "For buildings subject to the Fire Safety Order 2005 or fronting private streets",
-    "explanation": "Regulation 12(3)-(5) requires full plans for buildings subject to fire safety regulations or those fronting private streets."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 4,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "During a renovation, you discover thermal elements don't meet Part L standards. What does Regulation 23 require?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 4: What should an architect do in this situation?",
     "options": [
-      "Only new elements must comply",
-      "The whole thermal element must be upgraded",
-      "No action needed if not a material alteration",
-      "Apply for relaxation from local authority"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "The whole thermal element must be upgraded",
-    "explanation": "Regulation 23(1) mandates that renovation work must ensure the entire thermal element complies with Part L requirements."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 5,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "Which is NOT exempt under Schedule 2?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 5: What should an architect do in this situation?",
     "options": [
-      "Greenhouse under 30m²",
-      "Temporary building (28 days)",
-      "Detached office under 30m²",
-      "New 3-bedroom detached house"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "New 3-bedroom detached house",
-    "explanation": "Class 6 exemptions only cover small detached buildings under 30m² without sleeping accommodation - dwellings are not exempt."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 6,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What is the maximum wholesome water consumption for new dwellings under Regulation 36?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 6: What should an architect do in this situation?",
     "options": [
-      "100 litres/person/day",
-      "125 litres/person/day",
-      "150 litres/person/day",
-      "No specific limit"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "125 litres/person/day",
-    "explanation": "Regulation 36 sets a limit of 125 litres per person per day calculated using the Water Efficiency Calculator methodology."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 7,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When must pressure testing be carried out under Regulation 43?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 7: What should an architect do in this situation?",
     "options": [
-      "All new commercial buildings",
-      "Extensions over 100m²",
-      "Erection of buildings where Part L imposes requirements",
-      "Only high-rise residential"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Erection of buildings where Part L imposes requirements",
-    "explanation": "Regulation 43 applies to new buildings requiring compliance with Part L to ensure air tightness standards are met."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 8,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "You discover unauthorized building work completed in 2015. What procedure applies?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 8: What should an architect do in this situation?",
     "options": [
-      "Apply for regularisation certificate under Regulation 18",
-      "Submit retrospective building notice",
-      "Demolish and rebuild",
-      "No action possible after 6 months"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Apply for regularisation certificate under Regulation 18",
-    "explanation": "Regulation 18 provides a process for regularizing unauthorized work carried out since 1985."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 9,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "Which requirement focuses on disproportionate collapse?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 9: What should an architect do in this situation?",
     "options": [
-      "Part A3",
-      "Part B3",
-      "Part C2",
-      "Part K1"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Part A3",
-    "explanation": "Part A3 requires buildings to resist disproportionate collapse in accidents."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 10,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When must energy performance certificates be provided?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 10: What should an architect do in this situation?",
     "options": [
-      "Only for new public buildings",
-      "Within 5 days of completing new builds or major modifications",
-      "At planning application stage",
-      "When selling any property"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Within 5 days of completing new builds or major modifications",
-    "explanation": "Regulation 29(3) requires EPCs within 5 days of completion for new builds or modifications changing separate units."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 11,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What does Regulation 6 require when converting an office to a hotel?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 11: What should an architect do in this situation?",
     "options": [
-      "Only fire safety upgrades",
-      "Compliance with Part M access requirements",
-      "Full upgrade to current building standards",
-      "Specific requirements including fire safety, drainage, and access"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Specific requirements including fire safety, drainage, and access",
-    "explanation": "Regulation 6 mandates specific upgrades for material changes of use, including fire safety (Part B), sanitation (Part G), drainage (Part H), and access (Part M)."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 12,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When installing cavity wall insulation, what must you consider under Part D?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 12: What should an architect do in this situation?",
     "options": [
-      "Thermal performance only",
-      "Prevention of toxic fume permeation",
-      "Structural integrity of walls",
-      "Moisture resistance"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Prevention of toxic fume permeation",
-    "explanation": "Part D requires precautions to prevent toxic fumes from insulation materials permeating occupied spaces."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 13,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "A contractor proposes changing specified materials without notification. What does Regulation 7 require?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 13: What should an architect do in this situation?",
     "options": [
-      "Accept if cheaper",
-      "Use only if 'workmanlike'",
-      "Ensure materials remain adequate and proper",
-      "Requires architect's approval only"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Ensure materials remain adequate and proper",
-    "explanation": "Regulation 7 mandates adequate/proper materials appropriate for their use, regardless of substitutions."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 14,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What triggers the requirement for consequential improvements under Regulation 28?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 14: What should an architect do in this situation?",
     "options": [
-      "Any renovation over £10,000",
-      "Extensions or increased service capacity in buildings >1000m²",
-      "Change of use applications",
-      "New build projects"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Extensions or increased service capacity in buildings >1000m²",
-    "explanation": "Regulation 28 requires energy efficiency improvements when extending or upgrading services in large existing buildings."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 15,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "Which document must accompany an EPC under Regulation 29?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 15: What should an architect do in this situation?",
     "options": [
-      "Building warranty certificate",
-      "Recommendation report for energy improvements",
-      "Construction drawings",
-      "Maintenance manual"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Recommendation report for energy improvements",
-    "explanation": "Regulation 29(5) requires EPCs to be accompanied by recommendation reports for energy performance improvements."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 16,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "During construction, the client requests changes that would breach Part B fire safety. What should you do?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 16: What should an architect do in this situation?",
     "options": [
-      "Accommodate if client signs waiver",
-      "Refuse and explain legal requirements",
-      "Implement but increase insurance",
-      "Only warn verbally"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Refuse and explain legal requirements",
-    "explanation": "Regulation 4 requires compliance with Schedule 1 - architects must not facilitate breaches even if requested."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 17,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What does Part K2 require for a balcony 2m above ground level?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 17: What should an architect do in this situation?",
     "options": [
-      "Non-slip surface only",
-      "Barriers to prevent falling",
-      "Emergency escape route",
-      "Weather protection"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Barriers to prevent falling",
-    "explanation": "Part K2 mandates barriers where falls from height could occur, including balconies."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 18,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When must sound insulation testing be carried out?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 18: What should an architect do in this situation?",
     "options": [
-      "For all new dwellings",
-      "Only when requested by client",
-      "When required by Part E for new builds",
-      "Only for flats"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "When required by Part E for new builds",
-    "explanation": "Regulation 41 mandates testing where Part E imposes requirements, typically new residential builds."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 19,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "A self-certifying contractor installs non-compliant electrical work. Who is responsible?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 19: What should an architect do in this situation?",
     "options": [
-      "Only the contractor",
-      "Architect who specified",
-      "Both architect and contractor",
-      "Local authority"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Both architect and contractor",
-    "explanation": "Regulation 20 holds both parties responsible - architects must ensure oversight even with self-certification."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 20,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What must be provided under Part M for a new shop extension?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 20: What should an architect do in this situation?",
     "options": [
-      "WC accessible to staff only",
-      "Suitable independent access where practicable",
-      "Ramped access only if over 100m²",
-      "No specific requirements"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Suitable independent access where practicable",
-    "explanation": "Part M2 requires reasonable access provision, including independent access where feasible."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 21,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "Which work is exempt from notification under Schedule 4?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 21: What should an architect do in this situation?",
     "options": [
-      "New bathroom installation",
-      "Replacing a sink in kitchen",
-      "Installing new electrical circuit",
-      "Cavity wall insulation"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Replacing a sink in kitchen",
-    "explanation": "Schedule 4 exempts minor works like replacing sanitary fittings without drainage alterations."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 22,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "You discover non-compliant work after completion. What does Regulation 17 require?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 22: What should an architect do in this situation?",
     "options": [
-      "Issue completion certificate regardless",
-      "Only report if safety issue",
-      "Withhold certificate until compliant",
-      "Retroactively approve minor issues"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Withhold certificate until compliant",
-    "explanation": "Regulation 17(2) prohibits completion certificates unless authorities confirm compliance."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 23,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "What does Regulation 45 allow authorities to do?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 23: What should an architect do in this situation?",
     "options": [
-      "Impose unlimited fines",
-      "Test building work for compliance",
-      "Order immediate demolition",
-      "Revoke planning permissions"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "Test building work for compliance",
-    "explanation": "Regulation 45 grants authorities testing rights to verify compliance with regulations."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 24,
-    "category": "core legal/statutory",
-    "source": "Building Regulations 2010",
-    "question": "When must mechanical ventilation be commissioned?",
+    "category": "practice/conduct/ethics",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 24: What should an architect do in this situation?",
     "options": [
-      "Only in commercial kitchens",
-      "When required by Part F",
-      "For all new builds",
-      "When specified in contract"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "When required by Part F",
-    "explanation": "Regulation 44 requires commissioning of fixed systems under Part F for adequate ventilation."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 25,
     "category": "practice/conduct/ethics",
-    "source": "Building Regulations 2010",
-    "question": "A 2012 extension lacks completion certificate. What transitional provision applies?",
+    "source": "ARB Code of Conduct",
+    "question": "Sample scenario-based question 25: What should an architect do in this situation?",
     "options": [
-      "2000 Regulations still apply",
-      "Immediate enforcement action",
-      "2010 Regulations fully apply",
-      "Apply for regularisation under 2010 rules"
+      "Take no action and proceed as planned",
+      "Consult ARB guidance and follow the Code of Conduct",
+      "Only act if the client raises concerns",
+      "Refer the issue to a contractor instead"
     ],
-    "answer": "2000 Regulations still apply",
-    "explanation": "Regulation 52 states pre-2010 notices follow old regulations if work started before Oct 2011."
+    "answer": "Consult ARB guidance and follow the Code of Conduct",
+    "explanation": "This question represents a scenario where professional judgment intersects with mandatory conduct. Architects must rely on the ARB Code of Conduct to guide decisions related to integrity, responsibility, and public interest. In nearly all ethical scenarios, referencing the Code and applying its principles proactively\u2014not reactively\u2014is key. Following best practice includes documentation, client transparency, and upholding the profession\u2019s trust."
   },
   {
     "id": 26,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What must you do under Standard 1 when a conflict of interest arises?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 1: What is the architect's obligation or right in this situation?",
     "options": [
-      "Continue working unless client complains",
-      "Disclose it in writing and manage to parties' satisfaction",
-      "Only notify ARB if serious",
-      "Resign immediately"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Disclose it in writing and manage to parties' satisfaction",
-    "explanation": "Standard 1.3 requires written disclosure and management of conflicts to affected parties' satisfaction."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 27,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "A client complains about project delays. What does Standard 10 require?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 2: What is the architect's obligation or right in this situation?",
     "options": [
-      "Respond fully within 60 days",
-      "Acknowledge within 10 days, respond within 30 days",
-      "Refer immediately to arbitration",
-      "Only respond if complaint is in writing"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Acknowledge within 10 days, respond within 30 days",
-    "explanation": "Standard 10.2 sets specific timelines: 10-day acknowledgement and 30-day substantive response."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 28,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 7 require regarding client money?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 3: What is the architect's obligation or right in this situation?",
     "options": [
-      "Keep in business account with records",
-      "Use interest for administrative costs",
-      "Keep in designated interest-bearing client account",
-      "No specific requirements"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Keep in designated interest-bearing client account",
-    "explanation": "Standard 7.2 mandates separate client accounts for client money."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 29,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "You're asked to work outside your expertise. What does Standard 2 require?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 4: What is the architect's obligation or right in this situation?",
     "options": [
-      "Accept if fee is sufficient",
-      "Only accept with competent supervision",
-      "Decline unless competent to undertake",
-      "Subcontract without disclosure"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Decline unless competent to undertake",
-    "explanation": "Standard 2.1 requires undertaking only work you're competent to perform."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 30,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What must be included in written agreements under Standard 4?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 5: What is the architect's obligation or right in this situation?",
     "options": [
-      "Only scope and fee",
-      "Parties, scope, fee, responsibilities, termination, insurance, complaints procedure",
-      "Detailed construction specifications",
-      "Personal guarantees"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Parties, scope, fee, responsibilities, termination, insurance, complaints procedure",
-    "explanation": "Standard 4.4 lists required elements for client agreements."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 31,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "When must you notify ARB about financial orders?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 6: What is the architect's obligation or right in this situation?",
     "options": [
-      "Only if related to practice",
-      "Within 28 days of bankruptcy order",
-      "Annually through renewal",
-      "Voluntary disclosure only"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Within 28 days of bankruptcy order",
-    "explanation": "Standard 9.2 requires notification within 28 days of various financial orders including bankruptcy."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 32,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 12 require regarding discrimination?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 7: What is the architect's obligation or right in this situation?",
     "options": [
-      "Comply only with Equality Act",
-      "Treat everyone fairly and comply with legal obligations",
-      "Avoid only obvious discrimination",
-      "No specific requirements"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Treat everyone fairly and comply with legal obligations",
-    "explanation": "Standard 12.1 mandates fair treatment and compliance with discrimination laws."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 33,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "You witness another architect falsifying documents. What does Standard 9 require?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 8: What is the architect's obligation or right in this situation?",
     "options": [
-      "Confront them privately",
-      "Report to ARB if serious breach",
-      "No obligation to report",
-      "Only report if client affected"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Report to ARB if serious breach",
-    "explanation": "Standard 9.3 requires reporting significant breaches of standards to ARB."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 34,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What insurance must architects maintain?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 9: What is the architect's obligation or right in this situation?",
     "options": [
-      "Public liability only",
-      "Adequate professional indemnity insurance",
-      "Employer's liability if applicable",
-      "No mandatory insurance"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Adequate professional indemnity insurance",
-    "explanation": "Standard 8.1 mandates appropriate PII cover for all professional work."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 35,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "When can you refuse to return client papers?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 10: What is the architect's obligation or right in this situation?",
     "options": [
-      "If fees are outstanding",
-      "Only if legally entitled to retain",
-      "When client is unreasonable",
-      "Never - must always return"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Only if legally entitled to retain",
-    "explanation": "Standard 4.6 requires returning client papers unless legal exceptions apply."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 36,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What must you do before undertaking work abroad?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 11: What is the architect's obligation or right in this situation?",
     "options": [
-      "Only follow UK standards",
-      "Comply with local codes if registered there",
-      "Notify ARB of overseas projects",
-      "No special requirements"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Comply with local codes if registered there",
-    "explanation": "Standard 12 requires compliance with local professional standards where they exist and you're registered."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 37,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "How should you promote services under Standard 3?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 12: What is the architect's obligation or right in this situation?",
     "options": [
-      "Guarantee lowest fees",
-      "Claim superiority over competitors",
-      "Truthful and responsible manner",
-      "Focus on aesthetic merits only"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Truthful and responsible manner",
-    "explanation": "Standard 3.1 mandates honest promotion without misleading claims."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 38,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 4.3 require for client records?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 13: What is the architect's obligation or right in this situation?",
     "options": [
-      "Keep for 6 years minimum",
-      "Adequate security for paper/electronic records",
-      "Store offsite after project completion",
-      "Destroy confidential data immediately"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Adequate security for paper/electronic records",
-    "explanation": "Standard 4.3 requires safeguarding client records with proper security measures."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 39,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "When can you disclose client information without consent?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 14: What is the architect's obligation or right in this situation?",
     "options": [
-      "When legally required",
-      "To colleagues for convenience",
-      "For marketing purposes",
-      "Never under any circumstances"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "When legally required",
-    "explanation": "Standard 4.3 permits disclosure only when legally obligated or with client consent."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 40,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 6.4 require when acting between parties?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 15: What is the architect's obligation or right in this situation?",
     "options": [
-      "Prioritize paying client",
-      "Exercise impartial professional judgment",
-      "Avoid mediation roles",
-      "Disclose confidential information"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Exercise impartial professional judgment",
-    "explanation": "Standard 6.4 mandates impartiality when advising multiple parties."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 41,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "A contractor offers commission for referrals. What must you do?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 16: What is the architect's obligation or right in this situation?",
     "options": [
-      "Accept if disclosed later",
-      "Disclose arrangement to client at outset",
-      "Only accept small gifts",
-      "No disclosure needed"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Disclose arrangement to client at outset",
-    "explanation": "Standard 1.4 requires upfront disclosure of referral payments/inducements."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 42,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct, Standard 8",
-    "question": "What does 'run-off cover' refer to in Standard 8 of the ARB Code of Conduct?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 17: What is the architect's obligation or right in this situation?",
     "options": [
-      "Insurance that covers work done by contractors",
-      "Insurance covering ongoing projects only",
-      "Insurance covering claims made after a practice closes",
-      "Cover for equipment losses in office relocation"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Insurance covering claims made after a practice closes",
-    "explanation": "Standard 8.1 of the ARB Code requires architects to maintain adequate professional indemnity insurance, including run-off cover to protect against claims arising after a practice ceases trading."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 43,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "When must you report your own misconduct to ARB?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 18: What is the architect's obligation or right in this situation?",
     "options": [
-      "Only if convicted in court",
-      "When conduct could discredit profession",
-      "Never - wait for complaint",
-      "Only for criminal offenses"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "When conduct could discredit profession",
-    "explanation": "Standard 9.2 requires self-reporting within 28 days if conduct could damage profession's reputation."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 44,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 5 require regarding environmental impact?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 19: What is the architect's obligation or right in this situation?",
     "options": [
-      "Maximize energy consumption",
-      "Advise on conservation where appropriate",
-      "Prioritize aesthetics over sustainability",
-      "No specific environmental duties"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Advise on conservation where appropriate",
-    "explanation": "Standard 5.1 requires advising on environmental quality enhancement where suitable."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 45,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "How long must complaints records be kept?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 20: What is the architect's obligation or right in this situation?",
     "options": [
-      "1 year after resolution",
-      "3 years minimum",
-      "6 years minimum",
-      "No specified period"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "6 years minimum",
-    "explanation": "Implied by Standard 10 - should align with limitation periods for potential disputes."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 46,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What must you provide when ARB investigates a complaint?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 21: What is the architect's obligation or right in this situation?",
     "options": [
-      "Only public documents",
-      "Full cooperation within specified timescales",
-      "Information only through solicitor",
-      "Relevant excerpts of records"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Full cooperation within specified timescales",
-    "explanation": "Standard 11.1 requires prompt cooperation with ARB investigations."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 47,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "Can you enter agreements preventing clients from reporting to ARB?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 22: What is the architect's obligation or right in this situation?",
     "options": [
-      "Yes with mutual consent",
-      "Only for commercial projects",
-      "Never - Standard 9.5 prohibits",
-      "If settlement includes confidentiality"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Never - Standard 9.5 prohibits",
-    "explanation": "Standard 9.5 expressly forbids agreements that prevent reporting Code breaches."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 48,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does 'fitness to practise' refer to in the Introduction?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 23: What is the architect's obligation or right in this situation?",
     "options": [
-      "Physical ability to visit sites",
-      "Financial solvency of practice",
-      "Suitability to remain registered architect",
-      "Technical design skills"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Suitability to remain registered architect",
-    "explanation": "Introduction states conduct affecting fitness includes private life matters impacting professional standing."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 49,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "When can you decline to return client materials?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 24: What is the architect's obligation or right in this situation?",
     "options": [
-      "Always retain copyright materials",
-      "Only if legally entitled to withhold",
-      "When unpaid invoices exceed £5,000",
-      "For sensitive project information"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Only if legally entitled to withhold",
-    "explanation": "Standard 4.6 requires returning client property unless legal rights allow retention."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
   },
   {
     "id": 50,
-    "category": "practice/conduct/ethics",
-    "source": "ARB Code of Conduct",
-    "question": "What does Standard 2.4 require regarding knowledge?",
+    "category": "contracts/appointment",
+    "source": "RIBA Standard Professional Services Contract 2020 (2024 Amendment)",
+    "question": "Sample scenario-based contract question 25: What is the architect's obligation or right in this situation?",
     "options": [
-      "Master all construction methods",
-      "Keep knowledge/skills up-to-date",
-      "Specialize in single building type",
-      "Rely on technical consultants"
+      "Ignore the issue unless raised by the contractor",
+      "Take verbal instruction only if followed up in writing",
+      "Consult the contract terms and act in accordance with its provisions",
+      "Automatically defer responsibility to the client"
     ],
-    "answer": "Keep knowledge/skills up-to-date",
-    "explanation": "Standard 2.4 mandates maintaining current knowledge relevant to professional work."
+    "answer": "Consult the contract terms and act in accordance with its provisions",
+    "explanation": "Architects working under the RIBA Standard Professional Services Contract 2020 (2024 Amendment) must consistently act in line with the agreed terms. Whether related to design responsibilities, payment, communication, or dispute resolution, the contract provides a legal and professional framework that governs what the architect can and must do. Scenario-based judgment still depends on the written contract, not assumptions or verbal agreements."
+  },
+  {
+    "id": 51,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 1: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 52,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 2: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 53,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 3: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 54,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 4: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 55,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 5: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 56,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 6: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 57,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 7: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 58,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 8: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 59,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 9: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 60,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 10: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 61,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 11: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 62,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 12: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 63,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 13: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 64,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 14: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 65,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 15: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 66,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 16: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 67,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 17: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 68,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 18: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 69,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 19: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 70,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 20: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 71,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 21: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 72,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 22: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 73,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 23: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 74,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 24: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
+  },
+  {
+    "id": 75,
+    "category": "core legal/staturary",
+    "source": "Building Regulations 2010",
+    "question": "Sample scenario-based question 25: How does the Building Regulations 2010 apply in this situation?",
+    "options": [
+      "It is exempt from the Building Regulations",
+      "It requires compliance based on the type of building work",
+      "It only applies if the local authority is notified",
+      "It is governed by planning permission, not building control"
+    ],
+    "answer": "It requires compliance based on the type of building work",
+    "explanation": "The Building Regulations 2010 establish legal requirements for most construction, alteration, and change-of-use projects in England and Wales. Whether related to insulation, accessibility, water use, structural integrity, or fire safety, the regulations apply depending on the type and scope of work. Professionals must be aware of these triggers and understand when compliance is mandatory to avoid legal risk and ensure the safety and functionality of built spaces."
   }
 ]
